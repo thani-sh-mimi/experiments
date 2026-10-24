@@ -1,0 +1,211 @@
+{
+  "env": {
+    "bun": "1.4.4",
+    "platform": "linux-x64",
+    "cpus": 2,
+    "date": "2026-10-24T20:05:40.745Z",
+    "lookups": 1000,
+    "trials": 3
+  },
+  "sizes": {
+    "1000": {
+      "bytes": {
+        "json": 188965,
+        "sqlite": 114688
+      },
+      "coldRead": {
+        "json": [
+          1.653,
+          1.344,
+          1.321
+        ],
+        "sqlite": [
+          4.791,
+          4.934,
+          4.781
+        ]
+      },
+      "oneUpdate": {
+        "json": [
+          1.824,
+          1.829,
+          1.824
+        ],
+        "sqlite": [
+          0.366,
+          0.449,
+          0.354
+        ]
+      },
+      "bulkUpdate": {
+        "json": [
+          1.928,
+          1.943,
+          3.298
+        ],
+        "sqlite": [
+          0.897,
+          0.87,
+          1.161
+        ]
+      },
+      "hits": {
+        "json": 1000,
+        "sqlite": 1000
+      },
+      "median": {
+        "coldRead": {
+          "json": 1.344,
+          "sqlite": 4.791
+        },
+        "oneUpdate": {
+          "json": 1.824,
+          "sqlite": 0.366
+        },
+        "bulkUpdate": {
+          "json": 1.943,
+          "sqlite": 0.897
+        }
+      }
+    },
+    "10000": {
+      "bytes": {
+        "json": 1889751,
+        "sqlite": 1105920
+      },
+      "coldRead": {
+        "json": [
+          12.712,
+          11.666,
+          13.013
+        ],
+        "sqlite": [
+          6.636,
+          5.767,
+          5.951
+        ]
+      },
+      "oneUpdate": {
+        "json": [
+          20.569,
+          17.268,
+          18.024
+        ],
+        "sqlite": [
+          0.862,
+          0.339,
+          0.415
+        ]
+      },
+      "bulkUpdate": {
+        "json": [
+          18.591,
+          17.258,
+          19.52
+        ],
+        "sqlite": [
+          5.248,
+          5.238,
+          22.875
+        ]
+      },
+      "hits": {
+        "json": 1000,
+        "sqlite": 1000
+      },
+      "median": {
+        "coldRead": {
+          "json": 12.712,
+          "sqlite": 5.951
+        },
+        "oneUpdate": {
+          "json": 18.024,
+          "sqlite": 0.415
+        },
+        "bulkUpdate": {
+          "json": 18.591,
+          "sqlite": 5.248
+        }
+      }
+    },
+    "100000": {
+      "bytes": {
+        "json": 18897695,
+        "sqlite": 10821632
+      },
+      "coldRead": {
+        "json": [
+          131.77,
+          137.722,
+          131.516
+        ],
+        "sqlite": [
+          9.059,
+          8.841,
+          8.963
+        ]
+      },
+      "oneUpdate": {
+        "json": [
+          224.361,
+          226.444,
+          199.591
+        ],
+        "sqlite": [
+          0.507,
+          5.283,
+          0.497
+        ]
+      },
+      "bulkUpdate": {
+        "json": [
+          198.795,
+          200.391,
+          199.908
+        ],
+        "sqlite": [
+          53.446,
+          14.943,
+          52.547
+        ]
+      },
+      "hits": {
+        "json": 1000,
+        "sqlite": 1000
+      },
+      "median": {
+        "coldRead": {
+          "json": 131.77,
+          "sqlite": 8.963
+        },
+        "oneUpdate": {
+          "json": 224.361,
+          "sqlite": 0.507
+        },
+        "bulkUpdate": {
+          "json": 199.908,
+          "sqlite": 52.547
+        }
+      }
+    }
+  },
+  "noiseFloor": {
+    "probe": "json cold read + 1000 lookups, 1000 entries, 10 repeats",
+    "runs": [
+      1.564,
+      1.232,
+      1.116,
+      1.12,
+      1.132,
+      1.138,
+      1.12,
+      1.163,
+      1.134,
+      1.131
+    ],
+    "min": 1.116,
+    "median": 1.133,
+    "max": 1.564,
+    "spread": 0.448
+  }
+}
