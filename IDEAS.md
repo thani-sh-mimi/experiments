@@ -7,7 +7,7 @@ Status: `open` · `building` · `done` · `dropped` · `needs Thanish`.
 | Test file count | What does each extra test file cost `bun test`, separate from the tests in it? | done (001) |
 | Fork-per-file runner | Same question against `node --test`: what does a worker per file cost, where Bun shares one process? | open |
 | Parallel crossover | Repeat 001's `--parallel` sweep on a host with more than 2 CPUs; the sandbox quota caps speedup at ~2x. | needs Thanish |
-| Pre-commit hook budget | Where does `prettier --check .` break the one-second commit budget, and how much does staging-only save? | open |
+| Pre-commit hook budget | Where does `prettier --check .` break the one-second commit budget, and how much does staging-only save? | done (003) |
 | Shallow clone | How much time and disk does `--depth 1` save on a mid-size repo, and what stops working? | open |
 | Incremental type-check | Cold `tsc` versus cached incremental on a synthetic 300-module project: what ratio do you actually get? | open |
 | Lockfile discipline | `bun install` with a warm cache and `--frozen-lockfile`: how much of CI install time is resolution? | open |

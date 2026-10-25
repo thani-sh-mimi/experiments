@@ -1,0 +1,303 @@
+{
+  "generatedAt": "2026-10-25T08:04:42.324Z",
+  "host": {
+    "cpus": 6,
+    "bun": "1.4.4",
+    "node": "v26.3.0"
+  },
+  "tool": {
+    "prettier": "3.9.10",
+    "cache": "off unless --cache"
+  },
+  "config": {
+    "sizes": [
+      10,
+      50,
+      100,
+      250,
+      500,
+      1000,
+      2000
+    ],
+    "fileBytes": 588,
+    "filesPerModule": 20,
+    "stagedFiles": 5,
+    "runsPerCase": 3,
+    "warmup": "1 discarded run per case"
+  },
+  "setupMs": 20391.3,
+  "startup": {
+    "label": "startup (--version)",
+    "args": "--version",
+    "runs": [
+      114.6,
+      107.3,
+      100.6
+    ],
+    "medianMs": 107.3,
+    "spreadMs": 14
+  },
+  "cases": [
+    {
+      "n": 10,
+      "label": "full tree (10)",
+      "args": "--check .",
+      "runs": [
+        394.3,
+        390.4,
+        399
+      ],
+      "medianMs": 394.3,
+      "spreadMs": 8.6
+    },
+    {
+      "n": 10,
+      "label": "staged 5 (10)",
+      "args": "--check /root/github/thani-sh-mimi/experiments/tmp/003/10/src/mod0/file0.ts /root/github/thani-sh-mimi/experiments/tmp/0",
+      "runs": [
+        302.2,
+        301.4,
+        309.7
+      ],
+      "medianMs": 302.2,
+      "spreadMs": 8.3
+    },
+    {
+      "n": 50,
+      "label": "full tree (50)",
+      "args": "--check .",
+      "runs": [
+        622.2,
+        641.8,
+        635.8
+      ],
+      "medianMs": 635.8,
+      "spreadMs": 19.6
+    },
+    {
+      "n": 50,
+      "label": "staged 5 (50)",
+      "args": "--check /root/github/thani-sh-mimi/experiments/tmp/003/50/src/mod0/file0.ts /root/github/thani-sh-mimi/experiments/tmp/0",
+      "runs": [
+        303.2,
+        305.6,
+        304.9
+      ],
+      "medianMs": 304.9,
+      "spreadMs": 2.4
+    },
+    {
+      "n": 100,
+      "label": "full tree (100)",
+      "args": "--check .",
+      "runs": [
+        896.7,
+        887.5,
+        886.8
+      ],
+      "medianMs": 887.5,
+      "spreadMs": 9.9
+    },
+    {
+      "n": 100,
+      "label": "staged 5 (100)",
+      "args": "--check /root/github/thani-sh-mimi/experiments/tmp/003/100/src/mod0/file0.ts /root/github/thani-sh-mimi/experiments/tmp/",
+      "runs": [
+        301.4,
+        302.7,
+        311.4
+      ],
+      "medianMs": 302.7,
+      "spreadMs": 10
+    },
+    {
+      "n": 250,
+      "label": "full tree (250)",
+      "args": "--check .",
+      "runs": [
+        1592.3,
+        1620,
+        1595.5
+      ],
+      "medianMs": 1595.5,
+      "spreadMs": 27.7
+    },
+    {
+      "n": 250,
+      "label": "staged 5 (250)",
+      "args": "--check /root/github/thani-sh-mimi/experiments/tmp/003/250/src/mod0/file0.ts /root/github/thani-sh-mimi/experiments/tmp/",
+      "runs": [
+        302.7,
+        317.8,
+        306.2
+      ],
+      "medianMs": 306.2,
+      "spreadMs": 15.1
+    },
+    {
+      "n": 500,
+      "label": "full tree (500)",
+      "args": "--check .",
+      "runs": [
+        2604.9,
+        2675,
+        2613.3
+      ],
+      "medianMs": 2613.3,
+      "spreadMs": 70.1
+    },
+    {
+      "n": 500,
+      "label": "staged 5 (500)",
+      "args": "--check /root/github/thani-sh-mimi/experiments/tmp/003/500/src/mod0/file0.ts /root/github/thani-sh-mimi/experiments/tmp/",
+      "runs": [
+        299.1,
+        297.9,
+        303
+      ],
+      "medianMs": 299.1,
+      "spreadMs": 5.1
+    },
+    {
+      "n": 1000,
+      "label": "full tree (1000)",
+      "args": "--check .",
+      "runs": [
+        4566.7,
+        4547.9,
+        4563.8
+      ],
+      "medianMs": 4563.8,
+      "spreadMs": 18.8
+    },
+    {
+      "n": 1000,
+      "label": "staged 5 (1000)",
+      "args": "--check /root/github/thani-sh-mimi/experiments/tmp/003/1000/src/mod0/file0.ts /root/github/thani-sh-mimi/experiments/tmp",
+      "runs": [
+        299.6,
+        298.2,
+        300.5
+      ],
+      "medianMs": 299.6,
+      "spreadMs": 2.3
+    },
+    {
+      "n": 2000,
+      "label": "full tree (2000)",
+      "args": "--check .",
+      "runs": [
+        8325.6,
+        8465.1,
+        8477.2
+      ],
+      "medianMs": 8465.1,
+      "spreadMs": 151.6
+    },
+    {
+      "n": 2000,
+      "label": "staged 5 (2000)",
+      "args": "--check /root/github/thani-sh-mimi/experiments/tmp/003/2000/src/mod0/file0.ts /root/github/thani-sh-mimi/experiments/tmp",
+      "runs": [
+        302.1,
+        305,
+        305.1
+      ],
+      "medianMs": 305,
+      "spreadMs": 3
+    }
+  ],
+  "cacheCases": [
+    {
+      "n": 10,
+      "label": "full tree, cache (10)",
+      "args": "--check . --cache --cache-location /root/github/thani-sh-mimi/experiments/tmp/003/10/.prettier-cache",
+      "runs": [
+        213.6,
+        210.5,
+        214.2
+      ],
+      "medianMs": 213.6,
+      "spreadMs": 3.7
+    },
+    {
+      "n": 50,
+      "label": "full tree, cache (50)",
+      "args": "--check . --cache --cache-location /root/github/thani-sh-mimi/experiments/tmp/003/50/.prettier-cache",
+      "runs": [
+        293.7,
+        289.8,
+        291.1
+      ],
+      "medianMs": 291.1,
+      "spreadMs": 3.9
+    },
+    {
+      "n": 100,
+      "label": "full tree, cache (100)",
+      "args": "--check . --cache --cache-location /root/github/thani-sh-mimi/experiments/tmp/003/100/.prettier-cache",
+      "runs": [
+        399.9,
+        385.5,
+        397.8
+      ],
+      "medianMs": 397.8,
+      "spreadMs": 14.4
+    },
+    {
+      "n": 250,
+      "label": "full tree, cache (250)",
+      "args": "--check . --cache --cache-location /root/github/thani-sh-mimi/experiments/tmp/003/250/.prettier-cache",
+      "runs": [
+        670.9,
+        668.5,
+        665.7
+      ],
+      "medianMs": 668.5,
+      "spreadMs": 5.2
+    },
+    {
+      "n": 500,
+      "label": "full tree, cache (500)",
+      "args": "--check . --cache --cache-location /root/github/thani-sh-mimi/experiments/tmp/003/500/.prettier-cache",
+      "runs": [
+        1064.1,
+        1068,
+        1072.8
+      ],
+      "medianMs": 1068,
+      "spreadMs": 8.7
+    },
+    {
+      "n": 1000,
+      "label": "full tree, cache (1000)",
+      "args": "--check . --cache --cache-location /root/github/thani-sh-mimi/experiments/tmp/003/1000/.prettier-cache",
+      "runs": [
+        1810.2,
+        1825.7,
+        1871.4
+      ],
+      "medianMs": 1825.7,
+      "spreadMs": 61.2
+    },
+    {
+      "n": 2000,
+      "label": "full tree, cache (2000)",
+      "args": "--check . --cache --cache-location /root/github/thani-sh-mimi/experiments/tmp/003/2000/.prettier-cache",
+      "runs": [
+        3339.5,
+        3339,
+        3383.4
+      ],
+      "medianMs": 3339.5,
+      "spreadMs": 44.4
+    }
+  ],
+  "argmax": [],
+  "model": {
+    "msPerFile": 3.9882,
+    "fixedMs": 488.7,
+    "crossover1000ms": 128.2,
+    "note": "slope from full-tree points at 100 and 2000 files"
+  }
+}
