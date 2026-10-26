@@ -1,0 +1,553 @@
+{
+  "generatedAt": "2026-10-26T08:12:24.144Z",
+  "host": {
+    "cpus": 6,
+    "bun": "1.4.4",
+    "node": "v26.3.0"
+  },
+  "config": {
+    "sizes": [
+      300,
+      1000
+    ],
+    "bytesPerModule": 711,
+    "runsPerCase": 3,
+    "warmup": "one discarded cycle per compiler",
+    "compilerOptions": "strict, noEmit, skipLibCheck, incremental, tsBuildInfoFile=.cache/tsconfig.tsbuildinfo",
+    "edits": "append one exported const; mid = module index size/2 (half the graph depends on it), leaf = last module (nothing depends on it)"
+  },
+  "startups": [
+    {
+      "size": 300,
+      "compiler": "ts7",
+      "runs": [
+        61.3,
+        56.2,
+        61.2
+      ],
+      "medianMs": 61.2
+    },
+    {
+      "size": 300,
+      "compiler": "ts6",
+      "runs": [
+        92.4,
+        96.4,
+        98.2
+      ],
+      "medianMs": 96.4
+    },
+    {
+      "size": 1000,
+      "compiler": "ts7",
+      "runs": [
+        56.8,
+        56.7,
+        62
+      ],
+      "medianMs": 56.8
+    },
+    {
+      "size": 1000,
+      "compiler": "ts6",
+      "runs": [
+        99.8,
+        95.7,
+        94.7
+      ],
+      "medianMs": 95.7
+    }
+  ],
+  "results": [
+    {
+      "size": 300,
+      "modules": 300,
+      "compiler": "ts7",
+      "version": "7.0.2",
+      "cold": {
+        "runs": [
+          {
+            "ok": true,
+            "ms": 454.2
+          },
+          {
+            "ok": true,
+            "ms": 440.7
+          },
+          {
+            "ok": true,
+            "ms": 443
+          }
+        ],
+        "medianMs": 443,
+        "spreadMs": 13.5,
+        "failures": []
+      },
+      "noop": {
+        "runs": [
+          {
+            "ok": true,
+            "ms": 204.1
+          },
+          {
+            "ok": true,
+            "ms": 191.6
+          },
+          {
+            "ok": true,
+            "ms": 176.9
+          }
+        ],
+        "medianMs": 191.6,
+        "spreadMs": 27.2,
+        "failures": []
+      },
+      "edit-mid": {
+        "runs": [
+          {
+            "ok": true,
+            "ms": 433.2
+          },
+          {
+            "ok": true,
+            "ms": 418.1
+          },
+          {
+            "ok": true,
+            "ms": 455.7
+          }
+        ],
+        "medianMs": 433.2,
+        "spreadMs": 37.6,
+        "failures": []
+      },
+      "edit-leaf": {
+        "runs": [
+          {
+            "ok": true,
+            "ms": 256.2
+          },
+          {
+            "ok": true,
+            "ms": 272.3
+          },
+          {
+            "ok": true,
+            "ms": 262.7
+          }
+        ],
+        "medianMs": 262.7,
+        "spreadMs": 16.1,
+        "failures": []
+      },
+      "nocache": {
+        "runs": [
+          {
+            "ok": true,
+            "ms": 448.5
+          },
+          {
+            "ok": true,
+            "ms": 443.3
+          },
+          {
+            "ok": true,
+            "ms": 446.7
+          }
+        ],
+        "medianMs": 446.7,
+        "spreadMs": 5.2,
+        "failures": []
+      },
+      "tsbuildinfoBytes": {
+        "runs": [
+          30988,
+          30988,
+          30988
+        ],
+        "median": 30988
+      }
+    },
+    {
+      "size": 300,
+      "modules": 300,
+      "compiler": "ts6",
+      "version": "6.0.3",
+      "cold": {
+        "runs": [
+          {
+            "ok": true,
+            "ms": 1680.9
+          },
+          {
+            "ok": true,
+            "ms": 1664.6
+          },
+          {
+            "ok": true,
+            "ms": 1805.7
+          }
+        ],
+        "medianMs": 1680.9,
+        "spreadMs": 141.1,
+        "failures": []
+      },
+      "noop": {
+        "runs": [
+          {
+            "ok": true,
+            "ms": 940.4
+          },
+          {
+            "ok": true,
+            "ms": 945.4
+          },
+          {
+            "ok": true,
+            "ms": 940.9
+          }
+        ],
+        "medianMs": 940.9,
+        "spreadMs": 5,
+        "failures": []
+      },
+      "edit-mid": {
+        "runs": [
+          {
+            "ok": true,
+            "ms": 1728.7
+          },
+          {
+            "ok": true,
+            "ms": 1732
+          },
+          {
+            "ok": true,
+            "ms": 1688.8
+          }
+        ],
+        "medianMs": 1728.7,
+        "spreadMs": 43.2,
+        "failures": []
+      },
+      "edit-leaf": {
+        "runs": [
+          {
+            "ok": true,
+            "ms": 1210.2
+          },
+          {
+            "ok": true,
+            "ms": 1191.7
+          },
+          {
+            "ok": true,
+            "ms": 1206.6
+          }
+        ],
+        "medianMs": 1206.6,
+        "spreadMs": 18.5,
+        "failures": []
+      },
+      "nocache": {
+        "runs": [
+          {
+            "ok": true,
+            "ms": 1760.6
+          },
+          {
+            "ok": true,
+            "ms": 1814.5
+          },
+          {
+            "ok": true,
+            "ms": 1753.7
+          }
+        ],
+        "medianMs": 1760.6,
+        "spreadMs": 60.8,
+        "failures": []
+      },
+      "tsbuildinfoBytes": {
+        "runs": [
+          45274,
+          45274,
+          45274
+        ],
+        "median": 45274
+      }
+    },
+    {
+      "size": 1000,
+      "modules": 1000,
+      "compiler": "ts7",
+      "version": "7.0.2",
+      "cold": {
+        "runs": [
+          {
+            "ok": true,
+            "ms": 2941.1
+          },
+          {
+            "ok": true,
+            "ms": 2992.5
+          },
+          {
+            "ok": true,
+            "ms": 2937.2
+          }
+        ],
+        "medianMs": 2941.1,
+        "spreadMs": 55.3,
+        "failures": []
+      },
+      "noop": {
+        "runs": [
+          {
+            "ok": true,
+            "ms": 356.9
+          },
+          {
+            "ok": true,
+            "ms": 366.8
+          },
+          {
+            "ok": true,
+            "ms": 356.1
+          }
+        ],
+        "medianMs": 356.9,
+        "spreadMs": 10.7,
+        "failures": []
+      },
+      "edit-mid": {
+        "runs": [
+          {
+            "ok": true,
+            "ms": 2827.3
+          },
+          {
+            "ok": true,
+            "ms": 2744.2
+          },
+          {
+            "ok": true,
+            "ms": 2834
+          }
+        ],
+        "medianMs": 2827.3,
+        "spreadMs": 89.8,
+        "failures": []
+      },
+      "edit-leaf": {
+        "runs": [
+          {
+            "ok": true,
+            "ms": 1205.7
+          },
+          {
+            "ok": true,
+            "ms": 1210.4
+          },
+          {
+            "ok": true,
+            "ms": 1190
+          }
+        ],
+        "medianMs": 1205.7,
+        "spreadMs": 20.4,
+        "failures": []
+      },
+      "nocache": {
+        "runs": [
+          {
+            "ok": true,
+            "ms": 2891.1
+          },
+          {
+            "ok": true,
+            "ms": 2837.7
+          },
+          {
+            "ok": true,
+            "ms": 2832.1
+          }
+        ],
+        "medianMs": 2837.7,
+        "spreadMs": 59,
+        "failures": []
+      },
+      "tsbuildinfoBytes": {
+        "runs": [
+          87842,
+          87842,
+          87842
+        ],
+        "median": 87842
+      }
+    },
+    {
+      "size": 1000,
+      "modules": 1000,
+      "compiler": "ts6",
+      "version": "6.0.3",
+      "cold": {
+        "runs": [
+          {
+            "ok": true,
+            "ms": 3790.7
+          },
+          {
+            "ok": true,
+            "ms": 3975
+          },
+          {
+            "ok": true,
+            "ms": 3893.1
+          }
+        ],
+        "medianMs": 3893.1,
+        "spreadMs": 184.3,
+        "failures": []
+      },
+      "noop": {
+        "runs": [
+          {
+            "ok": true,
+            "ms": 1399.8
+          },
+          {
+            "ok": true,
+            "ms": 1405.3
+          },
+          {
+            "ok": true,
+            "ms": 1382.5
+          }
+        ],
+        "medianMs": 1399.8,
+        "spreadMs": 22.8,
+        "failures": []
+      },
+      "edit-mid": {
+        "runs": [
+          {
+            "ok": true,
+            "ms": 3687
+          },
+          {
+            "ok": true,
+            "ms": 3668.2
+          },
+          {
+            "ok": true,
+            "ms": 3670.3
+          }
+        ],
+        "medianMs": 3670.3,
+        "spreadMs": 18.8,
+        "failures": []
+      },
+      "edit-leaf": {
+        "runs": [
+          {
+            "ok": false,
+            "ms": 1536.6,
+            "code": 1,
+            "error": "RangeError: Maximum call stack size exceeded"
+          },
+          {
+            "ok": false,
+            "ms": 1535,
+            "code": 1,
+            "error": "RangeError: Maximum call stack size exceeded"
+          },
+          {
+            "ok": false,
+            "ms": 1526.1,
+            "code": 1,
+            "error": "RangeError: Maximum call stack size exceeded"
+          }
+        ],
+        "medianMs": null,
+        "spreadMs": null,
+        "failures": [
+          "RangeError: Maximum call stack size exceeded",
+          "RangeError: Maximum call stack size exceeded",
+          "RangeError: Maximum call stack size exceeded"
+        ]
+      },
+      "nocache": {
+        "runs": [
+          {
+            "ok": true,
+            "ms": 3882.8
+          },
+          {
+            "ok": true,
+            "ms": 3867.5
+          },
+          {
+            "ok": true,
+            "ms": 3927.2
+          }
+        ],
+        "medianMs": 3882.8,
+        "spreadMs": 59.7,
+        "failures": []
+      },
+      "tsbuildinfoBytes": {
+        "runs": [
+          124528,
+          124528,
+          124528
+        ],
+        "median": 124528
+      }
+    }
+  ],
+  "diagnostics": {
+    "300-ts7": {
+      "cold": "Files:                   363\nLines:                 64238\nIdentifiers:           69368\nSymbols:               60878\nTypes:                 17656\nInstantiations:         9936\nMemory used:          57936K\nMemory allocs:        287862\nConfig time:          0.001s\nBuildInfo read time:  0.000s\nParse time:           0.092s\nBind time:            0.000s\nCheck time:           0.249s\nEmit time:            0.004s\nChanges compute time: 0.027s\nTotal time:           0.374s",
+      "noop": "Files:                   363\nLines:                 64238\nIdentifiers:           69368\nSymbols:               43616\nTypes:                   340\nInstantiations:            0\nMemory used:          38612K\nMemory allocs:        129502\nConfig time:          0.001s\nBuildInfo read time:  0.002s\nParse time:           0.086s\nBind time:            0.000s\nCheck time:           0.000s\nEmit time:            0.000s\nChanges compute time: 0.031s\nTotal time:           0.121s",
+      "editLeaf": "Files:                   363\nLines:                 64239\nIdentifiers:           69369\nSymbols:               45203\nTypes:                  4025\nInstantiations:         2124\nMemory used:          41769K\nMemory allocs:        175514\nConfig time:          0.001s\nBuildInfo read time:  0.002s\nParse time:           0.091s\nBind time:            0.000s\nCheck time:           0.069s\nEmit time:            0.006s\nChanges compute time: 0.028s\nTotal time:           0.198s"
+    },
+    "300-ts6": {
+      "cold": "Files:                        363\nLines of Library:           56131\nLines of Definitions:           0\nLines of TypeScript:         8094\nLines of JavaScript:            0\nLines of JSON:                  0\nLines of Other:                 0\nIdentifiers:                69368\nSymbols:                    55634\nTypes:                       5860\nInstantiations:              3620\nMemory used:               97124K\nAssignability cache size:     600\nIdentity cache size:            2\nSubtype cache size:           303\nStrict subtype cache size:      0\nI/O Read time:              0.04s\nParse time:                 0.42s\nResolveModule time:         0.04s\nProgram time:               0.57s\nBind time:                  0.21s\nCheck time:                 0.82s\nI/O Write time:             0.00s\nprintTime time:             0.01s\nEmit time:                  0.01s\nTotal time:                 1.61s",
+      "noop": "Files:                        363\nLines of Library:           56131\nLines of Definitions:           0\nLines of TypeScript:         8094\nLines of JavaScript:            0\nLines of JSON:                  0\nLines of Other:                 0\nIdentifiers:                69368\nSymbols:                    42987\nTypes:                         85\nInstantiations:                 0\nMemory used:               71612K\nAssignability cache size:       0\nIdentity cache size:            0\nSubtype cache size:             0\nStrict subtype cache size:      0\nI/O Read time:              0.02s\nParse time:                 0.42s\nResolveModule time:         0.04s\nProgram time:               0.56s\nBind time:                  0.21s\nTotal time:                 0.77s",
+      "editLeaf": "Files:                        363\nLines of Library:           56131\nLines of Definitions:           0\nLines of TypeScript:         8095\nLines of JavaScript:            0\nLines of JSON:                  0\nLines of Other:                 0\nIdentifiers:                69369\nSymbols:                    44573\nTypes:                       3469\nInstantiations:              2123\nMemory used:               94253K\nAssignability cache size:     301\nIdentity cache size:            2\nSubtype cache size:             4\nStrict subtype cache size:      0\nI/O Read time:              0.02s\nParse time:                 0.43s\nResolveModule time:         0.04s\nProgram time:               0.57s\nBind time:                  0.20s\ntransformTime time:         0.02s\ncommentTime time:           0.00s\nprintTime time:             0.04s\nEmit time:                  0.04s\nCheck time:                 0.23s\nI/O Write time:             0.00s\nTotal time:                 1.03s"
+    },
+    "1000-ts7": {
+      "cold": "Files:                   1063\nLines:                  83138\nIdentifiers:           119068\nSymbols:               128778\nTypes:                  57556\nInstantiations:         33036\nMemory used:          158799K\nMemory allocs:         875332\nConfig time:           0.003s\nBuildInfo read time:   0.000s\nParse time:            0.193s\nBind time:             0.000s\nCheck time:            2.522s\nEmit time:             0.034s\nChanges compute time:  0.061s\nTotal time:            2.814s",
+      "noop": "Files:                  1063\nLines:                 83138\nIdentifiers:          119068\nSymbols:               71616\nTypes:                   340\nInstantiations:            0\nMemory used:          71963K\nMemory allocs:        334141\nConfig time:          0.003s\nBuildInfo read time:  0.007s\nParse time:           0.176s\nBind time:            0.000s\nCheck time:           0.000s\nEmit time:            0.000s\nChanges compute time: 0.109s\nTotal time:           0.297s",
+      "editLeaf": "Files:                  1063\nLines:                 83139\nIdentifiers:          119069\nSymbols:               76703\nTypes:                 12425\nInstantiations:         7024\nMemory used:          85883K\nMemory allocs:        484415\nConfig time:          0.003s\nBuildInfo read time:  0.007s\nParse time:           0.180s\nBind time:            0.000s\nCheck time:           0.824s\nEmit time:            0.013s\nChanges compute time: 0.106s\nTotal time:           1.135s"
+    },
+    "1000-ts6": {
+      "cold": "Files:                        1063\nLines of Library:            56131\nLines of Definitions:            0\nLines of TypeScript:         26994\nLines of JavaScript:             0\nLines of JSON:                   0\nLines of Other:                  0\nIdentifiers:                119068\nSymbols:                    113034\nTypes:                       19160\nInstantiations:              12020\nMemory used:               173487K\nAssignability cache size:     2000\nIdentity cache size:             2\nSubtype cache size:           1003\nStrict subtype cache size:       0\nI/O Read time:               0.05s\nParse time:                  0.60s\nResolveModule time:          0.09s\nProgram time:                0.89s\nBind time:                   0.31s\nCheck time:                  2.47s\nI/O Write time:              0.00s\nprintTime time:              0.02s\nEmit time:                   0.02s\nTotal time:                  3.69s",
+      "noop": "Files:                        1063\nLines of Library:            56131\nLines of Definitions:            0\nLines of TypeScript:         26994\nLines of JavaScript:             0\nLines of JSON:                   0\nLines of Other:                  0\nIdentifiers:                119068\nSymbols:                     70987\nTypes:                          85\nInstantiations:                  0\nMemory used:               111104K\nAssignability cache size:        0\nIdentity cache size:             0\nSubtype cache size:              0\nStrict subtype cache size:       0\nI/O Read time:               0.05s\nParse time:                  0.60s\nResolveModule time:          0.09s\nProgram time:                0.89s\nBind time:                   0.27s\nTotal time:                  1.16s",
+      "editLeaf": ""
+    },
+    "control": {
+      "size": 1000,
+      "flattenedUnionChain": true,
+      "ts7": {
+        "wallMs": 3003.2,
+        "diagnostics": "Files:                   1063\nLines:                  83138\nIdentifiers:           116071\nSymbols:               116808\nTypes:                  32622\nInstantiations:          5106\nMemory used:          134313K\nMemory allocs:         632356\nConfig time:           0.003s\nBuildInfo read time:   0.000s\nParse time:            0.198s\nBind time:             0.000s\nCheck time:            2.395s\nEmit time:             0.026s\nChanges compute time:  0.069s\nTotal time:            2.692s"
+      },
+      "ts6": {
+        "wallMs": 3712.2,
+        "diagnostics": "Files:                        1063\nLines of Library:            56131\nLines of Definitions:            0\nLines of TypeScript:         26994\nLines of JavaScript:             0\nLines of JSON:                   0\nLines of Other:                  0\nIdentifiers:                116071\nSymbols:                    112035\nTypes:                       17164\nInstantiations:               5027\nMemory used:               167582K\nAssignability cache size:     1001\nIdentity cache size:             2\nSubtype cache size:           1003\nStrict subtype cache size:       0\nI/O Read time:               0.05s\nParse time:                  0.56s\nResolveModule time:          0.09s\nProgram time:                0.84s\nBind time:                   0.30s\nCheck time:                  2.31s\nI/O Write time:              0.00s\nprintTime time:              0.02s\nEmit time:                   0.02s\nTotal time:                  3.48s"
+      }
+    }
+  },
+  "typeErrorDetection": {
+    "ts7": {
+      "code": 1,
+      "message": "src/mod0/m0.ts(24,14): error TS2322: Type 'string' is not assignable to type 'number'."
+    },
+    "ts6": {
+      "code": 2,
+      "message": "src/mod0/m0.ts(24,14): error TS2322: Type 'string' is not assignable to type 'number'."
+    }
+  }
+}

@@ -9,7 +9,7 @@ Status: `open` · `building` · `done` · `dropped` · `needs Thanish`.
 | Parallel crossover | Repeat 001's `--parallel` sweep on a host with more than 2 CPUs; the sandbox quota caps speedup at ~2x. | needs Thanish |
 | Pre-commit hook budget | Where does `prettier --check .` break the one-second commit budget, and how much does staging-only save? | done (003) |
 | Shallow clone | How much time and disk does `--depth 1` save on a mid-size repo, and what stops working? | open |
-| Incremental type-check | Cold `tsc` versus cached incremental on a synthetic 300-module project: what ratio do you actually get? | open |
+| Incremental type-check | Cold `tsc` versus cached incremental on a synthetic 300-module project: what ratio do you actually get? | done (004) |
 | Lockfile discipline | `bun install` with a warm cache and `--frozen-lockfile`: how much of CI install time is resolution? | open |
 | Barrel files | Cost of a re-export barrel versus direct imports in a 500-module graph, measured by bundle time. | open |
 | Build cache: JSON vs SQLite | 10k lookup keys: at what size does a JSON file stop being a fine cache? | done (002) |

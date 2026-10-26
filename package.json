@@ -1,6 +1,8 @@
 {
   "dependencies": {},
   "devDependencies": {
-    "prettier": "3.9.10"
+    "prettier": "3.9.10",
+    "typescript": "^7.0.2",
+    "typescript6": "npm:typescript@6"
   }
 }
