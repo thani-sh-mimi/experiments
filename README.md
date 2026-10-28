@@ -9,5 +9,6 @@ One small SDLC problem a day: a hypothesis with a number in it, a harness that m
 | 003 | [pre-commit-format-budget](experiments/003-pre-commit-format-budget) | Where does `prettier --check .` break a one-second commit budget? | Partial: 128 files; staged-only flat at 300 ms |
 | 004 | [incremental-type-check](experiments/004-incremental-type-check) | What does `tsc --incremental` save on 300 vs 1,000 modules? | Partial: 2.3× at 300, 8× at 1,000; edit mid-graph saves nothing |
 | 005 | [squash-vs-blame](experiments/005-squash-vs-blame) | What a squash merge costs `git blame` on a 5k-commit history | Partial: 6.6× faster blame, one-line blame unchanged, 64% of lines coarsened |
+| 006 | [barrel-import-cost](experiments/006-barrel-import-cost) | What a re-export barrel costs a build | Validated: 26 ms at 1,000 re-exports, ~0.03 ms/line; nesting cheaper than width |
 
 The backlog is in [IDEAS.md](IDEAS.md). How an experiment is run and written up is in [AGENTS.md](AGENTS.md).

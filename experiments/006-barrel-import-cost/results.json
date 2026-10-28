@@ -1,0 +1,432 @@
+{
+  "generatedAt": "2026-10-28T08:02:03.707Z",
+  "bun": "1.4.4",
+  "platform": "linux x64",
+  "counts": [
+    100,
+    500,
+    1000,
+    2000
+  ],
+  "runs": [
+    {
+      "n": 100,
+      "variant": "direct",
+      "run": 0,
+      "ms": 1.424,
+      "bytes": 161
+    },
+    {
+      "n": 100,
+      "variant": "barrel",
+      "run": 0,
+      "ms": 3.431,
+      "bytes": 160
+    },
+    {
+      "n": 100,
+      "variant": "nested",
+      "run": 0,
+      "ms": 3.841,
+      "bytes": 167
+    },
+    {
+      "n": 500,
+      "variant": "direct",
+      "run": 0,
+      "ms": 1.492,
+      "bytes": 161
+    },
+    {
+      "n": 500,
+      "variant": "barrel",
+      "run": 0,
+      "ms": 16.403,
+      "bytes": 160
+    },
+    {
+      "n": 500,
+      "variant": "nested",
+      "run": 0,
+      "ms": 13.706,
+      "bytes": 167
+    },
+    {
+      "n": 1000,
+      "variant": "direct",
+      "run": 0,
+      "ms": 1.83,
+      "bytes": 163
+    },
+    {
+      "n": 1000,
+      "variant": "barrel",
+      "run": 0,
+      "ms": 32.33,
+      "bytes": 162
+    },
+    {
+      "n": 1000,
+      "variant": "nested",
+      "run": 0,
+      "ms": 24.346,
+      "bytes": 169
+    },
+    {
+      "n": 2000,
+      "variant": "direct",
+      "run": 0,
+      "ms": 2.761,
+      "bytes": 163
+    },
+    {
+      "n": 2000,
+      "variant": "barrel",
+      "run": 0,
+      "ms": 75.791,
+      "bytes": 162
+    },
+    {
+      "n": 2000,
+      "variant": "nested",
+      "run": 0,
+      "ms": 50.243,
+      "bytes": 169
+    },
+    {
+      "n": 100,
+      "variant": "direct",
+      "run": 1,
+      "ms": 1.479,
+      "bytes": 161
+    },
+    {
+      "n": 100,
+      "variant": "barrel",
+      "run": 1,
+      "ms": 3.206,
+      "bytes": 160
+    },
+    {
+      "n": 100,
+      "variant": "nested",
+      "run": 1,
+      "ms": 3.258,
+      "bytes": 167
+    },
+    {
+      "n": 500,
+      "variant": "direct",
+      "run": 1,
+      "ms": 1.3,
+      "bytes": 161
+    },
+    {
+      "n": 500,
+      "variant": "barrel",
+      "run": 1,
+      "ms": 12.549,
+      "bytes": 160
+    },
+    {
+      "n": 500,
+      "variant": "nested",
+      "run": 1,
+      "ms": 10.678,
+      "bytes": 167
+    },
+    {
+      "n": 1000,
+      "variant": "direct",
+      "run": 1,
+      "ms": 1.685,
+      "bytes": 163
+    },
+    {
+      "n": 1000,
+      "variant": "barrel",
+      "run": 1,
+      "ms": 27.579,
+      "bytes": 162
+    },
+    {
+      "n": 1000,
+      "variant": "nested",
+      "run": 1,
+      "ms": 20.772,
+      "bytes": 169
+    },
+    {
+      "n": 2000,
+      "variant": "direct",
+      "run": 1,
+      "ms": 2.514,
+      "bytes": 163
+    },
+    {
+      "n": 2000,
+      "variant": "barrel",
+      "run": 1,
+      "ms": 66.78,
+      "bytes": 162
+    },
+    {
+      "n": 2000,
+      "variant": "nested",
+      "run": 1,
+      "ms": 42.382,
+      "bytes": 169
+    },
+    {
+      "n": 100,
+      "variant": "direct",
+      "run": 2,
+      "ms": 1.673,
+      "bytes": 161
+    },
+    {
+      "n": 100,
+      "variant": "barrel",
+      "run": 2,
+      "ms": 3.189,
+      "bytes": 160
+    },
+    {
+      "n": 100,
+      "variant": "nested",
+      "run": 2,
+      "ms": 3.333,
+      "bytes": 167
+    },
+    {
+      "n": 500,
+      "variant": "direct",
+      "run": 2,
+      "ms": 1.253,
+      "bytes": 161
+    },
+    {
+      "n": 500,
+      "variant": "barrel",
+      "run": 2,
+      "ms": 12.85,
+      "bytes": 160
+    },
+    {
+      "n": 500,
+      "variant": "nested",
+      "run": 2,
+      "ms": 10.973,
+      "bytes": 167
+    },
+    {
+      "n": 1000,
+      "variant": "direct",
+      "run": 2,
+      "ms": 1.732,
+      "bytes": 163
+    },
+    {
+      "n": 1000,
+      "variant": "barrel",
+      "run": 2,
+      "ms": 26.521,
+      "bytes": 162
+    },
+    {
+      "n": 1000,
+      "variant": "nested",
+      "run": 2,
+      "ms": 20.639,
+      "bytes": 169
+    },
+    {
+      "n": 2000,
+      "variant": "direct",
+      "run": 2,
+      "ms": 2.497,
+      "bytes": 163
+    },
+    {
+      "n": 2000,
+      "variant": "barrel",
+      "run": 2,
+      "ms": 65.444,
+      "bytes": 162
+    },
+    {
+      "n": 2000,
+      "variant": "nested",
+      "run": 2,
+      "ms": 41.413,
+      "bytes": 169
+    }
+  ],
+  "summary": {
+    "100": {
+      "direct": {
+        "medianMs": 1.479,
+        "allMs": [
+          1.424,
+          1.479,
+          1.673
+        ],
+        "bytes": [
+          161
+        ]
+      },
+      "barrel": {
+        "medianMs": 3.206,
+        "allMs": [
+          3.431,
+          3.206,
+          3.189
+        ],
+        "bytes": [
+          160
+        ]
+      },
+      "nested": {
+        "medianMs": 3.333,
+        "allMs": [
+          3.841,
+          3.258,
+          3.333
+        ],
+        "bytes": [
+          167
+        ]
+      },
+      "overheadVsDirectMs": 1.727,
+      "msPerReExport": 0.0173
+    },
+    "500": {
+      "direct": {
+        "medianMs": 1.3,
+        "allMs": [
+          1.492,
+          1.3,
+          1.253
+        ],
+        "bytes": [
+          161
+        ]
+      },
+      "barrel": {
+        "medianMs": 12.85,
+        "allMs": [
+          16.403,
+          12.549,
+          12.85
+        ],
+        "bytes": [
+          160
+        ]
+      },
+      "nested": {
+        "medianMs": 10.973,
+        "allMs": [
+          13.706,
+          10.678,
+          10.973
+        ],
+        "bytes": [
+          167
+        ]
+      },
+      "overheadVsDirectMs": 11.55,
+      "msPerReExport": 0.0231
+    },
+    "1000": {
+      "direct": {
+        "medianMs": 1.732,
+        "allMs": [
+          1.83,
+          1.685,
+          1.732
+        ],
+        "bytes": [
+          163
+        ]
+      },
+      "barrel": {
+        "medianMs": 27.579,
+        "allMs": [
+          32.33,
+          27.579,
+          26.521
+        ],
+        "bytes": [
+          162
+        ]
+      },
+      "nested": {
+        "medianMs": 20.772,
+        "allMs": [
+          24.346,
+          20.772,
+          20.639
+        ],
+        "bytes": [
+          169
+        ]
+      },
+      "overheadVsDirectMs": 25.847,
+      "msPerReExport": 0.0258
+    },
+    "2000": {
+      "direct": {
+        "medianMs": 2.514,
+        "allMs": [
+          2.761,
+          2.514,
+          2.497
+        ],
+        "bytes": [
+          163
+        ]
+      },
+      "barrel": {
+        "medianMs": 66.78,
+        "allMs": [
+          75.791,
+          66.78,
+          65.444
+        ],
+        "bytes": [
+          162
+        ]
+      },
+      "nested": {
+        "medianMs": 42.382,
+        "allMs": [
+          50.243,
+          42.382,
+          41.413
+        ],
+        "bytes": [
+          169
+        ]
+      },
+      "overheadVsDirectMs": 64.266,
+      "msPerReExport": 0.0321
+    }
+  },
+  "twoEntrypointsSharingOneBarrelMs": [
+    27.548,
+    27.74,
+    27.3
+  ],
+  "noiseFloorMs": {
+    "samples": [
+      27.279,
+      26.962,
+      26.853,
+      27.009,
+      27.014
+    ],
+    "min": 26.853,
+    "max": 27.279,
+    "spread": 0.426
+  }
+}
