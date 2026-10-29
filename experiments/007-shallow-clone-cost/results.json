@@ -1,0 +1,506 @@
+{
+  "generatedAt": "2026-10-29T08:03:17.933Z",
+  "git": "git version 2.47.3",
+  "shape": {
+    "files": 400,
+    "dirs": 20,
+    "touchedPerCommit": 3,
+    "counts": [
+      100,
+      500,
+      1000,
+      2000,
+      4000
+    ],
+    "runs": 3
+  },
+  "runs": [
+    {
+      "n": 100,
+      "mode": "full",
+      "ms": 48.15,
+      "gitBytes": 265807,
+      "wtBytes": 171403,
+      "commits": 100,
+      "run": 0
+    },
+    {
+      "n": 100,
+      "mode": "shallow",
+      "ms": 39.26,
+      "gitBytes": 149027,
+      "wtBytes": 171403,
+      "commits": 1,
+      "run": 0
+    },
+    {
+      "n": 500,
+      "mode": "full",
+      "ms": 92.28,
+      "gitBytes": 748108,
+      "wtBytes": 171990,
+      "commits": 500,
+      "run": 0
+    },
+    {
+      "n": 500,
+      "mode": "shallow",
+      "ms": 39.07,
+      "gitBytes": 148766,
+      "wtBytes": 171990,
+      "commits": 1,
+      "run": 0
+    },
+    {
+      "n": 1000,
+      "mode": "full",
+      "ms": 149.04,
+      "gitBytes": 1348812,
+      "wtBytes": 171990,
+      "commits": 1000,
+      "run": 0
+    },
+    {
+      "n": 1000,
+      "mode": "shallow",
+      "ms": 39.37,
+      "gitBytes": 148854,
+      "wtBytes": 171990,
+      "commits": 1,
+      "run": 0
+    },
+    {
+      "n": 2000,
+      "mode": "full",
+      "ms": 262.52,
+      "gitBytes": 2564313,
+      "wtBytes": 172390,
+      "commits": 2000,
+      "run": 0
+    },
+    {
+      "n": 2000,
+      "mode": "shallow",
+      "ms": 40.49,
+      "gitBytes": 149224,
+      "wtBytes": 172390,
+      "commits": 1,
+      "run": 0
+    },
+    {
+      "n": 4000,
+      "mode": "full",
+      "ms": 506.54,
+      "gitBytes": 4995095,
+      "wtBytes": 172390,
+      "commits": 4000,
+      "run": 0
+    },
+    {
+      "n": 4000,
+      "mode": "shallow",
+      "ms": 39.75,
+      "gitBytes": 149271,
+      "wtBytes": 172390,
+      "commits": 1,
+      "run": 0
+    },
+    {
+      "n": 100,
+      "mode": "full",
+      "ms": 47.99,
+      "gitBytes": 265807,
+      "wtBytes": 171403,
+      "commits": 100,
+      "run": 1
+    },
+    {
+      "n": 100,
+      "mode": "shallow",
+      "ms": 39.37,
+      "gitBytes": 149027,
+      "wtBytes": 171403,
+      "commits": 1,
+      "run": 1
+    },
+    {
+      "n": 500,
+      "mode": "full",
+      "ms": 92.17,
+      "gitBytes": 748108,
+      "wtBytes": 171990,
+      "commits": 500,
+      "run": 1
+    },
+    {
+      "n": 500,
+      "mode": "shallow",
+      "ms": 39.52,
+      "gitBytes": 148766,
+      "wtBytes": 171990,
+      "commits": 1,
+      "run": 1
+    },
+    {
+      "n": 1000,
+      "mode": "full",
+      "ms": 149.29,
+      "gitBytes": 1348812,
+      "wtBytes": 171990,
+      "commits": 1000,
+      "run": 1
+    },
+    {
+      "n": 1000,
+      "mode": "shallow",
+      "ms": 39.01,
+      "gitBytes": 148854,
+      "wtBytes": 171990,
+      "commits": 1,
+      "run": 1
+    },
+    {
+      "n": 2000,
+      "mode": "full",
+      "ms": 264.52,
+      "gitBytes": 2564313,
+      "wtBytes": 172390,
+      "commits": 2000,
+      "run": 1
+    },
+    {
+      "n": 2000,
+      "mode": "shallow",
+      "ms": 39.55,
+      "gitBytes": 149224,
+      "wtBytes": 172390,
+      "commits": 1,
+      "run": 1
+    },
+    {
+      "n": 4000,
+      "mode": "full",
+      "ms": 517.5,
+      "gitBytes": 4995095,
+      "wtBytes": 172390,
+      "commits": 4000,
+      "run": 1
+    },
+    {
+      "n": 4000,
+      "mode": "shallow",
+      "ms": 39.73,
+      "gitBytes": 149271,
+      "wtBytes": 172390,
+      "commits": 1,
+      "run": 1
+    },
+    {
+      "n": 100,
+      "mode": "full",
+      "ms": 47.72,
+      "gitBytes": 265807,
+      "wtBytes": 171403,
+      "commits": 100,
+      "run": 2
+    },
+    {
+      "n": 100,
+      "mode": "shallow",
+      "ms": 38.93,
+      "gitBytes": 149027,
+      "wtBytes": 171403,
+      "commits": 1,
+      "run": 2
+    },
+    {
+      "n": 500,
+      "mode": "full",
+      "ms": 91.72,
+      "gitBytes": 748108,
+      "wtBytes": 171990,
+      "commits": 500,
+      "run": 2
+    },
+    {
+      "n": 500,
+      "mode": "shallow",
+      "ms": 38.77,
+      "gitBytes": 148766,
+      "wtBytes": 171990,
+      "commits": 1,
+      "run": 2
+    },
+    {
+      "n": 1000,
+      "mode": "full",
+      "ms": 150.58,
+      "gitBytes": 1348812,
+      "wtBytes": 171990,
+      "commits": 1000,
+      "run": 2
+    },
+    {
+      "n": 1000,
+      "mode": "shallow",
+      "ms": 39.25,
+      "gitBytes": 148854,
+      "wtBytes": 171990,
+      "commits": 1,
+      "run": 2
+    },
+    {
+      "n": 2000,
+      "mode": "full",
+      "ms": 262.56,
+      "gitBytes": 2564313,
+      "wtBytes": 172390,
+      "commits": 2000,
+      "run": 2
+    },
+    {
+      "n": 2000,
+      "mode": "shallow",
+      "ms": 40.05,
+      "gitBytes": 149224,
+      "wtBytes": 172390,
+      "commits": 1,
+      "run": 2
+    },
+    {
+      "n": 4000,
+      "mode": "full",
+      "ms": 515.07,
+      "gitBytes": 4995095,
+      "wtBytes": 172390,
+      "commits": 4000,
+      "run": 2
+    },
+    {
+      "n": 4000,
+      "mode": "shallow",
+      "ms": 39.86,
+      "gitBytes": 149271,
+      "wtBytes": 172390,
+      "commits": 1,
+      "run": 2
+    }
+  ],
+  "summary": {
+    "100": {
+      "fullMs": 47.99,
+      "fullRange": [
+        47.72,
+        48.15
+      ],
+      "shallowMs": 39.26,
+      "shallowRange": [
+        38.93,
+        39.37
+      ],
+      "savedMs": 8.73,
+      "fullGitMB": 0.27,
+      "shallowGitMB": 0.15,
+      "diskRatio": 0.561,
+      "commitsSeen": 1
+    },
+    "500": {
+      "fullMs": 92.17,
+      "fullRange": [
+        91.72,
+        92.28
+      ],
+      "shallowMs": 39.07,
+      "shallowRange": [
+        38.77,
+        39.52
+      ],
+      "savedMs": 53.1,
+      "fullGitMB": 0.75,
+      "shallowGitMB": 0.15,
+      "diskRatio": 0.199,
+      "commitsSeen": 1
+    },
+    "1000": {
+      "fullMs": 149.29,
+      "fullRange": [
+        149.04,
+        150.58
+      ],
+      "shallowMs": 39.25,
+      "shallowRange": [
+        39.01,
+        39.37
+      ],
+      "savedMs": 110.04,
+      "fullGitMB": 1.35,
+      "shallowGitMB": 0.15,
+      "diskRatio": 0.11,
+      "commitsSeen": 1
+    },
+    "2000": {
+      "fullMs": 262.56,
+      "fullRange": [
+        262.52,
+        264.52
+      ],
+      "shallowMs": 40.05,
+      "shallowRange": [
+        39.55,
+        40.49
+      ],
+      "savedMs": 222.51,
+      "fullGitMB": 2.56,
+      "shallowGitMB": 0.15,
+      "diskRatio": 0.058,
+      "commitsSeen": 1
+    },
+    "4000": {
+      "fullMs": 515.07,
+      "fullRange": [
+        506.54,
+        517.5
+      ],
+      "shallowMs": 39.75,
+      "shallowRange": [
+        39.73,
+        39.86
+      ],
+      "savedMs": 475.32,
+      "fullGitMB": 5,
+      "shallowGitMB": 0.15,
+      "diskRatio": 0.03,
+      "commitsSeen": 1
+    }
+  },
+  "noCheckout": [
+    {
+      "n": 100,
+      "mode": "full",
+      "ms": 35.21,
+      "gitBytes": 233139,
+      "wtBytes": 0,
+      "commits": 100,
+      "run": 0
+    },
+    {
+      "n": 100,
+      "mode": "shallow",
+      "ms": 27.15,
+      "gitBytes": 116359,
+      "wtBytes": 0,
+      "commits": 1,
+      "run": 0
+    },
+    {
+      "n": 4000,
+      "mode": "full",
+      "ms": 492.64,
+      "gitBytes": 4962427,
+      "wtBytes": 0,
+      "commits": 4000,
+      "run": 0
+    },
+    {
+      "n": 4000,
+      "mode": "shallow",
+      "ms": 27.43,
+      "gitBytes": 116603,
+      "wtBytes": 0,
+      "commits": 1,
+      "run": 0
+    },
+    {
+      "n": 100,
+      "mode": "full",
+      "ms": 34.93,
+      "gitBytes": 233139,
+      "wtBytes": 0,
+      "commits": 100,
+      "run": 1
+    },
+    {
+      "n": 100,
+      "mode": "shallow",
+      "ms": 26.07,
+      "gitBytes": 116359,
+      "wtBytes": 0,
+      "commits": 1,
+      "run": 1
+    },
+    {
+      "n": 4000,
+      "mode": "full",
+      "ms": 504.6,
+      "gitBytes": 4962427,
+      "wtBytes": 0,
+      "commits": 4000,
+      "run": 1
+    },
+    {
+      "n": 4000,
+      "mode": "shallow",
+      "ms": 27.85,
+      "gitBytes": 116603,
+      "wtBytes": 0,
+      "commits": 1,
+      "run": 1
+    },
+    {
+      "n": 100,
+      "mode": "full",
+      "ms": 34.55,
+      "gitBytes": 233139,
+      "wtBytes": 0,
+      "commits": 100,
+      "run": 2
+    },
+    {
+      "n": 100,
+      "mode": "shallow",
+      "ms": 26.8,
+      "gitBytes": 116359,
+      "wtBytes": 0,
+      "commits": 1,
+      "run": 2
+    },
+    {
+      "n": 4000,
+      "mode": "full",
+      "ms": 499.09,
+      "gitBytes": 4962427,
+      "wtBytes": 0,
+      "commits": 4000,
+      "run": 2
+    },
+    {
+      "n": 4000,
+      "mode": "shallow",
+      "ms": 27.95,
+      "gitBytes": 116603,
+      "wtBytes": 0,
+      "commits": 1,
+      "run": 2
+    }
+  ],
+  "noCheckoutMedians": {
+    "100": {
+      "full": 34.93,
+      "shallow": 26.8
+    },
+    "4000": {
+      "full": 499.09,
+      "shallow": 27.85
+    }
+  },
+  "noiseFloorMs": {
+    "samples": [
+      263.44,
+      262.46,
+      264.95,
+      261.34,
+      263.13
+    ],
+    "spread": 3.61
+  }
+}
