@@ -1,0 +1,764 @@
+{
+  "generatedAt": "2026-10-30T08:02:26.597Z",
+  "bun": "1.4.4",
+  "platform": "linux x64",
+  "cpus": 6,
+  "totalLines": 20000,
+  "chunks": [
+    2000,
+    500,
+    200,
+    50,
+    20
+  ],
+  "runs": [
+    {
+      "chunk": 10,
+      "linesPerFile": 2000,
+      "bodyBytes": 543424,
+      "run": 0,
+      "ms": 19.879,
+      "outBytes": 387108
+    },
+    {
+      "chunk": 40,
+      "linesPerFile": 500,
+      "bodyBytes": 543424,
+      "run": 0,
+      "ms": 21.311,
+      "outBytes": 387090
+    },
+    {
+      "chunk": 99,
+      "linesPerFile": 202,
+      "bodyBytes": 543424,
+      "run": 0,
+      "ms": 24.737,
+      "outBytes": 387085
+    },
+    {
+      "chunk": 334,
+      "linesPerFile": 59.9,
+      "bodyBytes": 543424,
+      "run": 0,
+      "ms": 32.171,
+      "outBytes": 387027
+    },
+    {
+      "chunk": 834,
+      "linesPerFile": 24,
+      "bodyBytes": 543424,
+      "run": 0,
+      "ms": 42.925,
+      "outBytes": 386693
+    },
+    {
+      "chunk": 10,
+      "linesPerFile": 2000,
+      "run": 0,
+      "kind": "edit",
+      "editMs": 1.938,
+      "editP95Ms": 1.9661,
+      "editFileBytes": 56243
+    },
+    {
+      "chunk": 40,
+      "linesPerFile": 500,
+      "run": 0,
+      "kind": "edit",
+      "editMs": 0.5387,
+      "editP95Ms": 0.5497,
+      "editFileBytes": 14175
+    },
+    {
+      "chunk": 99,
+      "linesPerFile": 202,
+      "run": 0,
+      "kind": "edit",
+      "editMs": 0.2468,
+      "editP95Ms": 0.258,
+      "editFileBytes": 5730
+    },
+    {
+      "chunk": 334,
+      "linesPerFile": 59.9,
+      "run": 0,
+      "kind": "edit",
+      "editMs": 0.0961,
+      "editP95Ms": 0.1018,
+      "editFileBytes": 1701
+    },
+    {
+      "chunk": 834,
+      "linesPerFile": 24,
+      "run": 0,
+      "kind": "edit",
+      "editMs": 0.0472,
+      "editP95Ms": 0.048,
+      "editFileBytes": 618
+    },
+    {
+      "chunk": 10,
+      "linesPerFile": 2000,
+      "bodyBytes": 543424,
+      "run": 1,
+      "ms": 19.355,
+      "outBytes": 387108
+    },
+    {
+      "chunk": 40,
+      "linesPerFile": 500,
+      "bodyBytes": 543424,
+      "run": 1,
+      "ms": 21.665,
+      "outBytes": 387090
+    },
+    {
+      "chunk": 99,
+      "linesPerFile": 202,
+      "bodyBytes": 543424,
+      "run": 1,
+      "ms": 24.529,
+      "outBytes": 387085
+    },
+    {
+      "chunk": 334,
+      "linesPerFile": 59.9,
+      "bodyBytes": 543424,
+      "run": 1,
+      "ms": 32.064,
+      "outBytes": 387027
+    },
+    {
+      "chunk": 834,
+      "linesPerFile": 24,
+      "bodyBytes": 543424,
+      "run": 1,
+      "ms": 42.882,
+      "outBytes": 386693
+    },
+    {
+      "chunk": 10,
+      "linesPerFile": 2000,
+      "run": 1,
+      "kind": "edit",
+      "editMs": 1.9316,
+      "editP95Ms": 1.958,
+      "editFileBytes": 56243
+    },
+    {
+      "chunk": 40,
+      "linesPerFile": 500,
+      "run": 1,
+      "kind": "edit",
+      "editMs": 0.5371,
+      "editP95Ms": 0.5488,
+      "editFileBytes": 14175
+    },
+    {
+      "chunk": 99,
+      "linesPerFile": 202,
+      "run": 1,
+      "kind": "edit",
+      "editMs": 0.247,
+      "editP95Ms": 0.2626,
+      "editFileBytes": 5730
+    },
+    {
+      "chunk": 334,
+      "linesPerFile": 59.9,
+      "run": 1,
+      "kind": "edit",
+      "editMs": 0.0946,
+      "editP95Ms": 0.0966,
+      "editFileBytes": 1701
+    },
+    {
+      "chunk": 834,
+      "linesPerFile": 24,
+      "run": 1,
+      "kind": "edit",
+      "editMs": 0.0473,
+      "editP95Ms": 0.0482,
+      "editFileBytes": 618
+    },
+    {
+      "chunk": 10,
+      "linesPerFile": 2000,
+      "bodyBytes": 543424,
+      "run": 2,
+      "ms": 19.492,
+      "outBytes": 387108
+    },
+    {
+      "chunk": 40,
+      "linesPerFile": 500,
+      "bodyBytes": 543424,
+      "run": 2,
+      "ms": 21.31,
+      "outBytes": 387090
+    },
+    {
+      "chunk": 99,
+      "linesPerFile": 202,
+      "bodyBytes": 543424,
+      "run": 2,
+      "ms": 24.546,
+      "outBytes": 387085
+    },
+    {
+      "chunk": 334,
+      "linesPerFile": 59.9,
+      "bodyBytes": 543424,
+      "run": 2,
+      "ms": 32.06,
+      "outBytes": 387027
+    },
+    {
+      "chunk": 834,
+      "linesPerFile": 24,
+      "bodyBytes": 543424,
+      "run": 2,
+      "ms": 42.623,
+      "outBytes": 386693
+    },
+    {
+      "chunk": 10,
+      "linesPerFile": 2000,
+      "run": 2,
+      "kind": "edit",
+      "editMs": 1.935,
+      "editP95Ms": 1.953,
+      "editFileBytes": 56243
+    },
+    {
+      "chunk": 40,
+      "linesPerFile": 500,
+      "run": 2,
+      "kind": "edit",
+      "editMs": 0.5373,
+      "editP95Ms": 0.5479,
+      "editFileBytes": 14175
+    },
+    {
+      "chunk": 99,
+      "linesPerFile": 202,
+      "run": 2,
+      "kind": "edit",
+      "editMs": 0.2464,
+      "editP95Ms": 0.2599,
+      "editFileBytes": 5730
+    },
+    {
+      "chunk": 334,
+      "linesPerFile": 59.9,
+      "run": 2,
+      "kind": "edit",
+      "editMs": 0.0949,
+      "editP95Ms": 0.097,
+      "editFileBytes": 1701
+    },
+    {
+      "chunk": 834,
+      "linesPerFile": 24,
+      "run": 2,
+      "kind": "edit",
+      "editMs": 0.0467,
+      "editP95Ms": 0.0477,
+      "editFileBytes": 618
+    }
+  ],
+  "load": [
+    {
+      "chunk": 10,
+      "linesPerFile": 2000,
+      "run": 0,
+      "ms": 6.441,
+      "ok": true
+    },
+    {
+      "chunk": 40,
+      "linesPerFile": 500,
+      "run": 0,
+      "ms": 5.844,
+      "ok": true
+    },
+    {
+      "chunk": 99,
+      "linesPerFile": 202,
+      "run": 0,
+      "ms": 5.941,
+      "ok": true
+    },
+    {
+      "chunk": 334,
+      "linesPerFile": 59.9,
+      "run": 0,
+      "ms": 5.838,
+      "ok": true
+    },
+    {
+      "chunk": 834,
+      "linesPerFile": 24,
+      "run": 0,
+      "ms": 6.259,
+      "ok": true
+    },
+    {
+      "chunk": 10,
+      "linesPerFile": 2000,
+      "run": 1,
+      "ms": 5.649,
+      "ok": true
+    },
+    {
+      "chunk": 40,
+      "linesPerFile": 500,
+      "run": 1,
+      "ms": 5.796,
+      "ok": true
+    },
+    {
+      "chunk": 99,
+      "linesPerFile": 202,
+      "run": 1,
+      "ms": 5.961,
+      "ok": true
+    },
+    {
+      "chunk": 334,
+      "linesPerFile": 59.9,
+      "run": 1,
+      "ms": 6.156,
+      "ok": true
+    },
+    {
+      "chunk": 834,
+      "linesPerFile": 24,
+      "run": 1,
+      "ms": 6.396,
+      "ok": true
+    },
+    {
+      "chunk": 10,
+      "linesPerFile": 2000,
+      "run": 2,
+      "ms": 5.832,
+      "ok": true
+    },
+    {
+      "chunk": 40,
+      "linesPerFile": 500,
+      "run": 2,
+      "ms": 5.78,
+      "ok": true
+    },
+    {
+      "chunk": 99,
+      "linesPerFile": 202,
+      "run": 2,
+      "ms": 5.93,
+      "ok": true
+    },
+    {
+      "chunk": 334,
+      "linesPerFile": 59.9,
+      "run": 2,
+      "ms": 5.938,
+      "ok": true
+    },
+    {
+      "chunk": 834,
+      "linesPerFile": 24,
+      "run": 2,
+      "ms": 6.453,
+      "ok": true
+    }
+  ],
+  "summary": {
+    "10": {
+      "files": 10,
+      "linesPerFile": 2000,
+      "bodyKB": 530.7,
+      "fullMs": 19.492,
+      "fullAllMs": [
+        19.879,
+        19.355,
+        19.492
+      ],
+      "msPerKB": 0.0367,
+      "perFileUs": 1949.2,
+      "editUs": 1935,
+      "editP95Us": 1958,
+      "editShareOfFullPct": 9.93,
+      "loadMs": 5.8,
+      "loadAllMs": [
+        6.441,
+        5.649,
+        5.832
+      ]
+    },
+    "40": {
+      "files": 40,
+      "linesPerFile": 500,
+      "bodyKB": 530.7,
+      "fullMs": 21.311,
+      "fullAllMs": [
+        21.311,
+        21.665,
+        21.31
+      ],
+      "msPerKB": 0.0402,
+      "perFileUs": 532.77,
+      "editUs": 537.3,
+      "editP95Us": 548.8,
+      "editShareOfFullPct": 2.52,
+      "loadMs": 5.8,
+      "loadAllMs": [
+        5.844,
+        5.796,
+        5.78
+      ]
+    },
+    "99": {
+      "files": 99,
+      "linesPerFile": 202,
+      "bodyKB": 530.7,
+      "fullMs": 24.546,
+      "fullAllMs": [
+        24.737,
+        24.529,
+        24.546
+      ],
+      "msPerKB": 0.0463,
+      "perFileUs": 247.94,
+      "editUs": 246.8,
+      "editP95Us": 259.9,
+      "editShareOfFullPct": 1.01,
+      "loadMs": 5.9,
+      "loadAllMs": [
+        5.941,
+        5.961,
+        5.93
+      ]
+    },
+    "334": {
+      "files": 334,
+      "linesPerFile": 59.9,
+      "bodyKB": 530.7,
+      "fullMs": 32.064,
+      "fullAllMs": [
+        32.171,
+        32.064,
+        32.06
+      ],
+      "msPerKB": 0.0604,
+      "perFileUs": 96,
+      "editUs": 94.9,
+      "editP95Us": 97,
+      "editShareOfFullPct": 0.3,
+      "loadMs": 5.9,
+      "loadAllMs": [
+        5.838,
+        6.156,
+        5.938
+      ]
+    },
+    "834": {
+      "files": 834,
+      "linesPerFile": 24,
+      "bodyKB": 530.7,
+      "fullMs": 42.882,
+      "fullAllMs": [
+        42.925,
+        42.882,
+        42.623
+      ],
+      "msPerKB": 0.0808,
+      "perFileUs": 51.42,
+      "editUs": 47.2,
+      "editP95Us": 48,
+      "editShareOfFullPct": 0.11,
+      "loadMs": 6.4,
+      "loadAllMs": [
+        6.259,
+        6.396,
+        6.453
+      ]
+    }
+  },
+  "noiseFloorMs": {
+    "samples": [
+      2.179,
+      1.957,
+      1.911,
+      1.915,
+      1.897,
+      1.903,
+      1.897,
+      1.906,
+      1.909,
+      1.91,
+      1.892,
+      1.9,
+      1.898,
+      1.899,
+      1.903,
+      1.891,
+      1.903,
+      1.893,
+      1.903,
+      1.891,
+      1.938,
+      1.931,
+      1.929,
+      1.926,
+      1.927,
+      1.929,
+      1.927,
+      1.935,
+      1.943,
+      1.927
+    ],
+    "min": 1.891,
+    "max": 2.179,
+    "spread": 0.288
+  },
+  "emptyCallUs": {
+    "median": 2.72,
+    "min": 2.61,
+    "max": 12.24
+  },
+  "tsc": {
+    "version": "Version 7.0.2",
+    "runs": [
+      {
+        "files": 10,
+        "run": 0,
+        "wallMs": 809.9,
+        "parse": 0.087,
+        "bind": 0.021,
+        "check": 0.504,
+        "total": 0.615,
+        "lines": 76162,
+        "errors": 0
+      },
+      {
+        "files": 40,
+        "run": 0,
+        "wallMs": 852,
+        "parse": 0.092,
+        "bind": 0.02,
+        "check": 0.544,
+        "total": 0.658,
+        "lines": 76192,
+        "errors": 0
+      },
+      {
+        "files": 99,
+        "run": 0,
+        "wallMs": 840.6,
+        "parse": 0.091,
+        "bind": 0.045,
+        "check": 0.501,
+        "total": 0.64,
+        "lines": 76251,
+        "errors": 0
+      },
+      {
+        "files": 334,
+        "run": 0,
+        "wallMs": 876.6,
+        "parse": 0.12,
+        "bind": 0.033,
+        "check": 0.507,
+        "total": 0.672,
+        "lines": 76486,
+        "errors": 0
+      },
+      {
+        "files": 834,
+        "run": 0,
+        "wallMs": 887.3,
+        "parse": 0.132,
+        "bind": 0.066,
+        "check": 0.467,
+        "total": 0.68,
+        "lines": 76986,
+        "errors": 0
+      },
+      {
+        "files": 10,
+        "run": 1,
+        "wallMs": 793,
+        "parse": 0.085,
+        "bind": 0.032,
+        "check": 0.471,
+        "total": 0.596,
+        "lines": 76162,
+        "errors": 0
+      },
+      {
+        "files": 40,
+        "run": 1,
+        "wallMs": 823.7,
+        "parse": 0.08,
+        "bind": 0.05,
+        "check": 0.488,
+        "total": 0.62,
+        "lines": 76192,
+        "errors": 0
+      },
+      {
+        "files": 99,
+        "run": 1,
+        "wallMs": 876.8,
+        "parse": 0.098,
+        "bind": 0.022,
+        "check": 0.556,
+        "total": 0.679,
+        "lines": 76251,
+        "errors": 0
+      },
+      {
+        "files": 334,
+        "run": 1,
+        "wallMs": 893.9,
+        "parse": 0.121,
+        "bind": 0.034,
+        "check": 0.526,
+        "total": 0.688,
+        "lines": 76486,
+        "errors": 0
+      },
+      {
+        "files": 834,
+        "run": 1,
+        "wallMs": 906.7,
+        "parse": 0.135,
+        "bind": 0.074,
+        "check": 0.479,
+        "total": 0.695,
+        "lines": 76986,
+        "errors": 0
+      },
+      {
+        "files": 10,
+        "run": 2,
+        "wallMs": 785.6,
+        "parse": 0.084,
+        "bind": 0.02,
+        "check": 0.481,
+        "total": 0.594,
+        "lines": 76162,
+        "errors": 0
+      },
+      {
+        "files": 40,
+        "run": 2,
+        "wallMs": 826.4,
+        "parse": 0.081,
+        "bind": 0.052,
+        "check": 0.489,
+        "total": 0.624,
+        "lines": 76192,
+        "errors": 0
+      },
+      {
+        "files": 99,
+        "run": 2,
+        "wallMs": 825.2,
+        "parse": 0.088,
+        "bind": 0.052,
+        "check": 0.477,
+        "total": 0.625,
+        "lines": 76251,
+        "errors": 0
+      },
+      {
+        "files": 334,
+        "run": 2,
+        "wallMs": 894.5,
+        "parse": 0.119,
+        "bind": 0.032,
+        "check": 0.532,
+        "total": 0.69,
+        "lines": 76486,
+        "errors": 0
+      },
+      {
+        "files": 834,
+        "run": 2,
+        "wallMs": 922.9,
+        "parse": 0.138,
+        "bind": 0.076,
+        "check": 0.493,
+        "total": 0.713,
+        "lines": 76986,
+        "errors": 0
+      }
+    ],
+    "summary": {
+      "10": {
+        "files": 10,
+        "parseMs": 85,
+        "checkMs": 481,
+        "totalMs": 596,
+        "wallMs": 793,
+        "errors": [
+          0,
+          0,
+          0
+        ]
+      },
+      "40": {
+        "files": 40,
+        "parseMs": 81,
+        "checkMs": 489,
+        "totalMs": 624,
+        "wallMs": 826.4,
+        "errors": [
+          0,
+          0,
+          0
+        ]
+      },
+      "99": {
+        "files": 99,
+        "parseMs": 91,
+        "checkMs": 501,
+        "totalMs": 640,
+        "wallMs": 840.6,
+        "errors": [
+          0,
+          0,
+          0
+        ]
+      },
+      "334": {
+        "files": 334,
+        "parseMs": 120,
+        "checkMs": 526,
+        "totalMs": 688,
+        "wallMs": 893.9,
+        "errors": [
+          0,
+          0,
+          0
+        ]
+      },
+      "834": {
+        "files": 834,
+        "parseMs": 135,
+        "checkMs": 479,
+        "totalMs": 695,
+        "wallMs": 906.7,
+        "errors": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  }
+}

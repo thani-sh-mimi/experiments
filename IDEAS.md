@@ -17,4 +17,4 @@ Status: `open` · `building` · `done` · `dropped` · `needs Thanish`.
 | Commit size | Lines changed versus review time per file — needs human data, so read published studies instead of measuring. | needs Thanish |
 | Squash policy | What a squash merge costs `git blame` on a 5k-commit synthetic history. | done (005) |
 | Import graph | Does a 50-file deep import chain cost measurable start-up time versus a flat graph at the same total size? | open |
-| Editor tax | 2000-line files vs 200-line files: parse and transpile time in Bun at equal total bytes. | open |
+| Editor tax | 2000-line files vs 200-line files: parse and transpile time in Bun at equal total bytes. | done (008) |
