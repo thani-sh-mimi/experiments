@@ -11,10 +11,10 @@ Bun test startup is roughly 150 ms per shard, so a 3 s suite stops improving at 
 `bench.ts` generates a synthetic Bun suite into `$TMPDIR/shard-fanout-suite`: 30 test files × 20 tests, each test a calibrated ~5 ms arithmetic loop, so one file is ~100 ms and the suite is **T = 2,673 ms** of real work. Nothing touches the network.
 
 - **S** — `bun test` on a file with no tests, median of 3 (process start, framework load, zero work).
-- **k shards** — files dealt round-robin into k groups, each group run as `bun test <files>` in sequence, so every shard's own duration is measured without contention. k ∈ {1,2,3,4,5,6,8,12,15}, 3 runs each, median reported.
+- **k shards** — files dealt round-robin into k groups, each run as `bun test <files>` in sequence so no shard contends for a core. k ∈ {1,2,3,4,5,6,8,12,15}, 3 runs each.
 - **The model** — shard wall clock = S + T·⌈30/k⌉/30 (the ⌈⌉ is the imbalance when files don't divide evenly).
-- **Local parallel run** — all k shards at once, to see what the machine actually delivers.
-- Noise floor: k=1 across 3 runs gave 2,679.0 / 2,679.2 / 2,684.8 ms — a 5.8 ms spread on a 2.7 s measurement. That is 0.2%, so speedup ratios below are not noise, but the 7.8 ms per-shard overhead is the same order as one run's spread and rests on summing 15 shards.
+- **Local parallel run** — all k shards at once, to see what the machine delivers.
+- Noise floor: k=1 across 3 runs gave 2,679.0 / 2,679.2 / 2,684.8 ms, a 0.2% spread.
 
 ## Results
 
@@ -29,10 +29,9 @@ Bun test startup is roughly 150 ms per shard, so a 3 s suite stops improving at 
 | 12 | 275.4 | 273.2 | +0.8% | 9.73× |
 | 15 | 187.1 | 184.1 | +1.7% | **14.32×** |
 
-- **S = 5.8 ms**, not 150 ms. `bun test` starts in single-digit milliseconds.
-- Fan-out stayed **near-linear to 15 shards**. The sum of shard times grew 2,679 → 2,792 ms: **7.8 ms of overhead per extra shard**, of which 5.8 ms is the process that would exist anyway.
-- The model is right to within **1.7%** at every k, once imbalance counts — k=4 deals 8/8/7/7 files, and the 8-file shard is the one that finishes last.
-- The k-th extra shard saves **T/(k(k+1))** seconds: 1,337 ms going 1→2, 223 ms going 3→4, **37 ms going 7→8**.
+- **S = 5.8 ms**, not 150 ms. `bun test` starts in single-digit milliseconds, so fan-out stayed near-linear to 15 shards: sum of shard times 2,679 → 2,792 ms, **7.8 ms of overhead per extra shard**, of which 5.8 ms is a process that exists at k=1 anyway.
+- The model is right to within **1.7%** at every k once imbalance counts — k=4 deals 8/8/7/7 files, and the 8-file shard finishes last.
+- The k-th extra shard saves **T/(k(k+1))**: 1,337 ms going 1→2, 223 ms going 3→4, **37 ms going 7→8**.
 - Parallel on this host bought almost nothing: k=6 took 2,275 ms against 2,719 ms of summed shard time (**1.18×**), because `cpu.max` is `200000 100000` — a **2-CPU quota** behind `nproc`'s 6.
 
 Solving S + T/k for real CI setup, with the measured T:
@@ -45,11 +44,11 @@ Solving S + T/k for real CI setup, with the measured T:
 
 ## Verdict: PARTIAL
 
-The shape held, the magnitude did not. `k ≈ √(T/S)` is the whole decision rule, and the measured data follows it: with S = 5.8 ms the plateau sits at **21 shards**, not the 4–5 I predicted from a 150 ms assumption. Local sharding is nearly free, so "when does it stop helping" is the wrong question on a warm machine — it barely ever does.
+The shape held, the magnitude did not. `k ≈ √(T/S)` is the whole decision rule, and the data follows it: with S = 5.8 ms the plateau sits at **21 shards**, not the 4–5 I predicted from a 150 ms assumption. On a warm machine local sharding is nearly free, so "when does it stop helping" barely has an answer.
 
 The second half held, and it is the half that matters. Shard k is worth adding only when **S < T/(k(k+1))**, so a suite needs **T > S·k(k+1)** before k shards pay: at 15 s of setup, 2 shards need 90 s of tests, 4 need 300 s, 8 need 1,080 s. A 2.7 s suite gets **nothing** from sharding on any real runner — it pays 15 s of setup either way and saves 1.3 s at best.
 
-Cross-check against published guidance: 15 s setup × the qaskills table predicts k* = 5.7 for an 8-minute suite and 8.9 for a 20-minute one, where they recommend "4–6 shards" and "6–10 or more". The model reproduces advice that was arrived at by trial, which is the most useful thing here — it means the count can be computed instead of guessed.
+Cross-check: 15 s setup × the qaskills table predicts k* = 5.7 for an 8-minute suite and 8.9 for a 20-minute one, where they recommend "4–6 shards" and "6–10 or more". The model reproduces advice arrived at by trial, so the count can be computed instead of guessed.
 
 ## Limits
 
