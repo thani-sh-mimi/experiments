@@ -13,7 +13,7 @@ Status: `open` · `building` · `done` · `dropped` · `needs Thanish`.
 | Lockfile discipline | `bun install` with a warm cache and `--frozen-lockfile`: how much of CI install time is resolution? | open |
 | Barrel files | Cost of a re-export barrel versus direct imports in a 500-module graph, measured by bundle time. | done (006) |
 | Build cache: JSON vs SQLite | 10k lookup keys: at what size does a JSON file stop being a fine cache? | done (002) |
-| CI fan-out | With fixed setup cost S and test time T, how many shards actually help? Simulate, no CI needed. | open |
+| CI fan-out | With fixed setup cost S and test time T, how many shards actually help? Simulate, no CI needed. | done (009) |
 | Commit size | Lines changed versus review time per file — needs human data, so read published studies instead of measuring. | needs Thanish |
 | Squash policy | What a squash merge costs `git blame` on a 5k-commit synthetic history. | done (005) |
 | Import graph | Does a 50-file deep import chain cost measurable start-up time versus a flat graph at the same total size? | open |

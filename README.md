@@ -12,5 +12,6 @@ One small SDLC problem a day: a hypothesis with a number in it, a harness that m
 | 006 | [barrel-import-cost](experiments/006-barrel-import-cost) | What a re-export barrel costs a build | Validated: 26 ms at 1,000 re-exports, ~0.03 ms/line; nesting cheaper than width |
 | 007 | [shallow-clone-cost](experiments/007-shallow-clone-cost) | How much `--depth 1` saves, and from what history size | Validated: flat 40 ms vs 0.12 ms/commit; 18% saved at 100 commits, 92% at 4,000 |
 | 008 | [file-size-parse-cost](experiments/008-file-size-parse-cost) | Does cutting the same bytes into smaller files cost parse time? | Partial: 2.2× more at 834 files, but an edit is still under 2 ms |
+| 009 | [ci-shard-fanout](experiments/009-ci-shard-fanout) | How many CI shards pay for their own setup? | Partial: k ≈ √(T/S); 5.8 ms here, so 15 shards went 14.3×; at 15 s setup, a 2.7 s suite never shards |
 
 The backlog is in [IDEAS.md](IDEAS.md). How an experiment is run and written up is in [AGENTS.md](AGENTS.md).
