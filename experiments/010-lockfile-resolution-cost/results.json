@@ -1,0 +1,2435 @@
+{
+  "runs": 3,
+  "sizes": [50, 200, 600],
+  "rtts": [0, 20],
+  "shapes": {
+    "chain": {
+      "shape": "chain",
+      "runs": 3,
+      "sizes": [50, 200, 600],
+      "rtts": [0, 20],
+      "measurements": {
+        "0ms": {
+          "50/empty": {
+            "medianMs": 3,
+            "minMs": 3,
+            "maxMs": 3.1,
+            "spreadPct": 3.3,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "50/noop": {
+            "medianMs": 4.5,
+            "minMs": 4.4,
+            "maxMs": 4.5,
+            "spreadPct": 2.2,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "50/frozen": {
+            "medianMs": 5.2,
+            "minMs": 5.2,
+            "maxMs": 5.3,
+            "spreadPct": 1.9,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "50/nolock-warm": {
+            "medianMs": 6.2,
+            "minMs": 6.1,
+            "maxMs": 6.2,
+            "spreadPct": 1.6,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "50/nolock-cold": {
+            "medianMs": 9.1,
+            "minMs": 9,
+            "maxMs": 9.9,
+            "spreadPct": 9.9,
+            "metadataRequests": 50,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "50/nolock-offline": {
+            "medianMs": 6.2,
+            "minMs": 6,
+            "maxMs": 6.3,
+            "spreadPct": 4.8,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/empty": {
+            "medianMs": 3,
+            "minMs": 2.9,
+            "maxMs": 3.2,
+            "spreadPct": 10,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/noop": {
+            "medianMs": 7.5,
+            "minMs": 7.5,
+            "maxMs": 7.5,
+            "spreadPct": 0,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/frozen": {
+            "medianMs": 9.5,
+            "minMs": 9.5,
+            "maxMs": 9.8,
+            "spreadPct": 3.2,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/nolock-warm": {
+            "medianMs": 12.8,
+            "minMs": 12.7,
+            "maxMs": 12.8,
+            "spreadPct": 0.8,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/nolock-cold": {
+            "medianMs": 28.4,
+            "minMs": 27.3,
+            "maxMs": 29.8,
+            "spreadPct": 8.8,
+            "metadataRequests": 200,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/nolock-offline": {
+            "medianMs": 12.7,
+            "minMs": 12.5,
+            "maxMs": 12.8,
+            "spreadPct": 2.4,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/empty": {
+            "medianMs": 3,
+            "minMs": 3,
+            "maxMs": 3.2,
+            "spreadPct": 6.7,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/noop": {
+            "medianMs": 15.7,
+            "minMs": 15.6,
+            "maxMs": 15.8,
+            "spreadPct": 1.3,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/frozen": {
+            "medianMs": 21.2,
+            "minMs": 20.8,
+            "maxMs": 21.3,
+            "spreadPct": 2.4,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/nolock-warm": {
+            "medianMs": 29.4,
+            "minMs": 29.3,
+            "maxMs": 29.6,
+            "spreadPct": 1,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/nolock-cold": {
+            "medianMs": 74.9,
+            "minMs": 73.8,
+            "maxMs": 84,
+            "spreadPct": 13.6,
+            "metadataRequests": 600,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/nolock-offline": {
+            "medianMs": 29.5,
+            "minMs": 29.3,
+            "maxMs": 29.6,
+            "spreadPct": 1,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          }
+        },
+        "20ms": {
+          "50/empty": {
+            "medianMs": 3,
+            "minMs": 3,
+            "maxMs": 3,
+            "spreadPct": 0,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "50/noop": {
+            "medianMs": 4.5,
+            "minMs": 4.5,
+            "maxMs": 4.5,
+            "spreadPct": 0,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "50/frozen": {
+            "medianMs": 5.4,
+            "minMs": 5.3,
+            "maxMs": 5.4,
+            "spreadPct": 1.9,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "50/nolock-warm": {
+            "medianMs": 6.4,
+            "minMs": 6.3,
+            "maxMs": 6.4,
+            "spreadPct": 1.6,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "50/nolock-cold": {
+            "medianMs": 130.6,
+            "minMs": 130.1,
+            "maxMs": 131.1,
+            "spreadPct": 0.8,
+            "metadataRequests": 50,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "50/nolock-offline": {
+            "medianMs": 6.2,
+            "minMs": 6.1,
+            "maxMs": 6.2,
+            "spreadPct": 1.6,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/empty": {
+            "medianMs": 2.9,
+            "minMs": 2.9,
+            "maxMs": 3.1,
+            "spreadPct": 6.9,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/noop": {
+            "medianMs": 7.5,
+            "minMs": 7.5,
+            "maxMs": 7.5,
+            "spreadPct": 0,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/frozen": {
+            "medianMs": 9.5,
+            "minMs": 9.4,
+            "maxMs": 9.5,
+            "spreadPct": 1.1,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/nolock-warm": {
+            "medianMs": 12.7,
+            "minMs": 12.7,
+            "maxMs": 12.7,
+            "spreadPct": 0,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/nolock-cold": {
+            "medianMs": 1677.6,
+            "minMs": 1677.5,
+            "maxMs": 1678.2,
+            "spreadPct": 0,
+            "metadataRequests": 200,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/nolock-offline": {
+            "medianMs": 12.6,
+            "minMs": 12.6,
+            "maxMs": 12.6,
+            "spreadPct": 0,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/empty": {
+            "medianMs": 3,
+            "minMs": 3,
+            "maxMs": 3.2,
+            "spreadPct": 6.7,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/noop": {
+            "medianMs": 15.3,
+            "minMs": 15.3,
+            "maxMs": 15.4,
+            "spreadPct": 0.7,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/frozen": {
+            "medianMs": 20.7,
+            "minMs": 20.6,
+            "maxMs": 20.7,
+            "spreadPct": 0.5,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/nolock-warm": {
+            "medianMs": 29.3,
+            "minMs": 29.3,
+            "maxMs": 29.4,
+            "spreadPct": 0.3,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/nolock-cold": {
+            "medianMs": 5803,
+            "minMs": 5800.6,
+            "maxMs": 5804.2,
+            "spreadPct": 0.1,
+            "metadataRequests": 600,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/nolock-offline": {
+            "medianMs": 29.5,
+            "minMs": 29.3,
+            "maxMs": 29.5,
+            "spreadPct": 0.7,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          }
+        }
+      },
+      "raw": {
+        "0ms": {
+          "50/empty": [
+            {
+              "ms": 3.1,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "50/noop": [
+            {
+              "ms": 4.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 4.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 4.4,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "50/frozen": [
+            {
+              "ms": 5.2,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 5.2,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 5.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "50/nolock-warm": [
+            {
+              "ms": 6.2,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 6.1,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 6.2,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "50/nolock-cold": [
+            {
+              "ms": 9.9,
+              "metadata": 50,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 9,
+              "metadata": 50,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 9.1,
+              "metadata": 50,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "50/nolock-offline": [
+            {
+              "ms": 6.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 6,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 6.2,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/empty": [
+            {
+              "ms": 3.2,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 2.9,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/noop": [
+            {
+              "ms": 7.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 7.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 7.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/frozen": [
+            {
+              "ms": 9.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 9.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 9.8,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/nolock-warm": [
+            {
+              "ms": 12.8,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 12.8,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 12.7,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/nolock-cold": [
+            {
+              "ms": 29.8,
+              "metadata": 200,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 28.4,
+              "metadata": 200,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 27.3,
+              "metadata": 200,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/nolock-offline": [
+            {
+              "ms": 12.8,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 12.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 12.7,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/empty": [
+            {
+              "ms": 3.2,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/noop": [
+            {
+              "ms": 15.8,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 15.7,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 15.6,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/frozen": [
+            {
+              "ms": 21.2,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 21.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 20.8,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/nolock-warm": [
+            {
+              "ms": 29.4,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 29.6,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 29.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/nolock-cold": [
+            {
+              "ms": 74.9,
+              "metadata": 600,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 73.8,
+              "metadata": 600,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 84,
+              "metadata": 600,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/nolock-offline": [
+            {
+              "ms": 29.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 29.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 29.6,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ]
+        },
+        "20ms": {
+          "50/empty": [
+            {
+              "ms": 3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "50/noop": [
+            {
+              "ms": 4.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 4.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 4.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "50/frozen": [
+            {
+              "ms": 5.4,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 5.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 5.4,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "50/nolock-warm": [
+            {
+              "ms": 6.4,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 6.4,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 6.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "50/nolock-cold": [
+            {
+              "ms": 131.1,
+              "metadata": 50,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 130.6,
+              "metadata": 50,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 130.1,
+              "metadata": 50,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "50/nolock-offline": [
+            {
+              "ms": 6.2,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 6.2,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 6.1,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/empty": [
+            {
+              "ms": 3.1,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 2.9,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 2.9,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/noop": [
+            {
+              "ms": 7.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 7.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 7.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/frozen": [
+            {
+              "ms": 9.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 9.4,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 9.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/nolock-warm": [
+            {
+              "ms": 12.7,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 12.7,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 12.7,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/nolock-cold": [
+            {
+              "ms": 1678.2,
+              "metadata": 200,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 1677.6,
+              "metadata": 200,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 1677.5,
+              "metadata": 200,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/nolock-offline": [
+            {
+              "ms": 12.6,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 12.6,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 12.6,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/empty": [
+            {
+              "ms": 3.2,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/noop": [
+            {
+              "ms": 15.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 15.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 15.4,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/frozen": [
+            {
+              "ms": 20.7,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 20.7,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 20.6,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/nolock-warm": [
+            {
+              "ms": 29.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 29.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 29.4,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/nolock-cold": [
+            {
+              "ms": 5804.2,
+              "metadata": 600,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 5803,
+              "metadata": 600,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 5800.6,
+              "metadata": 600,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/nolock-offline": [
+            {
+              "ms": 29.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 29.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 29.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ]
+        }
+      },
+      "notes": {
+        "0ms/50": {
+          "lockfilePackages": 50,
+          "reference": {
+            "metadata": 50,
+            "tarball": 50
+          }
+        },
+        "0ms/200": {
+          "lockfilePackages": 200,
+          "reference": {
+            "metadata": 150,
+            "tarball": 150
+          }
+        },
+        "0ms/600": {
+          "lockfilePackages": 600,
+          "reference": {
+            "metadata": 400,
+            "tarball": 400
+          }
+        },
+        "20ms/50": {
+          "lockfilePackages": 50,
+          "reference": {
+            "metadata": 0,
+            "tarball": 0
+          }
+        },
+        "20ms/200": {
+          "lockfilePackages": 200,
+          "reference": {
+            "metadata": 0,
+            "tarball": 0
+          }
+        },
+        "20ms/600": {
+          "lockfilePackages": 600,
+          "reference": {
+            "metadata": 0,
+            "tarball": 0
+          }
+        }
+      }
+    },
+    "wide": {
+      "shape": "wide",
+      "runs": 3,
+      "sizes": [50, 200, 600],
+      "rtts": [0, 20],
+      "measurements": {
+        "0ms": {
+          "50/empty": {
+            "medianMs": 3,
+            "minMs": 3,
+            "maxMs": 3.1,
+            "spreadPct": 3.3,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "50/noop": {
+            "medianMs": 4.5,
+            "minMs": 4.4,
+            "maxMs": 4.5,
+            "spreadPct": 2.2,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "50/frozen": {
+            "medianMs": 5.2,
+            "minMs": 5.2,
+            "maxMs": 5.3,
+            "spreadPct": 1.9,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "50/nolock-warm": {
+            "medianMs": 6.1,
+            "minMs": 6.1,
+            "maxMs": 6.3,
+            "spreadPct": 3.3,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "50/nolock-cold": {
+            "medianMs": 10.4,
+            "minMs": 10.4,
+            "maxMs": 10.4,
+            "spreadPct": 0,
+            "metadataRequests": 50,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "50/nolock-offline": {
+            "medianMs": 6.2,
+            "minMs": 6.1,
+            "maxMs": 6.3,
+            "spreadPct": 3.2,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/empty": {
+            "medianMs": 3,
+            "minMs": 2.9,
+            "maxMs": 3.1,
+            "spreadPct": 6.7,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/noop": {
+            "medianMs": 7.7,
+            "minMs": 7.6,
+            "maxMs": 7.9,
+            "spreadPct": 3.9,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/frozen": {
+            "medianMs": 10.3,
+            "minMs": 10.3,
+            "maxMs": 11.3,
+            "spreadPct": 9.7,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/nolock-warm": {
+            "medianMs": 13.8,
+            "minMs": 13.6,
+            "maxMs": 14.9,
+            "spreadPct": 9.4,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/nolock-cold": {
+            "medianMs": 23.6,
+            "minMs": 22.2,
+            "maxMs": 25.1,
+            "spreadPct": 12.3,
+            "metadataRequests": 200,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/nolock-offline": {
+            "medianMs": 12.8,
+            "minMs": 12.7,
+            "maxMs": 12.9,
+            "spreadPct": 1.6,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/empty": {
+            "medianMs": 3.1,
+            "minMs": 3.1,
+            "maxMs": 3.1,
+            "spreadPct": 0,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/noop": {
+            "medianMs": 15.6,
+            "minMs": 15.6,
+            "maxMs": 15.8,
+            "spreadPct": 1.3,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/frozen": {
+            "medianMs": 21.3,
+            "minMs": 21.2,
+            "maxMs": 21.6,
+            "spreadPct": 1.9,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/nolock-warm": {
+            "medianMs": 30,
+            "minMs": 29.9,
+            "maxMs": 30.2,
+            "spreadPct": 1,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/nolock-cold": {
+            "medianMs": 53,
+            "minMs": 52.4,
+            "maxMs": 63.2,
+            "spreadPct": 20.4,
+            "metadataRequests": 600,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/nolock-offline": {
+            "medianMs": 29.8,
+            "minMs": 29.7,
+            "maxMs": 30.1,
+            "spreadPct": 1.3,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          }
+        },
+        "20ms": {
+          "50/empty": {
+            "medianMs": 3,
+            "minMs": 3,
+            "maxMs": 3,
+            "spreadPct": 0,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "50/noop": {
+            "medianMs": 4.5,
+            "minMs": 4.5,
+            "maxMs": 4.7,
+            "spreadPct": 4.4,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "50/frozen": {
+            "medianMs": 5.4,
+            "minMs": 5.3,
+            "maxMs": 5.5,
+            "spreadPct": 3.7,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "50/nolock-warm": {
+            "medianMs": 6.3,
+            "minMs": 6.2,
+            "maxMs": 7.1,
+            "spreadPct": 14.3,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "50/nolock-cold": {
+            "medianMs": 29.7,
+            "minMs": 29.6,
+            "maxMs": 30.4,
+            "spreadPct": 2.7,
+            "metadataRequests": 50,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "50/nolock-offline": {
+            "medianMs": 6.2,
+            "minMs": 6.2,
+            "maxMs": 6.3,
+            "spreadPct": 1.6,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/empty": {
+            "medianMs": 3,
+            "minMs": 3,
+            "maxMs": 3.1,
+            "spreadPct": 3.3,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/noop": {
+            "medianMs": 7.6,
+            "minMs": 7.6,
+            "maxMs": 7.8,
+            "spreadPct": 2.6,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/frozen": {
+            "medianMs": 9.7,
+            "minMs": 9.6,
+            "maxMs": 9.7,
+            "spreadPct": 1,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/nolock-warm": {
+            "medianMs": 12.8,
+            "minMs": 12.7,
+            "maxMs": 13,
+            "spreadPct": 2.3,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/nolock-cold": {
+            "medianMs": 96.7,
+            "minMs": 96.4,
+            "maxMs": 97.2,
+            "spreadPct": 0.8,
+            "metadataRequests": 200,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "200/nolock-offline": {
+            "medianMs": 12.8,
+            "minMs": 12.8,
+            "maxMs": 12.9,
+            "spreadPct": 0.8,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/empty": {
+            "medianMs": 3,
+            "minMs": 2.9,
+            "maxMs": 3.1,
+            "spreadPct": 6.7,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/noop": {
+            "medianMs": 15.6,
+            "minMs": 15.5,
+            "maxMs": 15.9,
+            "spreadPct": 2.6,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/frozen": {
+            "medianMs": 21.6,
+            "minMs": 21.4,
+            "maxMs": 21.9,
+            "spreadPct": 2.3,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/nolock-warm": {
+            "medianMs": 29.9,
+            "minMs": 29.7,
+            "maxMs": 30.2,
+            "spreadPct": 1.7,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/nolock-cold": {
+            "medianMs": 234,
+            "minMs": 233.3,
+            "maxMs": 235.5,
+            "spreadPct": 0.9,
+            "metadataRequests": 600,
+            "tarballRequests": 0,
+            "ok": true
+          },
+          "600/nolock-offline": {
+            "medianMs": 30.2,
+            "minMs": 30,
+            "maxMs": 30.3,
+            "spreadPct": 1,
+            "metadataRequests": 0,
+            "tarballRequests": 0,
+            "ok": true
+          }
+        }
+      },
+      "raw": {
+        "0ms": {
+          "50/empty": [
+            {
+              "ms": 3.1,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "50/noop": [
+            {
+              "ms": 4.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 4.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 4.4,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "50/frozen": [
+            {
+              "ms": 5.2,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 5.2,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 5.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "50/nolock-warm": [
+            {
+              "ms": 6.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 6.1,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 6.1,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "50/nolock-cold": [
+            {
+              "ms": 10.4,
+              "metadata": 50,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 10.4,
+              "metadata": 50,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 10.4,
+              "metadata": 50,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "50/nolock-offline": [
+            {
+              "ms": 6.2,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 6.1,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 6.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/empty": [
+            {
+              "ms": 3.1,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 2.9,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/noop": [
+            {
+              "ms": 7.7,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 7.6,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 7.9,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/frozen": [
+            {
+              "ms": 10.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 10.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 11.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/nolock-warm": [
+            {
+              "ms": 14.9,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 13.8,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 13.6,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/nolock-cold": [
+            {
+              "ms": 25.1,
+              "metadata": 200,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 22.2,
+              "metadata": 200,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 23.6,
+              "metadata": 200,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/nolock-offline": [
+            {
+              "ms": 12.9,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 12.7,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 12.8,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/empty": [
+            {
+              "ms": 3.1,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 3.1,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 3.1,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/noop": [
+            {
+              "ms": 15.8,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 15.6,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 15.6,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/frozen": [
+            {
+              "ms": 21.2,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 21.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 21.6,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/nolock-warm": [
+            {
+              "ms": 30.2,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 30,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 29.9,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/nolock-cold": [
+            {
+              "ms": 53,
+              "metadata": 600,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 63.2,
+              "metadata": 600,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 52.4,
+              "metadata": 600,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/nolock-offline": [
+            {
+              "ms": 30.1,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 29.7,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 29.8,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ]
+        },
+        "20ms": {
+          "50/empty": [
+            {
+              "ms": 3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "50/noop": [
+            {
+              "ms": 4.7,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 4.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 4.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "50/frozen": [
+            {
+              "ms": 5.4,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 5.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 5.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "50/nolock-warm": [
+            {
+              "ms": 6.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 6.2,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 7.1,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "50/nolock-cold": [
+            {
+              "ms": 30.4,
+              "metadata": 50,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 29.6,
+              "metadata": 50,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 29.7,
+              "metadata": 50,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "50/nolock-offline": [
+            {
+              "ms": 6.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 6.2,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 6.2,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/empty": [
+            {
+              "ms": 3.1,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/noop": [
+            {
+              "ms": 7.6,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 7.8,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 7.6,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/frozen": [
+            {
+              "ms": 9.6,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 9.7,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 9.7,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/nolock-warm": [
+            {
+              "ms": 13,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 12.7,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 12.8,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/nolock-cold": [
+            {
+              "ms": 97.2,
+              "metadata": 200,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 96.4,
+              "metadata": 200,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 96.7,
+              "metadata": 200,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "200/nolock-offline": [
+            {
+              "ms": 12.9,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 12.8,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 12.8,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/empty": [
+            {
+              "ms": 3.1,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 2.9,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/noop": [
+            {
+              "ms": 15.5,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 15.9,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 15.6,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/frozen": [
+            {
+              "ms": 21.6,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 21.4,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 21.9,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/nolock-warm": [
+            {
+              "ms": 29.7,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 30.2,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 29.9,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/nolock-cold": [
+            {
+              "ms": 235.5,
+              "metadata": 600,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 233.3,
+              "metadata": 600,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 234,
+              "metadata": 600,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ],
+          "600/nolock-offline": [
+            {
+              "ms": 30.3,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 30,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            },
+            {
+              "ms": 30.2,
+              "metadata": 0,
+              "tarball": 0,
+              "ok": true,
+              "stderr": ""
+            }
+          ]
+        }
+      },
+      "notes": {
+        "0ms/50": {
+          "lockfilePackages": 50,
+          "reference": {
+            "metadata": 50,
+            "tarball": 50
+          }
+        },
+        "0ms/200": {
+          "lockfilePackages": 200,
+          "reference": {
+            "metadata": 150,
+            "tarball": 150
+          }
+        },
+        "0ms/600": {
+          "lockfilePackages": 600,
+          "reference": {
+            "metadata": 400,
+            "tarball": 400
+          }
+        },
+        "20ms/50": {
+          "lockfilePackages": 50,
+          "reference": {
+            "metadata": 0,
+            "tarball": 0
+          }
+        },
+        "20ms/200": {
+          "lockfilePackages": 200,
+          "reference": {
+            "metadata": 0,
+            "tarball": 0
+          }
+        },
+        "20ms/600": {
+          "lockfilePackages": 600,
+          "reference": {
+            "metadata": 0,
+            "tarball": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -10,7 +10,7 @@ Status: `open` · `building` · `done` · `dropped` · `needs Thanish`.
 | Pre-commit hook budget | Where does `prettier --check .` break the one-second commit budget, and how much does staging-only save? | done (003) |
 | Shallow clone | How much time and disk does `--depth 1` save on a mid-size repo, and at what history size does it start to matter? | done (007) |
 | Incremental type-check | Cold `tsc` versus cached incremental on a synthetic 300-module project: what ratio do you actually get? | done (004) |
-| Lockfile discipline | `bun install` with a warm cache and `--frozen-lockfile`: how much of CI install time is resolution? | open |
+| Lockfile discipline | `bun install` with a warm cache and `--frozen-lockfile`: how much of CI install time is resolution? | done (010) |
 | Barrel files | Cost of a re-export barrel versus direct imports in a 500-module graph, measured by bundle time. | done (006) |
 | Build cache: JSON vs SQLite | 10k lookup keys: at what size does a JSON file stop being a fine cache? | done (002) |
 | CI fan-out | With fixed setup cost S and test time T, how many shards actually help? Simulate, no CI needed. | done (009) |
