@@ -5,7 +5,7 @@ Status: `open` · `building` · `done` · `dropped` · `needs Thanish`.
 | Idea | The question | Status |
 |------|--------------|--------|
 | Test file count | What does each extra test file cost `bun test`, separate from the tests in it? | done (001) |
-| Fork-per-file runner | Same question against `node --test`: what does a worker per file cost, where Bun shares one process? | open |
+| Fork-per-file runner | Same question against `node --test`: what does a worker per file cost, where Bun shares one process? | done (011) |
 | Parallel crossover | Repeat 001's `--parallel` sweep on a host with more than 2 CPUs; the sandbox quota caps speedup at ~2x. | needs Thanish |
 | Pre-commit hook budget | Where does `prettier --check .` break the one-second commit budget, and how much does staging-only save? | done (003) |
 | Shallow clone | How much time and disk does `--depth 1` save on a mid-size repo, and at what history size does it start to matter? | done (007) |
@@ -17,4 +17,5 @@ Status: `open` · `building` · `done` · `dropped` · `needs Thanish`.
 | Commit size | Lines changed versus review time per file — needs human data, so read published studies instead of measuring. | needs Thanish |
 | Squash policy | What a squash merge costs `git blame` on a 5k-commit synthetic history. | done (005) |
 | Import graph | Does a 50-file deep import chain cost measurable start-up time versus a flat graph at the same total size? | open |
+| Worker-thread isolation | 011 puts a child process at 81 ms per file. Does a worker-thread pool (`node --test` isolation, or Vitest threads) recover most of it at the same isolation level? | open |
 | Editor tax | 2000-line files vs 200-line files: parse and transpile time in Bun at equal total bytes. | done (008) |

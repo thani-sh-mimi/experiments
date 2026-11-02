@@ -1,0 +1,16 @@
+floor node 46.1 bun 5.6
+ext js: proc 917.9 none 109
+ext ts: proc 1458.3 none 171.3
+count 1: proc 185.7 none 96.9 bun 33.4
+count 2: proc 263.3 none 104.8 bun 33.9
+count 4: proc 422.1 none 101.8 bun 34.4
+count 8: proc 750 none 109.9 bun 34.9
+count 16: proc 1399.8 none 118.2 bun 36.8
+count 32: proc 2685 none 139.5 bun 40.2
+work 0ms: proc 2679.2 none 143 proc@2 1547.9
+work 1ms: proc 2679.6 none 171.3 proc@2 1596
+work 5ms: proc 2826.5 none 299.1 proc@2 1705.6
+work 20ms: proc 3266.2 none 780.2 proc@2 1904.8
+work 50ms: proc 4249.6 none 1741.2 proc@2 2348
+fit {"process":{"fixed":103.1,"perFile":80.747},"processMin":{"fixed":97.7,"perFile":79.798},"inProcess":{"fixed":98.4,"perFile":1.2819999999999998},"bun":{"fixed":33.4,"perFile":0.214}}
+noise {"wall":[2670.2,2691.7,2683.1,2711.7,2679.5,2680.2,2647.3],"min":2647.3,"median":2680.2,"max":2711.7,"spreadPct":2.4}
