@@ -1,0 +1,432 @@
+{
+  "runs": [
+    {
+      "ext": "js",
+      "n": 50,
+      "shape": "chain",
+      "runtime": "bun",
+      "ms": [
+        7.48,
+        6.75,
+        6.5
+      ],
+      "bytes": 10967,
+      "median": 6.75
+    },
+    {
+      "ext": "js",
+      "n": 50,
+      "shape": "chain",
+      "runtime": "node",
+      "ms": [
+        22.73,
+        26.12,
+        23.31
+      ],
+      "bytes": 10967,
+      "median": 23.31
+    },
+    {
+      "ext": "js",
+      "n": 50,
+      "shape": "flat",
+      "runtime": "bun",
+      "ms": [
+        3.31,
+        3.15,
+        3.16
+      ],
+      "bytes": 10967,
+      "median": 3.16
+    },
+    {
+      "ext": "js",
+      "n": 50,
+      "shape": "flat",
+      "runtime": "node",
+      "ms": [
+        25.21,
+        22.04,
+        25.7
+      ],
+      "bytes": 10967,
+      "median": 25.21
+    },
+    {
+      "ext": "js",
+      "n": 200,
+      "shape": "chain",
+      "runtime": "bun",
+      "ms": [
+        19.96,
+        18.76,
+        19.6
+      ],
+      "bytes": 43917,
+      "median": 19.6
+    },
+    {
+      "ext": "js",
+      "n": 200,
+      "shape": "chain",
+      "runtime": "node",
+      "ms": [
+        75.39,
+        78.63,
+        79.92
+      ],
+      "bytes": 43917,
+      "median": 78.63
+    },
+    {
+      "ext": "js",
+      "n": 200,
+      "shape": "flat",
+      "runtime": "bun",
+      "ms": [
+        7.81,
+        7.56,
+        7.48
+      ],
+      "bytes": 43917,
+      "median": 7.56
+    },
+    {
+      "ext": "js",
+      "n": 200,
+      "shape": "flat",
+      "runtime": "node",
+      "ms": [
+        74.16,
+        74.56,
+        71.1
+      ],
+      "bytes": 43917,
+      "median": 74.16
+    },
+    {
+      "ext": "js",
+      "n": 800,
+      "shape": "chain",
+      "runtime": "bun",
+      "ms": [
+        74.84,
+        69.06,
+        70.07
+      ],
+      "bytes": 175917,
+      "median": 70.07
+    },
+    {
+      "ext": "js",
+      "n": 800,
+      "shape": "chain",
+      "runtime": "node",
+      "ms": [],
+      "bytes": 175917,
+      "errors": [
+        "Node.js v26.12.1",
+        "Node.js v26.12.1",
+        "Node.js v26.12.1"
+      ]
+    },
+    {
+      "ext": "js",
+      "n": 800,
+      "shape": "flat",
+      "runtime": "bun",
+      "ms": [
+        24.88,
+        23.36,
+        23.24
+      ],
+      "bytes": 175917,
+      "median": 23.36
+    },
+    {
+      "ext": "js",
+      "n": 800,
+      "shape": "flat",
+      "runtime": "node",
+      "ms": [
+        255.7,
+        256.61,
+        250.41
+      ],
+      "bytes": 175917,
+      "median": 255.7
+    },
+    {
+      "ext": "ts",
+      "n": 50,
+      "shape": "chain",
+      "runtime": "bun",
+      "ms": [
+        7.2,
+        7.15,
+        6.59
+      ],
+      "bytes": 10967,
+      "median": 7.15
+    },
+    {
+      "ext": "ts",
+      "n": 50,
+      "shape": "chain",
+      "runtime": "node",
+      "ms": [
+        85.45,
+        90.57,
+        83.86
+      ],
+      "bytes": 10967,
+      "median": 85.45
+    },
+    {
+      "ext": "ts",
+      "n": 50,
+      "shape": "flat",
+      "runtime": "bun",
+      "ms": [
+        3.35,
+        3.19,
+        3.23
+      ],
+      "bytes": 10967,
+      "median": 3.23
+    },
+    {
+      "ext": "ts",
+      "n": 50,
+      "shape": "flat",
+      "runtime": "node",
+      "ms": [
+        83.19,
+        83.13,
+        84.64
+      ],
+      "bytes": 10967,
+      "median": 83.19
+    },
+    {
+      "ext": "ts",
+      "n": 200,
+      "shape": "chain",
+      "runtime": "bun",
+      "ms": [
+        20.85,
+        19.63,
+        19.28
+      ],
+      "bytes": 43917,
+      "median": 19.63
+    },
+    {
+      "ext": "ts",
+      "n": 200,
+      "shape": "chain",
+      "runtime": "node",
+      "ms": [
+        177.94,
+        175.11,
+        169.78
+      ],
+      "bytes": 43917,
+      "median": 175.11
+    },
+    {
+      "ext": "ts",
+      "n": 200,
+      "shape": "flat",
+      "runtime": "bun",
+      "ms": [
+        7.91,
+        7.41,
+        7.45
+      ],
+      "bytes": 43917,
+      "median": 7.45
+    },
+    {
+      "ext": "ts",
+      "n": 200,
+      "shape": "flat",
+      "runtime": "node",
+      "ms": [
+        169.55,
+        166.31,
+        170.92
+      ],
+      "bytes": 43917,
+      "median": 169.55
+    }
+  ],
+  "noise": {
+    "samples": [
+      7.72,
+      7.3,
+      7.34,
+      7.44,
+      7.42,
+      7.38,
+      7.36
+    ],
+    "median": 7.38,
+    "spreadPct": 5.69
+  },
+  "meta": {
+    "bun": "1.4.4",
+    "node": "v26.12.1",
+    "cpus": "200000 100000",
+    "moduleBytes": 200,
+    "runs": 3,
+    "date": "2026-11-03"
+  },
+  "depthLimit": [
+    {
+      "n": 700,
+      "runtime": "bun",
+      "ms": 66.108681
+    },
+    {
+      "n": 700,
+      "runtime": "node",
+      "ms": 248.335143
+    },
+    {
+      "n": 720,
+      "runtime": "bun",
+      "ms": 64.801979
+    },
+    {
+      "n": 720,
+      "runtime": "node",
+      "ms": 256.793287
+    },
+    {
+      "n": 740,
+      "runtime": "bun",
+      "ms": 72.555409
+    },
+    {
+      "n": 740,
+      "runtime": "node",
+      "ms": 266.883976
+    },
+    {
+      "n": 760,
+      "runtime": "bun",
+      "ms": 71.806021
+    },
+    {
+      "n": 760,
+      "runtime": "node",
+      "ms": 267.94739500000003
+    },
+    {
+      "n": 765,
+      "runtime": "bun",
+      "ms": 75.060531
+    },
+    {
+      "n": 765,
+      "runtime": "node",
+      "error": "Node.js v26.12.1"
+    },
+    {
+      "n": 770,
+      "runtime": "bun",
+      "ms": 73.141874
+    },
+    {
+      "n": 770,
+      "runtime": "node",
+      "error": "Node.js v26.12.1"
+    },
+    {
+      "n": 780,
+      "runtime": "bun",
+      "ms": 72.249493
+    },
+    {
+      "n": 780,
+      "runtime": "node",
+      "error": "Node.js v26.12.1"
+    },
+    {
+      "n": 900,
+      "runtime": "bun",
+      "ms": 84.449202
+    },
+    {
+      "n": 900,
+      "runtime": "node",
+      "error": "Node.js v26.12.1"
+    },
+    {
+      "n": 2000,
+      "runtime": "bun",
+      "ms": 181.009659
+    },
+    {
+      "n": 2000,
+      "runtime": "node",
+      "error": "Node.js v26.12.1"
+    }
+  ],
+  "lattice": [
+    {
+      "label": "40 chains of 50 (2000 modules), depth 50",
+      "runtime": "bun",
+      "ms": [
+        64.57,
+        66.77,
+        73.67
+      ],
+      "median": 66.77
+    },
+    {
+      "label": "40 chains of 50 (2000 modules), depth 50",
+      "runtime": "node",
+      "ms": [
+        604.15,
+        603.99,
+        602.54
+      ],
+      "median": 603.99
+    },
+    {
+      "label": "flat 2000, depth 1",
+      "runtime": "bun",
+      "ms": [
+        59.82,
+        56.47,
+        62.87
+      ],
+      "median": 59.82
+    },
+    {
+      "label": "flat 2000, depth 1",
+      "runtime": "node",
+      "ms": [
+        585.47,
+        585.08,
+        579.25
+      ],
+      "median": 585.08
+    }
+  ],
+  "latticeNoise": {
+    "samples": [
+      65.47,
+      60.63,
+      74.09,
+      71.03,
+      64.42,
+      61.24,
+      63
+    ],
+    "median": 64.42,
+    "spreadPct": 20.89
+  }
+}
