@@ -18,4 +18,5 @@ Status: `open` · `building` · `done` · `dropped` · `needs Thanish`.
 | Squash policy | What a squash merge costs `git blame` on a 5k-commit synthetic history. | done (005) |
 | Import graph | Does a 50-file deep import chain cost measurable start-up time versus a flat graph at the same total size? | done (012) |
 | Worker-thread isolation | 011 puts a child process at 81 ms per file. Does a worker-thread pool (`node --test` isolation, or Vitest threads) recover most of it at the same isolation level? | open |
+| Git index at scale | How much of a one-second hook budget does `git status --porcelain` eat at 1k/10k/50k tracked files, and what does `-uall` cost versus `-unormal` with untracked files present? | done (013) |
 | Editor tax | 2000-line files vs 200-line files: parse and transpile time in Bun at equal total bytes. | done (008) |

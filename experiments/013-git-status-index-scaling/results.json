@@ -1,0 +1,2017 @@
+{
+  "generatedAt": "2026-11-04T08:05:56.873Z",
+  "runs": 5,
+  "git": "git version 2.47.3",
+  "sessions": [
+    {
+      "at": "2026-11-04T08:04:34.182Z",
+      "floor": {
+        "label": "git --version",
+        "ms": [
+          1.63,
+          1.65,
+          1.74,
+          1.57,
+          1.64
+        ],
+        "median": 1.64,
+        "spreadPct": 10.2
+      },
+      "scale": [
+        {
+          "tracked": 1000,
+          "status": {
+            "label": "status --porcelain",
+            "ms": [
+              18.83,
+              19,
+              18.88,
+              18.92,
+              18.82
+            ],
+            "median": 18.88,
+            "spreadPct": 1
+          },
+          "uno": {
+            "label": "status --porcelain -uno",
+            "ms": [
+              16.9,
+              16.98,
+              16.84,
+              16.73,
+              17.11
+            ],
+            "median": 16.9,
+            "spreadPct": 2.2
+          },
+          "uall": {
+            "label": "status --porcelain -uall",
+            "ms": [
+              18.63,
+              18.64,
+              18.58,
+              18.99,
+              18.67
+            ],
+            "median": 18.64,
+            "spreadPct": 2.2
+          },
+          "diffCached": {
+            "label": "diff --cached --name-only",
+            "ms": [
+              2.54,
+              2.55,
+              2.54,
+              2.56,
+              2.53
+            ],
+            "median": 2.54,
+            "spreadPct": 1
+          },
+          "lsFilesM": {
+            "label": "ls-files -m",
+            "ms": [
+              13.43,
+              13.11,
+              13.09,
+              13.21,
+              13.08
+            ],
+            "median": 13.11,
+            "spreadPct": 2.7
+          },
+          "trace": {
+            "read": 0.05,
+            "do_read_index .git/index": 0.29,
+            "preload": 2.01,
+            "refresh": 11.44,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 0.07,
+            "..traverse_trees": 0.01,
+            "unpack_trees": 0.07,
+            "index": 0.42,
+            "..name-hash-init": 0.08,
+            "read_directory": 1.95,
+            "untracked": 1.98,
+            "write": 0.03,
+            "do_write_index /root/github/thani-sh-mimi/experiments/tmp/013/1000/.git/index.lock": 0.67,
+            "print": 0.01
+          }
+        },
+        {
+          "tracked": 10000,
+          "status": {
+            "label": "status --porcelain",
+            "ms": [
+              19.12,
+              18.66,
+              33.73,
+              20.62,
+              19.61
+            ],
+            "median": 19.61,
+            "spreadPct": 76.8
+          },
+          "uno": {
+            "label": "status --porcelain -uno",
+            "ms": [
+              30.11,
+              13.25,
+              14.13,
+              14.1,
+              14.06
+            ],
+            "median": 14.1,
+            "spreadPct": 119.5
+          },
+          "uall": {
+            "label": "status --porcelain -uall",
+            "ms": [
+              22.38,
+              19.93,
+              35.58,
+              18.83,
+              20.9
+            ],
+            "median": 20.9,
+            "spreadPct": 80.1
+          },
+          "diffCached": {
+            "label": "diff --cached --name-only",
+            "ms": [
+              3.9,
+              3.94,
+              3.92,
+              3.95,
+              3.9
+            ],
+            "median": 3.92,
+            "spreadPct": 1.4
+          },
+          "lsFilesM": {
+            "label": "ls-files -m",
+            "ms": [
+              33.24,
+              33.61,
+              33.12,
+              33.05,
+              33.13
+            ],
+            "median": 33.13,
+            "spreadPct": 1.7
+          },
+          "trace": {
+            "read": 0.05,
+            "do_read_index .git/index": 1.43,
+            "preload": 7.89,
+            "refresh": 0.26,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 0.23,
+            "..traverse_trees": 0.01,
+            "unpack_trees": 0.17,
+            "index": 0.53,
+            "..name-hash-init": 0.52,
+            "read_directory": 7,
+            "untracked": 7.04,
+            "print": 0.01
+          }
+        },
+        {
+          "tracked": 50000,
+          "status": {
+            "label": "status --porcelain",
+            "ms": [
+              106.88,
+              96.64,
+              105.62,
+              105.34,
+              99.19
+            ],
+            "median": 105.34,
+            "spreadPct": 9.7
+          },
+          "uno": {
+            "label": "status --porcelain -uno",
+            "ms": [
+              95.14,
+              95.71,
+              91.93,
+              42.53,
+              88.47
+            ],
+            "median": 91.93,
+            "spreadPct": 57.9
+          },
+          "uall": {
+            "label": "status --porcelain -uall",
+            "ms": [
+              139.29,
+              111.67,
+              107.55,
+              111.98,
+              101.27
+            ],
+            "median": 111.67,
+            "spreadPct": 34
+          },
+          "diffCached": {
+            "label": "diff --cached --name-only",
+            "ms": [
+              7.59,
+              7.52,
+              7.7,
+              7.6,
+              7.64
+            ],
+            "median": 7.6,
+            "spreadPct": 2.4
+          },
+          "lsFilesM": {
+            "label": "ls-files -m",
+            "ms": [
+              155.9,
+              155.63,
+              155.89,
+              157.89,
+              155.92
+            ],
+            "median": 155.9,
+            "spreadPct": 1.4
+          },
+          "trace": {
+            "read": 0.06,
+            "do_read_index .git/index": 4.42,
+            "preload": 33.52,
+            "refresh": 1.19,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 1.1,
+            "..traverse_trees": 0.01,
+            "unpack_trees": 0.73,
+            "index": 1.12,
+            "..name-hash-init": 2.76,
+            "read_directory": 32.81,
+            "untracked": 32.85,
+            "print": 0.01
+          }
+        },
+        {
+          "tracked": 100000,
+          "status": {
+            "label": "status --porcelain",
+            "ms": [
+              222.34,
+              223.46,
+              226.46,
+              215.45,
+              209.88
+            ],
+            "median": 222.34,
+            "spreadPct": 7.5
+          },
+          "uno": {
+            "label": "status --porcelain -uno",
+            "ms": [
+              185.8,
+              130.11,
+              191.32,
+              194.21,
+              189.49
+            ],
+            "median": 189.49,
+            "spreadPct": 33.8
+          },
+          "uall": {
+            "label": "status --porcelain -uall",
+            "ms": [
+              217.53,
+              209.7,
+              207.79,
+              211.89,
+              214.83
+            ],
+            "median": 211.89,
+            "spreadPct": 4.6
+          },
+          "diffCached": {
+            "label": "diff --cached --name-only",
+            "ms": [
+              12.41,
+              12.61,
+              12.49,
+              12.19,
+              12.4
+            ],
+            "median": 12.41,
+            "spreadPct": 3.4
+          },
+          "lsFilesM": {
+            "label": "ls-files -m",
+            "ms": [
+              312.24,
+              309.22,
+              308.94,
+              309.43,
+              308.87
+            ],
+            "median": 309.22,
+            "spreadPct": 1.1
+          },
+          "trace": {
+            "read": 0.07,
+            "do_read_index .git/index": 7.78,
+            "preload": 124.68,
+            "refresh": 2.38,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 2.11,
+            "..traverse_trees": 0.02,
+            "unpack_trees": 1.93,
+            "index": 2.33,
+            "..name-hash-init": 6.73,
+            "read_directory": 67.04,
+            "untracked": 67.08,
+            "print": 0.01
+          }
+        }
+      ],
+      "untrackedHeavy": {
+        "count": 10000,
+        "cacheOff": {
+          "normal": {
+            "label": "status -unormal (cache off)",
+            "ms": [
+              217.29,
+              218.15,
+              211.33,
+              213.6,
+              216.93
+            ],
+            "median": 216.93,
+            "spreadPct": 3.1
+          },
+          "all": {
+            "label": "status -uall (cache off)",
+            "ms": [
+              231.88,
+              232.56,
+              238.95,
+              230.46,
+              240.69
+            ],
+            "median": 232.56,
+            "spreadPct": 4.4
+          },
+          "uno": {
+            "label": "status -uno (cache off)",
+            "ms": [
+              190.98,
+              185.27,
+              193.54,
+              126.04,
+              192.17
+            ],
+            "median": 190.98,
+            "spreadPct": 35.3
+          }
+        },
+        "traceNormal": {
+          "read": 0.07,
+          "do_read_index .git/index": 7.76,
+          "preload": 172.59,
+          "refresh": 2.36,
+          "setup": 0.01,
+          "write back to queue": 0.01,
+          "worktrees": 2.13,
+          "..traverse_trees": 0.02,
+          "unpack_trees": 1.97,
+          "index": 2.35,
+          "..name-hash-init": 6.7,
+          "read_directory": 67.05,
+          "untracked": 67.09,
+          "print": 0.02
+        },
+        "traceAll": {
+          "read": 0.08,
+          "do_read_index .git/index": 7.66,
+          "preload": 125.22,
+          "refresh": 2.37,
+          "setup": 0.01,
+          "write back to queue": 0.01,
+          "worktrees": 2.13,
+          "..traverse_trees": 0.02,
+          "unpack_trees": 2,
+          "index": 2.39,
+          "..name-hash-init": 6.76,
+          "read_directory": 80.58,
+          "untracked": 85.17,
+          "print": 2.85
+        },
+        "cacheOn": {
+          "normal": {
+            "label": "status -unormal (cache on)",
+            "ms": [
+              193.16,
+              192.22,
+              191.52,
+              126.98,
+              193.8
+            ],
+            "median": 192.22,
+            "spreadPct": 34.8
+          },
+          "all": {
+            "label": "status -uall (cache on)",
+            "ms": [
+              234.75,
+              235.01,
+              234.92,
+              238.79,
+              232.24
+            ],
+            "median": 234.92,
+            "spreadPct": 2.8
+          },
+          "uno": {
+            "label": "status -uno (cache on)",
+            "ms": [
+              197.53,
+              186.5,
+              133.18,
+              184.44,
+              196.67
+            ],
+            "median": 186.5,
+            "spreadPct": 34.5
+          }
+        },
+        "traceNormalCached": {
+          "read": 0.07,
+          "do_read_index .git/index": 7.76,
+          "preload": 170.26,
+          "refresh": 2.38,
+          "setup": 0.01,
+          "write back to queue": 0.01,
+          "worktrees": 2.15,
+          "..traverse_trees": 0.02,
+          "unpack_trees": 1.9,
+          "index": 2.31,
+          "..name-hash-init": 6.84,
+          "read_directory": 7.3,
+          "untracked": 7.35,
+          "print": 0.02
+        },
+        "traceAllCached": {
+          "read": 0.07,
+          "do_read_index .git/index": 7.72,
+          "preload": 101.97,
+          "refresh": 2.39,
+          "setup": 0.01,
+          "write back to queue": 0.01,
+          "worktrees": 2.15,
+          "..traverse_trees": 0.02,
+          "unpack_trees": 61.1,
+          "index": 61.53,
+          "..name-hash-init": 6.95,
+          "read_directory": 79.2,
+          "untracked": 83.84,
+          "print": 3.05
+        }
+      },
+      "dirtyOne": {
+        "normal": {
+          "label": "status --porcelain (1 modified)",
+          "ms": [
+            194.1,
+            193.01,
+            129.35,
+            201.02,
+            188.69
+          ],
+          "median": 193.01,
+          "spreadPct": 37.1
+        },
+        "uno": {
+          "label": "status --porcelain -uno (1 modified)",
+          "ms": [
+            189.63,
+            189.65,
+            189.99,
+            127.81,
+            196.52
+          ],
+          "median": 189.65,
+          "spreadPct": 36.2
+        },
+        "diffCached": {
+          "label": "diff --cached --name-only (1 modified)",
+          "ms": [
+            12.43,
+            12.3,
+            15.24,
+            12.29,
+            12.43
+          ],
+          "median": 12.43,
+          "spreadPct": 23.8
+        }
+      }
+    },
+    {
+      "at": "2026-11-04T08:05:15.784Z",
+      "floor": {
+        "label": "git --version",
+        "ms": [
+          1.61,
+          1.64,
+          1.63,
+          1.64,
+          1.64
+        ],
+        "median": 1.64,
+        "spreadPct": 1.9
+      },
+      "scale": [
+        {
+          "tracked": 1000,
+          "status": {
+            "label": "status --porcelain",
+            "ms": [
+              18.93,
+              18.64,
+              6.66,
+              6.6,
+              6.53
+            ],
+            "median": 6.66,
+            "spreadPct": 186.1
+          },
+          "uno": {
+            "label": "status --porcelain -uno",
+            "ms": [
+              4.79,
+              4.82,
+              4.79,
+              4.81,
+              4.81
+            ],
+            "median": 4.81,
+            "spreadPct": 0.6
+          },
+          "uall": {
+            "label": "status --porcelain -uall",
+            "ms": [
+              6.64,
+              6.53,
+              6.78,
+              6.81,
+              6.67
+            ],
+            "median": 6.67,
+            "spreadPct": 4.2
+          },
+          "diffCached": {
+            "label": "diff --cached --name-only",
+            "ms": [
+              2.55,
+              2.56,
+              2.59,
+              2.51,
+              2.55
+            ],
+            "median": 2.55,
+            "spreadPct": 3.2
+          },
+          "lsFilesM": {
+            "label": "ls-files -m",
+            "ms": [
+              5.06,
+              5.03,
+              5.03,
+              5.05,
+              5.07
+            ],
+            "median": 5.05,
+            "spreadPct": 0.9
+          },
+          "trace": {
+            "read": 0.05,
+            "do_read_index .git/index": 0.28,
+            "preload": 1.99,
+            "refresh": 0.05,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 0.09,
+            "..traverse_trees": 0.01,
+            "unpack_trees": 0.07,
+            "index": 0.42,
+            "..name-hash-init": 0.08,
+            "read_directory": 1.84,
+            "untracked": 1.88,
+            "print": 0.01
+          }
+        },
+        {
+          "tracked": 10000,
+          "status": {
+            "label": "status --porcelain",
+            "ms": [
+              19.03,
+              18.71,
+              35.28,
+              20.45,
+              21.13
+            ],
+            "median": 20.45,
+            "spreadPct": 81
+          },
+          "uno": {
+            "label": "status --porcelain -uno",
+            "ms": [
+              12.08,
+              13.87,
+              18.83,
+              12.09,
+              42.5
+            ],
+            "median": 13.87,
+            "spreadPct": 219.3
+          },
+          "uall": {
+            "label": "status --porcelain -uall",
+            "ms": [
+              20.49,
+              44.44,
+              19.01,
+              21.75,
+              20.82
+            ],
+            "median": 20.82,
+            "spreadPct": 122.1
+          },
+          "diffCached": {
+            "label": "diff --cached --name-only",
+            "ms": [
+              3.97,
+              3.89,
+              3.9,
+              3.9,
+              3.9
+            ],
+            "median": 3.9,
+            "spreadPct": 2
+          },
+          "lsFilesM": {
+            "label": "ls-files -m",
+            "ms": [
+              33.3,
+              33.13,
+              33.08,
+              33.29,
+              33.07
+            ],
+            "median": 33.13,
+            "spreadPct": 0.7
+          },
+          "trace": {
+            "read": 0.05,
+            "do_read_index .git/index": 1.42,
+            "preload": 7.5,
+            "refresh": 0.26,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 0.23,
+            "..traverse_trees": 0.01,
+            "unpack_trees": 0.16,
+            "index": 0.54,
+            "..name-hash-init": 0.52,
+            "read_directory": 7.02,
+            "untracked": 7.06,
+            "print": 0.01
+          }
+        },
+        {
+          "tracked": 50000,
+          "status": {
+            "label": "status --porcelain",
+            "ms": [
+              103.32,
+              100.93,
+              104.04,
+              103.4,
+              95.59
+            ],
+            "median": 103.32,
+            "spreadPct": 8.2
+          },
+          "uno": {
+            "label": "status --porcelain -uno",
+            "ms": [
+              91.25,
+              96.2,
+              99.11,
+              94.47,
+              50.9
+            ],
+            "median": 94.47,
+            "spreadPct": 51
+          },
+          "uall": {
+            "label": "status --porcelain -uall",
+            "ms": [
+              111.59,
+              111.59,
+              107.09,
+              105.62,
+              101.72
+            ],
+            "median": 107.09,
+            "spreadPct": 9.2
+          },
+          "diffCached": {
+            "label": "diff --cached --name-only",
+            "ms": [
+              7.57,
+              7.75,
+              7.77,
+              7.77,
+              7.81
+            ],
+            "median": 7.77,
+            "spreadPct": 3.1
+          },
+          "lsFilesM": {
+            "label": "ls-files -m",
+            "ms": [
+              157.55,
+              155.97,
+              156.24,
+              156.29,
+              158.35
+            ],
+            "median": 156.29,
+            "spreadPct": 1.5
+          },
+          "trace": {
+            "read": 0.06,
+            "do_read_index .git/index": 4.44,
+            "preload": 31.17,
+            "refresh": 1.2,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 1.12,
+            "..traverse_trees": 0.02,
+            "unpack_trees": 0.79,
+            "index": 1.17,
+            "..name-hash-init": 2.67,
+            "read_directory": 72.73,
+            "untracked": 72.77,
+            "print": 0.01
+          }
+        },
+        {
+          "tracked": 100000,
+          "status": {
+            "label": "status --porcelain",
+            "ms": [
+              212.87,
+              218.72,
+              212.75,
+              217.03,
+              220.87
+            ],
+            "median": 217.03,
+            "spreadPct": 3.7
+          },
+          "uno": {
+            "label": "status --porcelain -uno",
+            "ms": [
+              135.15,
+              188.71,
+              193.97,
+              188.15,
+              131.5
+            ],
+            "median": 188.15,
+            "spreadPct": 33.2
+          },
+          "uall": {
+            "label": "status --porcelain -uall",
+            "ms": [
+              217.82,
+              218.6,
+              212.36,
+              215.55,
+              219.54
+            ],
+            "median": 217.82,
+            "spreadPct": 3.3
+          },
+          "diffCached": {
+            "label": "diff --cached --name-only",
+            "ms": [
+              12.3,
+              12.63,
+              12.22,
+              12.28,
+              12.32
+            ],
+            "median": 12.3,
+            "spreadPct": 3.4
+          },
+          "lsFilesM": {
+            "label": "ls-files -m",
+            "ms": [
+              310.37,
+              311.19,
+              310.69,
+              312.02,
+              310.36
+            ],
+            "median": 310.69,
+            "spreadPct": 0.5
+          },
+          "trace": {
+            "read": 0.08,
+            "do_read_index .git/index": 7.72,
+            "preload": 125.2,
+            "refresh": 2.38,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 2.11,
+            "..traverse_trees": 0.02,
+            "unpack_trees": 2.1,
+            "index": 2.48,
+            "..name-hash-init": 6.76,
+            "read_directory": 74.12,
+            "untracked": 74.16,
+            "print": 0.01
+          }
+        }
+      ],
+      "untrackedHeavy": {
+        "count": 10000,
+        "cacheOff": {
+          "normal": {
+            "label": "status -unormal (cache off)",
+            "ms": [
+              213.11,
+              211.58,
+              219.64,
+              224.46,
+              215.8
+            ],
+            "median": 215.8,
+            "spreadPct": 6
+          },
+          "all": {
+            "label": "status -uall (cache off)",
+            "ms": [
+              235.25,
+              232.13,
+              235.71,
+              237.24,
+              229.81
+            ],
+            "median": 235.25,
+            "spreadPct": 3.2
+          },
+          "uno": {
+            "label": "status -uno (cache off)",
+            "ms": [
+              191.69,
+              186.64,
+              141.51,
+              183.92,
+              190.37
+            ],
+            "median": 186.64,
+            "spreadPct": 26.9
+          }
+        },
+        "traceNormal": {
+          "read": 0.09,
+          "do_read_index .git/index": 7.79,
+          "preload": 108.98,
+          "refresh": 2.38,
+          "setup": 0.01,
+          "write back to queue": 0.01,
+          "worktrees": 2.15,
+          "..traverse_trees": 0.02,
+          "unpack_trees": 57.04,
+          "index": 57.46,
+          "..name-hash-init": 6.93,
+          "read_directory": 68.21,
+          "untracked": 68.26,
+          "print": 0.02
+        },
+        "traceAll": {
+          "read": 0.08,
+          "do_read_index .git/index": 7.69,
+          "preload": 128.65,
+          "refresh": 2.38,
+          "setup": 0.01,
+          "write back to queue": 0.01,
+          "worktrees": 2.08,
+          "..traverse_trees": 0.02,
+          "unpack_trees": 2.33,
+          "index": 2.73,
+          "..name-hash-init": 6.95,
+          "read_directory": 78.69,
+          "untracked": 83.31,
+          "print": 2.86
+        },
+        "cacheOn": {
+          "normal": {
+            "label": "status -unormal (cache on)",
+            "ms": [
+              192.57,
+              189.91,
+              185.74,
+              134.04,
+              194.64
+            ],
+            "median": 189.91,
+            "spreadPct": 31.9
+          },
+          "all": {
+            "label": "status -uall (cache on)",
+            "ms": [
+              236.1,
+              231.71,
+              235.79,
+              241.91,
+              239
+            ],
+            "median": 236.1,
+            "spreadPct": 4.3
+          },
+          "uno": {
+            "label": "status -uno (cache on)",
+            "ms": [
+              183.97,
+              195.44,
+              125.61,
+              193.63,
+              198.46
+            ],
+            "median": 193.63,
+            "spreadPct": 37.6
+          }
+        },
+        "traceNormalCached": {
+          "read": 0.07,
+          "do_read_index .git/index": 7.8,
+          "preload": 166.64,
+          "refresh": 2.41,
+          "setup": 0.01,
+          "write back to queue": 0.01,
+          "worktrees": 2.16,
+          "..traverse_trees": 0.02,
+          "unpack_trees": 1.93,
+          "index": 2.35,
+          "..name-hash-init": 6.87,
+          "read_directory": 7.33,
+          "untracked": 7.38,
+          "print": 0.02
+        },
+        "traceAllCached": {
+          "read": 0.07,
+          "do_read_index .git/index": 7.79,
+          "preload": 100.19,
+          "refresh": 2.38,
+          "setup": 0.01,
+          "write back to queue": 0.01,
+          "worktrees": 2.06,
+          "..traverse_trees": 0.02,
+          "unpack_trees": 2.14,
+          "index": 2.55,
+          "..name-hash-init": 62.1,
+          "read_directory": 133.48,
+          "untracked": 138.11,
+          "print": 2.85
+        }
+      },
+      "dirtyOne": {
+        "normal": {
+          "label": "status --porcelain (1 modified)",
+          "ms": [
+            191.88,
+            130.15,
+            190.92,
+            192.85,
+            190.86
+          ],
+          "median": 190.92,
+          "spreadPct": 32.8
+        },
+        "uno": {
+          "label": "status --porcelain -uno (1 modified)",
+          "ms": [
+            184.86,
+            190.69,
+            191.93,
+            127.99,
+            194.12
+          ],
+          "median": 190.69,
+          "spreadPct": 34.7
+        },
+        "diffCached": {
+          "label": "diff --cached --name-only (1 modified)",
+          "ms": [
+            12.33,
+            12.19,
+            12.49,
+            12.27,
+            12.49
+          ],
+          "median": 12.33,
+          "spreadPct": 2.4
+        }
+      }
+    },
+    {
+      "at": "2026-11-04T08:05:56.873Z",
+      "floor": {
+        "label": "git --version",
+        "ms": [
+          1.69,
+          1.64,
+          1.65,
+          1.65,
+          1.63
+        ],
+        "median": 1.65,
+        "spreadPct": 3.8
+      },
+      "scale": [
+        {
+          "tracked": 1000,
+          "status": {
+            "label": "status --porcelain",
+            "ms": [
+              6.61,
+              6.67,
+              6.68,
+              6.58,
+              6.6
+            ],
+            "median": 6.61,
+            "spreadPct": 1.5
+          },
+          "uno": {
+            "label": "status --porcelain -uno",
+            "ms": [
+              4.75,
+              4.79,
+              4.75,
+              4.76,
+              4.76
+            ],
+            "median": 4.76,
+            "spreadPct": 1
+          },
+          "uall": {
+            "label": "status --porcelain -uall",
+            "ms": [
+              6.58,
+              6.62,
+              6.64,
+              6.73,
+              6.62
+            ],
+            "median": 6.62,
+            "spreadPct": 2.2
+          },
+          "diffCached": {
+            "label": "diff --cached --name-only",
+            "ms": [
+              2.55,
+              2.58,
+              2.55,
+              2.58,
+              2.56
+            ],
+            "median": 2.56,
+            "spreadPct": 1.4
+          },
+          "lsFilesM": {
+            "label": "ls-files -m",
+            "ms": [
+              5.09,
+              5.02,
+              5.09,
+              5.03,
+              5.04
+            ],
+            "median": 5.04,
+            "spreadPct": 1.3
+          },
+          "trace": {
+            "read": 0.05,
+            "do_read_index .git/index": 0.28,
+            "preload": 1.97,
+            "refresh": 0.05,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 0.09,
+            "..traverse_trees": 0.01,
+            "unpack_trees": 0.07,
+            "index": 0.44,
+            "..name-hash-init": 0.08,
+            "read_directory": 1.96,
+            "untracked": 1.99,
+            "print": 0.01
+          }
+        },
+        {
+          "tracked": 10000,
+          "status": {
+            "label": "status --porcelain",
+            "ms": [
+              19.19,
+              18.77,
+              18.95,
+              19.26,
+              19.92
+            ],
+            "median": 19.19,
+            "spreadPct": 6
+          },
+          "uno": {
+            "label": "status --porcelain -uno",
+            "ms": [
+              12.61,
+              11.96,
+              12.61,
+              52.11,
+              14.72
+            ],
+            "median": 12.61,
+            "spreadPct": 318.3
+          },
+          "uall": {
+            "label": "status --porcelain -uall",
+            "ms": [
+              47.92,
+              19.68,
+              19.37,
+              19,
+              41.95
+            ],
+            "median": 19.68,
+            "spreadPct": 147
+          },
+          "diffCached": {
+            "label": "diff --cached --name-only",
+            "ms": [
+              3.9,
+              3.99,
+              3.89,
+              3.93,
+              3.86
+            ],
+            "median": 3.9,
+            "spreadPct": 3.4
+          },
+          "lsFilesM": {
+            "label": "ls-files -m",
+            "ms": [
+              33.13,
+              33.36,
+              33.67,
+              33.06,
+              33.1
+            ],
+            "median": 33.13,
+            "spreadPct": 1.8
+          },
+          "trace": {
+            "read": 0.05,
+            "do_read_index .git/index": 1.43,
+            "preload": 7.3,
+            "refresh": 0.26,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 0.25,
+            "..traverse_trees": 0.02,
+            "unpack_trees": 0.16,
+            "index": 0.54,
+            "..name-hash-init": 0.52,
+            "read_directory": 7.02,
+            "untracked": 7.05,
+            "print": 0.01
+          }
+        },
+        {
+          "tracked": 50000,
+          "status": {
+            "label": "status --porcelain",
+            "ms": [
+              114.89,
+              89.08,
+              102.92,
+              103.9,
+              104.77
+            ],
+            "median": 103.9,
+            "spreadPct": 24.8
+          },
+          "uno": {
+            "label": "status --porcelain -uno",
+            "ms": [
+              94.8,
+              97.64,
+              99.06,
+              45.95,
+              84.18
+            ],
+            "median": 94.8,
+            "spreadPct": 56
+          },
+          "uall": {
+            "label": "status --porcelain -uall",
+            "ms": [
+              145.67,
+              110.31,
+              111.19,
+              107.73,
+              104.26
+            ],
+            "median": 110.31,
+            "spreadPct": 37.5
+          },
+          "diffCached": {
+            "label": "diff --cached --name-only",
+            "ms": [
+              7.78,
+              7.72,
+              7.82,
+              7.75,
+              7.84
+            ],
+            "median": 7.78,
+            "spreadPct": 1.5
+          },
+          "lsFilesM": {
+            "label": "ls-files -m",
+            "ms": [
+              158.19,
+              155.75,
+              156.74,
+              155.86,
+              155.86
+            ],
+            "median": 155.86,
+            "spreadPct": 1.6
+          },
+          "trace": {
+            "read": 0.07,
+            "do_read_index .git/index": 4.47,
+            "preload": 35.8,
+            "refresh": 1.21,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 1.12,
+            "..traverse_trees": 0.02,
+            "unpack_trees": 0.77,
+            "index": 1.17,
+            "..name-hash-init": 2.66,
+            "read_directory": 60.11,
+            "untracked": 60.14,
+            "print": 0.01
+          }
+        },
+        {
+          "tracked": 100000,
+          "status": {
+            "label": "status --porcelain",
+            "ms": [
+              212.77,
+              208.91,
+              211.69,
+              217.51,
+              217.75
+            ],
+            "median": 212.77,
+            "spreadPct": 4.2
+          },
+          "uno": {
+            "label": "status --porcelain -uno",
+            "ms": [
+              184.81,
+              188.71,
+              123.85,
+              193.63,
+              191.85
+            ],
+            "median": 188.71,
+            "spreadPct": 37
+          },
+          "uall": {
+            "label": "status --porcelain -uall",
+            "ms": [
+              214.78,
+              218.02,
+              218.29,
+              216.67,
+              218.15
+            ],
+            "median": 218.02,
+            "spreadPct": 1.6
+          },
+          "diffCached": {
+            "label": "diff --cached --name-only",
+            "ms": [
+              12.38,
+              12.32,
+              12.52,
+              12.18,
+              12.47
+            ],
+            "median": 12.38,
+            "spreadPct": 2.8
+          },
+          "lsFilesM": {
+            "label": "ls-files -m",
+            "ms": [
+              309.13,
+              309.15,
+              311.02,
+              309.07,
+              311.2
+            ],
+            "median": 309.15,
+            "spreadPct": 0.7
+          },
+          "trace": {
+            "read": 0.08,
+            "do_read_index .git/index": 7.73,
+            "preload": 86.6,
+            "refresh": 2.36,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 2.14,
+            "..traverse_trees": 0.02,
+            "unpack_trees": 1.87,
+            "index": 2.25,
+            "..name-hash-init": 6.85,
+            "read_directory": 106.14,
+            "untracked": 106.18,
+            "print": 0.01
+          }
+        }
+      ],
+      "untrackedHeavy": {
+        "count": 10000,
+        "cacheOff": {
+          "normal": {
+            "label": "status -unormal (cache off)",
+            "ms": [
+              211.26,
+              220.13,
+              215.63,
+              215.51,
+              216.81
+            ],
+            "median": 215.63,
+            "spreadPct": 4.1
+          },
+          "all": {
+            "label": "status -uall (cache off)",
+            "ms": [
+              236.94,
+              228.9,
+              233.14,
+              237.58,
+              236.09
+            ],
+            "median": 236.09,
+            "spreadPct": 3.7
+          },
+          "uno": {
+            "label": "status -uno (cache off)",
+            "ms": [
+              187.99,
+              182.39,
+              135.74,
+              188.29,
+              191.81
+            ],
+            "median": 187.99,
+            "spreadPct": 29.8
+          }
+        },
+        "traceNormal": {
+          "read": 0.07,
+          "do_read_index .git/index": 7.69,
+          "preload": 110.47,
+          "refresh": 2.38,
+          "setup": 0.01,
+          "write back to queue": 0.01,
+          "worktrees": 60.97,
+          "..traverse_trees": 0.02,
+          "unpack_trees": 2.19,
+          "index": 2.6,
+          "..name-hash-init": 7.24,
+          "read_directory": 67.55,
+          "untracked": 67.59,
+          "print": 0.02
+        },
+        "traceAll": {
+          "read": 0.07,
+          "do_read_index .git/index": 7.67,
+          "preload": 125.75,
+          "refresh": 2.38,
+          "setup": 0.01,
+          "write back to queue": 0.01,
+          "worktrees": 2.13,
+          "..traverse_trees": 0.02,
+          "unpack_trees": 2.14,
+          "index": 2.52,
+          "..name-hash-init": 6.89,
+          "read_directory": 78.36,
+          "untracked": 82.95,
+          "print": 2.85
+        },
+        "cacheOn": {
+          "normal": {
+            "label": "status -unormal (cache on)",
+            "ms": [
+              188.44,
+              188.3,
+              191.97,
+              137.99,
+              182.96
+            ],
+            "median": 188.3,
+            "spreadPct": 28.7
+          },
+          "all": {
+            "label": "status -uall (cache on)",
+            "ms": [
+              239.56,
+              236.76,
+              237.04,
+              232.17,
+              231.55
+            ],
+            "median": 236.76,
+            "spreadPct": 3.4
+          },
+          "uno": {
+            "label": "status -uno (cache on)",
+            "ms": [
+              196.76,
+              189.6,
+              129.61,
+              191.72,
+              185.8
+            ],
+            "median": 189.6,
+            "spreadPct": 35.4
+          }
+        },
+        "traceNormalCached": {
+          "read": 0.07,
+          "do_read_index .git/index": 7.76,
+          "preload": 171.05,
+          "refresh": 2.39,
+          "setup": 0.01,
+          "write back to queue": 0.01,
+          "worktrees": 2.16,
+          "..traverse_trees": 0.02,
+          "unpack_trees": 2.14,
+          "index": 2.55,
+          "..name-hash-init": 6.85,
+          "read_directory": 7.31,
+          "untracked": 7.36,
+          "print": 0.02
+        },
+        "traceAllCached": {
+          "read": 0.07,
+          "do_read_index .git/index": 7.79,
+          "preload": 101.03,
+          "refresh": 2.38,
+          "setup": 0.01,
+          "write back to queue": 0.01,
+          "worktrees": 2.14,
+          "..traverse_trees": 0.02,
+          "unpack_trees": 2.15,
+          "index": 2.56,
+          "..name-hash-init": 6.71,
+          "read_directory": 129.74,
+          "untracked": 134.36,
+          "print": 2.85
+        }
+      },
+      "dirtyOne": {
+        "normal": {
+          "label": "status --porcelain (1 modified)",
+          "ms": [
+            186.44,
+            135.57,
+            201.91,
+            188.09,
+            187.07
+          ],
+          "median": 187.07,
+          "spreadPct": 35.5
+        },
+        "uno": {
+          "label": "status --porcelain -uno (1 modified)",
+          "ms": [
+            195.84,
+            194.81,
+            116.65,
+            190.52,
+            196.48
+          ],
+          "median": 194.81,
+          "spreadPct": 41
+        },
+        "diffCached": {
+          "label": "diff --cached --name-only (1 modified)",
+          "ms": [
+            12.55,
+            12.48,
+            12.32,
+            12.32,
+            12.23
+          ],
+          "median": 12.32,
+          "spreadPct": 2.5
+        }
+      }
+    }
+  ],
+  "summary": {
+    "floor": {
+      "median": 1.64,
+      "sessionMedians": [
+        1.64,
+        1.64,
+        1.65
+      ]
+    },
+    "scale": [
+      {
+        "tracked": 1000,
+        "status": {
+          "median": 6.66,
+          "sessionMedians": [
+            18.88,
+            6.66,
+            6.61
+          ]
+        },
+        "uno": {
+          "median": 4.81,
+          "sessionMedians": [
+            16.9,
+            4.81,
+            4.76
+          ]
+        },
+        "uall": {
+          "median": 6.67,
+          "sessionMedians": [
+            18.64,
+            6.67,
+            6.62
+          ]
+        },
+        "diffCached": {
+          "median": 2.55,
+          "sessionMedians": [
+            2.54,
+            2.55,
+            2.56
+          ]
+        },
+        "lsFilesM": {
+          "median": 5.05,
+          "sessionMedians": [
+            13.11,
+            5.05,
+            5.04
+          ]
+        },
+        "trace": [
+          {
+            "read": 0.05,
+            "do_read_index .git/index": 0.29,
+            "preload": 2.01,
+            "refresh": 11.44,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 0.07,
+            "..traverse_trees": 0.01,
+            "unpack_trees": 0.07,
+            "index": 0.42,
+            "..name-hash-init": 0.08,
+            "read_directory": 1.95,
+            "untracked": 1.98,
+            "write": 0.03,
+            "do_write_index /root/github/thani-sh-mimi/experiments/tmp/013/1000/.git/index.lock": 0.67,
+            "print": 0.01
+          },
+          {
+            "read": 0.05,
+            "do_read_index .git/index": 0.28,
+            "preload": 1.99,
+            "refresh": 0.05,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 0.09,
+            "..traverse_trees": 0.01,
+            "unpack_trees": 0.07,
+            "index": 0.42,
+            "..name-hash-init": 0.08,
+            "read_directory": 1.84,
+            "untracked": 1.88,
+            "print": 0.01
+          },
+          {
+            "read": 0.05,
+            "do_read_index .git/index": 0.28,
+            "preload": 1.97,
+            "refresh": 0.05,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 0.09,
+            "..traverse_trees": 0.01,
+            "unpack_trees": 0.07,
+            "index": 0.44,
+            "..name-hash-init": 0.08,
+            "read_directory": 1.96,
+            "untracked": 1.99,
+            "print": 0.01
+          }
+        ]
+      },
+      {
+        "tracked": 10000,
+        "status": {
+          "median": 19.61,
+          "sessionMedians": [
+            19.61,
+            20.45,
+            19.19
+          ]
+        },
+        "uno": {
+          "median": 13.87,
+          "sessionMedians": [
+            14.1,
+            13.87,
+            12.61
+          ]
+        },
+        "uall": {
+          "median": 20.82,
+          "sessionMedians": [
+            20.9,
+            20.82,
+            19.68
+          ]
+        },
+        "diffCached": {
+          "median": 3.9,
+          "sessionMedians": [
+            3.92,
+            3.9,
+            3.9
+          ]
+        },
+        "lsFilesM": {
+          "median": 33.13,
+          "sessionMedians": [
+            33.13,
+            33.13,
+            33.13
+          ]
+        },
+        "trace": [
+          {
+            "read": 0.05,
+            "do_read_index .git/index": 1.43,
+            "preload": 7.89,
+            "refresh": 0.26,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 0.23,
+            "..traverse_trees": 0.01,
+            "unpack_trees": 0.17,
+            "index": 0.53,
+            "..name-hash-init": 0.52,
+            "read_directory": 7,
+            "untracked": 7.04,
+            "print": 0.01
+          },
+          {
+            "read": 0.05,
+            "do_read_index .git/index": 1.42,
+            "preload": 7.5,
+            "refresh": 0.26,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 0.23,
+            "..traverse_trees": 0.01,
+            "unpack_trees": 0.16,
+            "index": 0.54,
+            "..name-hash-init": 0.52,
+            "read_directory": 7.02,
+            "untracked": 7.06,
+            "print": 0.01
+          },
+          {
+            "read": 0.05,
+            "do_read_index .git/index": 1.43,
+            "preload": 7.3,
+            "refresh": 0.26,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 0.25,
+            "..traverse_trees": 0.02,
+            "unpack_trees": 0.16,
+            "index": 0.54,
+            "..name-hash-init": 0.52,
+            "read_directory": 7.02,
+            "untracked": 7.05,
+            "print": 0.01
+          }
+        ]
+      },
+      {
+        "tracked": 50000,
+        "status": {
+          "median": 103.9,
+          "sessionMedians": [
+            105.34,
+            103.32,
+            103.9
+          ]
+        },
+        "uno": {
+          "median": 94.47,
+          "sessionMedians": [
+            91.93,
+            94.47,
+            94.8
+          ]
+        },
+        "uall": {
+          "median": 110.31,
+          "sessionMedians": [
+            111.67,
+            107.09,
+            110.31
+          ]
+        },
+        "diffCached": {
+          "median": 7.77,
+          "sessionMedians": [
+            7.6,
+            7.77,
+            7.78
+          ]
+        },
+        "lsFilesM": {
+          "median": 155.9,
+          "sessionMedians": [
+            155.9,
+            156.29,
+            155.86
+          ]
+        },
+        "trace": [
+          {
+            "read": 0.06,
+            "do_read_index .git/index": 4.42,
+            "preload": 33.52,
+            "refresh": 1.19,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 1.1,
+            "..traverse_trees": 0.01,
+            "unpack_trees": 0.73,
+            "index": 1.12,
+            "..name-hash-init": 2.76,
+            "read_directory": 32.81,
+            "untracked": 32.85,
+            "print": 0.01
+          },
+          {
+            "read": 0.06,
+            "do_read_index .git/index": 4.44,
+            "preload": 31.17,
+            "refresh": 1.2,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 1.12,
+            "..traverse_trees": 0.02,
+            "unpack_trees": 0.79,
+            "index": 1.17,
+            "..name-hash-init": 2.67,
+            "read_directory": 72.73,
+            "untracked": 72.77,
+            "print": 0.01
+          },
+          {
+            "read": 0.07,
+            "do_read_index .git/index": 4.47,
+            "preload": 35.8,
+            "refresh": 1.21,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 1.12,
+            "..traverse_trees": 0.02,
+            "unpack_trees": 0.77,
+            "index": 1.17,
+            "..name-hash-init": 2.66,
+            "read_directory": 60.11,
+            "untracked": 60.14,
+            "print": 0.01
+          }
+        ]
+      },
+      {
+        "tracked": 100000,
+        "status": {
+          "median": 217.03,
+          "sessionMedians": [
+            222.34,
+            217.03,
+            212.77
+          ]
+        },
+        "uno": {
+          "median": 188.71,
+          "sessionMedians": [
+            189.49,
+            188.15,
+            188.71
+          ]
+        },
+        "uall": {
+          "median": 217.82,
+          "sessionMedians": [
+            211.89,
+            217.82,
+            218.02
+          ]
+        },
+        "diffCached": {
+          "median": 12.38,
+          "sessionMedians": [
+            12.41,
+            12.3,
+            12.38
+          ]
+        },
+        "lsFilesM": {
+          "median": 309.22,
+          "sessionMedians": [
+            309.22,
+            310.69,
+            309.15
+          ]
+        },
+        "trace": [
+          {
+            "read": 0.07,
+            "do_read_index .git/index": 7.78,
+            "preload": 124.68,
+            "refresh": 2.38,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 2.11,
+            "..traverse_trees": 0.02,
+            "unpack_trees": 1.93,
+            "index": 2.33,
+            "..name-hash-init": 6.73,
+            "read_directory": 67.04,
+            "untracked": 67.08,
+            "print": 0.01
+          },
+          {
+            "read": 0.08,
+            "do_read_index .git/index": 7.72,
+            "preload": 125.2,
+            "refresh": 2.38,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 2.11,
+            "..traverse_trees": 0.02,
+            "unpack_trees": 2.1,
+            "index": 2.48,
+            "..name-hash-init": 6.76,
+            "read_directory": 74.12,
+            "untracked": 74.16,
+            "print": 0.01
+          },
+          {
+            "read": 0.08,
+            "do_read_index .git/index": 7.73,
+            "preload": 86.6,
+            "refresh": 2.36,
+            "setup": 0.01,
+            "write back to queue": 0.01,
+            "worktrees": 2.14,
+            "..traverse_trees": 0.02,
+            "unpack_trees": 1.87,
+            "index": 2.25,
+            "..name-hash-init": 6.85,
+            "read_directory": 106.14,
+            "untracked": 106.18,
+            "print": 0.01
+          }
+        ]
+      }
+    ],
+    "untrackedHeavy": {
+      "cacheOff": {
+        "normal": {
+          "median": 215.8,
+          "sessionMedians": [
+            216.93,
+            215.8,
+            215.63
+          ]
+        },
+        "all": {
+          "median": 235.25,
+          "sessionMedians": [
+            232.56,
+            235.25,
+            236.09
+          ]
+        },
+        "uno": {
+          "median": 187.99,
+          "sessionMedians": [
+            190.98,
+            186.64,
+            187.99
+          ]
+        }
+      },
+      "cacheOn": {
+        "normal": {
+          "median": 189.91,
+          "sessionMedians": [
+            192.22,
+            189.91,
+            188.3
+          ]
+        },
+        "all": {
+          "median": 236.1,
+          "sessionMedians": [
+            234.92,
+            236.1,
+            236.76
+          ]
+        },
+        "uno": {
+          "median": 189.6,
+          "sessionMedians": [
+            186.5,
+            193.63,
+            189.6
+          ]
+        }
+      }
+    },
+    "dirtyOne": {
+      "normal": {
+        "median": 190.92,
+        "sessionMedians": [
+          193.01,
+          190.92,
+          187.07
+        ]
+      },
+      "uno": {
+        "median": 190.69,
+        "sessionMedians": [
+          189.65,
+          190.69,
+          194.81
+        ]
+      },
+      "diffCached": {
+        "median": 12.33,
+        "sessionMedians": [
+          12.43,
+          12.33,
+          12.32
+        ]
+      }
+    }
+  }
+}

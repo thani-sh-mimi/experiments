@@ -16,5 +16,6 @@ One small SDLC problem a day: a hypothesis with a number in it, a harness that m
 | 010 | [lockfile-resolution-cost](experiments/010-lockfile-resolution-cost) | With a warm cache, how much of `bun install` is resolution? | Validated: 30 µs/pkg to link, lockfile still 38% faster with zero requests, cold cache 10.8× on a wide graph and 280× on a chain |
 | 011 | [node-test-process-per-file](experiments/011-node-test-process-per-file) | What does a child process per test file cost `node --test`? | Invalidated: 80.7 ms/file, not 25–40; 19× in-process at 32 files, no crossover |
 | 012 | [import-graph-depth](experiments/012-import-graph-depth) | Does a deep import chain cost start-up at the same module count? | Partial: Bun 60 µs/level, 2.1× at depth 50; Node crashes at 765 |
+| 013 | [git-status-index-scaling](experiments/013-git-status-index-scaling) | What does `git status` cost a hook at 1k–100k tracked files? | Partial: 2.2 µs/file, 217 ms at 100k; `-uno` saves 13 %, `diff --cached` 17.5× cheaper |
 
 The backlog is in [IDEAS.md](IDEAS.md). How an experiment is run and written up is in [AGENTS.md](AGENTS.md).
