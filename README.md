@@ -18,5 +18,6 @@ One small SDLC problem a day: a hypothesis with a number in it, a harness that m
 | 012 | [import-graph-depth](experiments/012-import-graph-depth)                 | Does a deep import chain cost start-up at the same module count?             | Partial: Bun 60 µs/level, 2.1× at depth 50; Node crashes at 765                                                                  |
 | 013 | [git-status-index-scaling](experiments/013-git-status-index-scaling)     | What does `git status` cost a hook at 1k–100k tracked files?                 | Partial: 2.2 µs/file, 217 ms at 100k; `-uno` saves 13 %, `diff --cached` 17.5× cheaper                                           |
 | 014 | [worker-thread-per-file](experiments/014-worker-thread-per-file)         | What does a fresh worker thread per test file cost against a forked process? | Validated: 21.5 ms/file vs 51; 3.9× cheaper than `node --test`, a reused pool 1.35 ms but leaks module state                     |
+| 015 | [cache-archive-restore](experiments/015-cache-archive-restore)           | What does restoring a 20k-file cache tree cost as tar, tar.gz and tar.zst?   | Validated: 62.7 µs/file is 78 % of the restore; tar 1.60 s, zstd -1 1.69 s (−71 % bytes), gzip -6 2.63 s; `cp -a` 2.36 s         |
 
 The backlog is in [IDEAS.md](IDEAS.md). How an experiment is run and written up is in [AGENTS.md](AGENTS.md).

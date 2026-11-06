@@ -1,0 +1,222 @@
+{
+  "date": "2026-11-06",
+  "host": {
+    "platform": "linux",
+    "cpus": 2,
+    "bun": "1.4.4"
+  },
+  "config": {
+    "files": 20000,
+    "avgBytes": 15000,
+    "sessions": 3,
+    "runsPerSession": 3
+  },
+  "tree": {
+    "files": 20000,
+    "bytes": 300869502
+  },
+  "bigfile": {
+    "files": 1,
+    "bytes": 340016393
+  },
+  "create": {
+    "tar": {
+      "median": 6254.82,
+      "samples": [12095.39, 6254.82, 4891.21]
+    },
+    "gz1": {
+      "median": 11304.73,
+      "samples": [11304.73, 11242.09, 15202]
+    },
+    "gz6": {
+      "median": 23934.75,
+      "samples": [27708.88, 23934.75, 21035.45]
+    },
+    "zst1": {
+      "median": 1884.64,
+      "samples": [1884.64, 1875.9, 1905.84]
+    },
+    "zst3": {
+      "median": 2806.4,
+      "samples": [2806.4, 2808.67, 2696.9]
+    }
+  },
+  "archives": {
+    "big.tar.zst": {
+      "bytes": 104566335
+    },
+    "big.tar": {
+      "bytes": 340019200
+    },
+    "big.tgz": {
+      "bytes": 96014582
+    },
+    "tree.tar.zst": {
+      "bytes": 93581554
+    },
+    "tree.zst3": {
+      "bytes": 93734668
+    },
+    "tree.tgz": {
+      "bytes": 86471669
+    },
+    "tree.tar": {
+      "bytes": 321290240
+    },
+    "tree.gz1": {
+      "bytes": 102037537
+    }
+  },
+  "extract": {
+    "cp": {
+      "median": 2358.08,
+      "min": 2277.75,
+      "max": 2406.3,
+      "sessionMedians": [2370.66, 2373.65, 2332.97],
+      "spread": 1.74,
+      "samples": [
+        2406.3, 2370.66, 2358.08, 2277.75, 2373.65, 2391.42, 2332.97, 2346.08,
+        2288.35
+      ]
+    },
+    "tar": {
+      "median": 1602.84,
+      "min": 1590.94,
+      "max": 1673.12,
+      "sessionMedians": [1629.84, 1615.79, 1593.46],
+      "spread": 2.28,
+      "samples": [
+        1673.12, 1602.73, 1629.84, 1600.9, 1655.17, 1615.79, 1590.94, 1602.84,
+        1593.46
+      ],
+      "verified": true
+    },
+    "gz1": {
+      "median": 3021.15,
+      "min": 2998.48,
+      "max": 3039.87,
+      "sessionMedians": [3007.54, 3021.15, 3024.94],
+      "spread": 0.58,
+      "samples": [
+        3007.54, 3004.46, 3033.74, 2998.48, 3039.87, 3021.15, 3013.65, 3024.94,
+        3028.01
+      ],
+      "verified": true
+    },
+    "gz6": {
+      "median": 2633.1,
+      "min": 2612.93,
+      "max": 2695.59,
+      "sessionMedians": [2633.1, 2629.99, 2633.34],
+      "spread": 0.13,
+      "samples": [
+        2695.59, 2633.1, 2613.04, 2669.26, 2615.56, 2629.99, 2640.18, 2633.34,
+        2612.93
+      ],
+      "verified": true
+    },
+    "zst1": {
+      "median": 1691.89,
+      "min": 1662.94,
+      "max": 1718.12,
+      "sessionMedians": [1707.98, 1691.12, 1683.83],
+      "spread": 1.43,
+      "samples": [
+        1718.12, 1691.89, 1707.98, 1702.87, 1676.97, 1691.12, 1683.83, 1698.62,
+        1662.94
+      ],
+      "verified": true
+    },
+    "zst3": {
+      "median": 1694.93,
+      "min": 1654.32,
+      "max": 1786.8,
+      "sessionMedians": [1696.56, 1685.88, 1715.15],
+      "spread": 1.74,
+      "samples": [
+        1696.56, 1720.23, 1657.94, 1694.93, 1685.88, 1654.32, 1715.15, 1786.8,
+        1694.06
+      ],
+      "verified": true
+    }
+  },
+  "bigExtract": {
+    "big_tar": {
+      "median": 348.46,
+      "min": 344.72,
+      "max": 351.48,
+      "sessionMedians": [348.46, 348.91, 346.2],
+      "spread": 0.78,
+      "samples": [
+        346.38, 349.54, 348.46, 351.33, 345.32, 348.91, 346.2, 351.48, 344.72
+      ]
+    },
+    "big_zst1": {
+      "median": 904.5,
+      "min": 903.03,
+      "max": 905.55,
+      "sessionMedians": [904.74, 903.88, 904.02],
+      "spread": 0.1,
+      "samples": [
+        904.5, 904.74, 905.55, 905.54, 903.03, 903.88, 903.21, 904.02, 905.11
+      ]
+    },
+    "big_gz1": {
+      "median": 2812.05,
+      "min": 2809.65,
+      "max": 2814.72,
+      "sessionMedians": [2814.45, 2810.83, 2809.69],
+      "spread": 0.17,
+      "samples": [
+        2812.05, 2814.45, 2814.72, 2809.81, 2813.91, 2810.83, 2809.69, 2809.65,
+        2813.69
+      ]
+    }
+  },
+  "decomposition": {
+    "fixedMs": 1254.38,
+    "perFileUs": 62.72,
+    "note": "tar vs one-file tar at the same byte count: the difference is the file count"
+  },
+  "crossover": {
+    "small": {
+      "zst1": {
+        "bytesSaved": 227708686,
+        "extraRestoreMs": 89.05,
+        "breakEvenMbps": 20456.7
+      },
+      "zst3": {
+        "bytesSaved": 227555572,
+        "extraRestoreMs": 92.09,
+        "breakEvenMbps": 19768.1
+      },
+      "gz1": {
+        "bytesSaved": 219252703,
+        "extraRestoreMs": 1418.31,
+        "breakEvenMbps": 1236.7
+      },
+      "gz6": {
+        "bytesSaved": 234818571,
+        "extraRestoreMs": 1030.26,
+        "breakEvenMbps": 1823.37
+      },
+      "zst1_vs_gz6": {
+        "bytesSaved": -7109885,
+        "extraRestoreMs": -941.21,
+        "breakEvenMbps": -56879080
+      }
+    },
+    "big": {
+      "zst1": {
+        "bytesSaved": 235452865,
+        "extraRestoreMs": 556.04,
+        "breakEvenMbps": 3387.57
+      },
+      "gz1": {
+        "bytesSaved": 244004618,
+        "extraRestoreMs": 2463.59,
+        "breakEvenMbps": 792.35
+      }
+    }
+  }
+}
