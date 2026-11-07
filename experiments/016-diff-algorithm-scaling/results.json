@@ -1,0 +1,744 @@
+{
+  "git": "git version 2.47.3",
+  "floorMs": 2.223452,
+  "scenarios": [
+    {
+      "scenario": "source",
+      "lines": 2000,
+      "bytes": 45975,
+      "edits": {
+        "modified": 43,
+        "movedBlocks": 24,
+        "movedLines": 480,
+        "deleted": 15,
+        "inserted": 30
+      },
+      "algorithms": {
+        "myers": {
+          "ms": [
+            5.6,
+            5.6,
+            5.5
+          ],
+          "medianMs": 5.6,
+          "netMs": 3.4,
+          "hunks": 53,
+          "added": 484,
+          "removed": 453,
+          "churn": 937,
+          "bytes": 38562,
+          "timedOut": false
+        },
+        "minimal": {
+          "ms": [
+            6.1,
+            6.1,
+            6.1
+          ],
+          "medianMs": 6.1,
+          "netMs": 3.9,
+          "hunks": 54,
+          "added": 471,
+          "removed": 440,
+          "churn": 911,
+          "bytes": 38058,
+          "timedOut": false
+        },
+        "histogram": {
+          "ms": [
+            4.1,
+            4.1,
+            4.1
+          ],
+          "medianMs": 4.1,
+          "netMs": 1.9,
+          "hunks": 58,
+          "added": 493,
+          "removed": 462,
+          "churn": 955,
+          "bytes": 37563,
+          "timedOut": false
+        },
+        "patience": {
+          "ms": [
+            4,
+            4,
+            4
+          ],
+          "medianMs": 4,
+          "netMs": 1.8,
+          "hunks": 58,
+          "added": 491,
+          "removed": 460,
+          "churn": 951,
+          "bytes": 37483,
+          "timedOut": false
+        }
+      }
+    },
+    {
+      "scenario": "source",
+      "lines": 8000,
+      "bytes": 178542,
+      "edits": {
+        "modified": 164,
+        "movedBlocks": 24,
+        "movedLines": 480,
+        "deleted": 15,
+        "inserted": 30
+      },
+      "algorithms": {
+        "myers": {
+          "ms": [
+            9.4,
+            9.2,
+            9.2
+          ],
+          "medianMs": 9.2,
+          "netMs": 7,
+          "hunks": 119,
+          "added": 570,
+          "removed": 543,
+          "churn": 1113,
+          "bytes": 52718,
+          "timedOut": false
+        },
+        "minimal": {
+          "ms": [
+            10.3,
+            10.3,
+            10.5
+          ],
+          "medianMs": 10.3,
+          "netMs": 8.1,
+          "hunks": 119,
+          "added": 558,
+          "removed": 531,
+          "churn": 1089,
+          "bytes": 52035,
+          "timedOut": false
+        },
+        "histogram": {
+          "ms": [
+            7.7,
+            7.7,
+            7.6
+          ],
+          "medianMs": 7.7,
+          "netMs": 5.4,
+          "hunks": 120,
+          "added": 563,
+          "removed": 536,
+          "churn": 1099,
+          "bytes": 51964,
+          "timedOut": false
+        },
+        "patience": {
+          "ms": [
+            7.3,
+            7.2,
+            7.6
+          ],
+          "medianMs": 7.3,
+          "netMs": 5.1,
+          "hunks": 120,
+          "added": 563,
+          "removed": 536,
+          "churn": 1099,
+          "bytes": 51964,
+          "timedOut": false
+        }
+      }
+    },
+    {
+      "scenario": "source",
+      "lines": 32000,
+      "bytes": 713239,
+      "edits": {
+        "modified": 630,
+        "movedBlocks": 24,
+        "movedLines": 480,
+        "deleted": 15,
+        "inserted": 30
+      },
+      "algorithms": {
+        "myers": {
+          "ms": [
+            22.6,
+            22.5,
+            22.5
+          ],
+          "medianMs": 22.5,
+          "netMs": 20.3,
+          "hunks": 236,
+          "added": 730,
+          "removed": 686,
+          "churn": 1416,
+          "bytes": 85848,
+          "timedOut": false
+        },
+        "minimal": {
+          "ms": [
+            24.8,
+            24.8,
+            24.7
+          ],
+          "medianMs": 24.8,
+          "netMs": 22.6,
+          "hunks": 236,
+          "added": 709,
+          "removed": 665,
+          "churn": 1374,
+          "bytes": 84538,
+          "timedOut": false
+        },
+        "histogram": {
+          "ms": [
+            21.3,
+            21.2,
+            21.3
+          ],
+          "medianMs": 21.3,
+          "netMs": 19,
+          "hunks": 236,
+          "added": 709,
+          "removed": 665,
+          "churn": 1374,
+          "bytes": 84538,
+          "timedOut": false
+        },
+        "patience": {
+          "ms": [
+            19.9,
+            19.8,
+            20.7
+          ],
+          "medianMs": 19.9,
+          "netMs": 17.7,
+          "hunks": 236,
+          "added": 709,
+          "removed": 665,
+          "churn": 1374,
+          "bytes": 84538,
+          "timedOut": false
+        }
+      }
+    },
+    {
+      "scenario": "source",
+      "lines": 96000,
+      "bytes": 2141148,
+      "edits": {
+        "modified": 1988,
+        "movedBlocks": 24,
+        "movedLines": 480,
+        "deleted": 15,
+        "inserted": 30
+      },
+      "algorithms": {
+        "myers": {
+          "ms": [
+            59.6,
+            60.2,
+            62.5
+          ],
+          "medianMs": 60.2,
+          "netMs": 57.9,
+          "hunks": 657,
+          "added": 1151,
+          "removed": 1117,
+          "churn": 2268,
+          "bytes": 197880,
+          "timedOut": false
+        },
+        "minimal": {
+          "ms": [
+            69.4,
+            68.7,
+            68.7
+          ],
+          "medianMs": 68.7,
+          "netMs": 66.5,
+          "hunks": 657,
+          "added": 1151,
+          "removed": 1117,
+          "churn": 2268,
+          "bytes": 197880,
+          "timedOut": false
+        },
+        "histogram": {
+          "ms": [
+            61,
+            60.7,
+            60.8
+          ],
+          "medianMs": 60.8,
+          "netMs": 58.6,
+          "hunks": 657,
+          "added": 1151,
+          "removed": 1117,
+          "churn": 2268,
+          "bytes": 197880,
+          "timedOut": false
+        },
+        "patience": {
+          "ms": [
+            53.8,
+            54,
+            54.1
+          ],
+          "medianMs": 54,
+          "netMs": 51.8,
+          "hunks": 657,
+          "added": 1151,
+          "removed": 1117,
+          "churn": 2268,
+          "bytes": 197880,
+          "timedOut": false
+        }
+      }
+    },
+    {
+      "scenario": "records",
+      "lines": 8000,
+      "bytes": 104007,
+      "edits": {
+        "modified": 1,
+        "deleted": 1
+      },
+      "algorithms": {
+        "myers": {
+          "ms": [
+            5.9,
+            5.8,
+            5.9
+          ],
+          "medianMs": 5.9,
+          "netMs": 3.7,
+          "hunks": 2,
+          "added": 1,
+          "removed": 2,
+          "churn": 3,
+          "bytes": 724,
+          "timedOut": false
+        },
+        "minimal": {
+          "ms": [
+            5.9,
+            5.9,
+            5.9
+          ],
+          "medianMs": 5.9,
+          "netMs": 3.6,
+          "hunks": 2,
+          "added": 1,
+          "removed": 2,
+          "churn": 3,
+          "bytes": 724,
+          "timedOut": false
+        },
+        "histogram": {
+          "ms": [
+            7.3,
+            7.3,
+            7.3
+          ],
+          "medianMs": 7.3,
+          "netMs": 5.1,
+          "hunks": 2,
+          "added": 1,
+          "removed": 2,
+          "churn": 3,
+          "bytes": 724,
+          "timedOut": false
+        },
+        "patience": {
+          "ms": [
+            7.6,
+            7.4,
+            7.4
+          ],
+          "medianMs": 7.4,
+          "netMs": 5.2,
+          "hunks": 2,
+          "added": 1,
+          "removed": 2,
+          "churn": 3,
+          "bytes": 724,
+          "timedOut": false
+        }
+      }
+    },
+    {
+      "scenario": "records",
+      "lines": 32000,
+      "bytes": 416007,
+      "edits": {
+        "modified": 1,
+        "deleted": 1
+      },
+      "algorithms": {
+        "myers": {
+          "ms": [
+            15.5,
+            15.5,
+            15.4
+          ],
+          "medianMs": 15.5,
+          "netMs": 13.3,
+          "hunks": 2,
+          "added": 1,
+          "removed": 2,
+          "churn": 3,
+          "bytes": 730,
+          "timedOut": false
+        },
+        "minimal": {
+          "ms": [
+            15.4,
+            15.3,
+            15.3
+          ],
+          "medianMs": 15.3,
+          "netMs": 13.1,
+          "hunks": 2,
+          "added": 1,
+          "removed": 2,
+          "churn": 3,
+          "bytes": 730,
+          "timedOut": false
+        },
+        "histogram": {
+          "ms": [
+            21.3,
+            20.9,
+            21.2
+          ],
+          "medianMs": 21.2,
+          "netMs": 18.9,
+          "hunks": 2,
+          "added": 1,
+          "removed": 2,
+          "churn": 3,
+          "bytes": 730,
+          "timedOut": false
+        },
+        "patience": {
+          "ms": [
+            21,
+            21.3,
+            21.2
+          ],
+          "medianMs": 21.2,
+          "netMs": 18.9,
+          "hunks": 2,
+          "added": 1,
+          "removed": 2,
+          "churn": 3,
+          "bytes": 730,
+          "timedOut": false
+        }
+      }
+    },
+    {
+      "scenario": "probe:one-line-edit-in-identical-blocks",
+      "lines": 4000,
+      "bytes": 115999,
+      "edits": {
+        "probe": true
+      },
+      "algorithms": {
+        "myers": {
+          "ms": [
+            4.7,
+            4.7,
+            4.8
+          ],
+          "medianMs": 4.7,
+          "netMs": 2.5,
+          "hunks": 1,
+          "added": 1,
+          "removed": 1,
+          "churn": 2,
+          "bytes": 689,
+          "timedOut": false
+        },
+        "minimal": {
+          "ms": [
+            4.7,
+            4.7,
+            4.8
+          ],
+          "medianMs": 4.7,
+          "netMs": 2.5,
+          "hunks": 1,
+          "added": 1,
+          "removed": 1,
+          "churn": 2,
+          "bytes": 689,
+          "timedOut": false
+        },
+        "histogram": {
+          "ms": [
+            5.7,
+            5.7,
+            5.7
+          ],
+          "medianMs": 5.7,
+          "netMs": 3.5,
+          "hunks": 1,
+          "added": 1,
+          "removed": 1,
+          "churn": 2,
+          "bytes": 689,
+          "timedOut": false
+        },
+        "patience": {
+          "ms": [
+            5.8,
+            5.7,
+            5.7
+          ],
+          "medianMs": 5.7,
+          "netMs": 3.5,
+          "hunks": 1,
+          "added": 1,
+          "removed": 1,
+          "churn": 2,
+          "bytes": 689,
+          "timedOut": false
+        }
+      },
+      "diverged": false,
+      "worstRatio": 1
+    },
+    {
+      "scenario": "probe:block-moved-far",
+      "lines": 4004,
+      "bytes": 88431,
+      "edits": {
+        "probe": true
+      },
+      "algorithms": {
+        "myers": {
+          "ms": [
+            5.4,
+            5.4,
+            5.2
+          ],
+          "medianMs": 5.4,
+          "netMs": 3.1,
+          "hunks": 2,
+          "added": 200,
+          "removed": 200,
+          "churn": 400,
+          "bytes": 9811,
+          "timedOut": false
+        },
+        "minimal": {
+          "ms": [
+            5.2,
+            5.2,
+            5.3
+          ],
+          "medianMs": 5.2,
+          "netMs": 3,
+          "hunks": 2,
+          "added": 200,
+          "removed": 200,
+          "churn": 400,
+          "bytes": 9811,
+          "timedOut": false
+        },
+        "histogram": {
+          "ms": [
+            6.7,
+            4.9,
+            4.8
+          ],
+          "medianMs": 4.9,
+          "netMs": 2.7,
+          "hunks": 2,
+          "added": 200,
+          "removed": 200,
+          "churn": 400,
+          "bytes": 9811,
+          "timedOut": false
+        },
+        "patience": {
+          "ms": [
+            4.9,
+            4.9,
+            4.9
+          ],
+          "medianMs": 4.9,
+          "netMs": 2.7,
+          "hunks": 2,
+          "added": 200,
+          "removed": 200,
+          "churn": 400,
+          "bytes": 9811,
+          "timedOut": false
+        }
+      },
+      "diverged": false,
+      "worstRatio": 1
+    },
+    {
+      "scenario": "probe:duplicated-chunk",
+      "lines": 4200,
+      "bytes": 91197,
+      "edits": {
+        "probe": true
+      },
+      "algorithms": {
+        "myers": {
+          "ms": [
+            4.7,
+            4.7,
+            4.5
+          ],
+          "medianMs": 4.7,
+          "netMs": 2.5,
+          "hunks": 1,
+          "added": 0,
+          "removed": 1,
+          "churn": 1,
+          "bytes": 650,
+          "timedOut": false
+        },
+        "minimal": {
+          "ms": [
+            4.6,
+            4.6,
+            4.7
+          ],
+          "medianMs": 4.6,
+          "netMs": 2.4,
+          "hunks": 1,
+          "added": 0,
+          "removed": 1,
+          "churn": 1,
+          "bytes": 650,
+          "timedOut": false
+        },
+        "histogram": {
+          "ms": [
+            5.6,
+            5.5,
+            5.6
+          ],
+          "medianMs": 5.6,
+          "netMs": 3.4,
+          "hunks": 1,
+          "added": 0,
+          "removed": 1,
+          "churn": 1,
+          "bytes": 650,
+          "timedOut": false
+        },
+        "patience": {
+          "ms": [
+            5.5,
+            5.6,
+            5.6
+          ],
+          "medianMs": 5.6,
+          "netMs": 3.3,
+          "hunks": 1,
+          "added": 0,
+          "removed": 1,
+          "churn": 1,
+          "bytes": 650,
+          "timedOut": false
+        }
+      },
+      "diverged": false,
+      "worstRatio": 1
+    },
+    {
+      "scenario": "probe:json-braces",
+      "lines": 4000,
+      "bytes": 45208,
+      "edits": {
+        "probe": true
+      },
+      "algorithms": {
+        "myers": {
+          "ms": [
+            3.8,
+            3.7,
+            3.8
+          ],
+          "medianMs": 3.8,
+          "netMs": 1.5,
+          "hunks": 1,
+          "added": 1,
+          "removed": 1,
+          "churn": 2,
+          "bytes": 542,
+          "timedOut": false
+        },
+        "minimal": {
+          "ms": [
+            3.7,
+            3.7,
+            3.8
+          ],
+          "medianMs": 3.7,
+          "netMs": 1.5,
+          "hunks": 1,
+          "added": 1,
+          "removed": 1,
+          "churn": 2,
+          "bytes": 542,
+          "timedOut": false
+        },
+        "histogram": {
+          "ms": [
+            4.6,
+            4.6,
+            4.8
+          ],
+          "medianMs": 4.6,
+          "netMs": 2.4,
+          "hunks": 1,
+          "added": 1,
+          "removed": 1,
+          "churn": 2,
+          "bytes": 542,
+          "timedOut": false
+        },
+        "patience": {
+          "ms": [
+            4.8,
+            4.7,
+            4.7
+          ],
+          "medianMs": 4.7,
+          "netMs": 2.5,
+          "hunks": 1,
+          "added": 1,
+          "removed": 1,
+          "churn": 2,
+          "bytes": 542,
+          "timedOut": false
+        }
+      },
+      "diverged": false,
+      "worstRatio": 1
+    }
+  ],
+  "floorSamples": [
+    3.8,
+    2.3,
+    2.2,
+    2.2,
+    2.2,
+    2.2,
+    2.2,
+    2.4,
+    2.3,
+    2.2
+  ]
+}
