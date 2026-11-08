@@ -1,0 +1,539 @@
+{
+  "runs": 3,
+  "spawnMs": 1.8,
+  "spawnTimes": [
+    1.8,
+    1.8,
+    1.8
+  ],
+  "results": [
+    {
+      "modules": 100,
+      "mapContentChars": 0,
+      "mapMappingsChars": 0,
+      "strippedGzip": 0,
+      "variant": "plain",
+      "flags": [],
+      "sourceBytes": 103702,
+      "runs": [
+        13.7,
+        14,
+        13.7
+      ],
+      "medianMs": 13.7,
+      "outBytes": 71933,
+      "jsBytes": 71933,
+      "mapBytes": 0,
+      "gzipJs": 5943,
+      "gzipMap": 0
+    },
+    {
+      "modules": 100,
+      "mapContentChars": 0,
+      "mapMappingsChars": 0,
+      "strippedGzip": 0,
+      "variant": "minify",
+      "flags": [
+        "--minify"
+      ],
+      "sourceBytes": 103702,
+      "runs": [
+        13.7,
+        13.7,
+        13.8
+      ],
+      "medianMs": 13.7,
+      "outBytes": 35140,
+      "jsBytes": 35140,
+      "mapBytes": 0,
+      "gzipJs": 4841,
+      "gzipMap": 0
+    },
+    {
+      "modules": 100,
+      "mapContentChars": 0,
+      "mapMappingsChars": 0,
+      "strippedGzip": 0,
+      "variant": "min-whitespace",
+      "flags": [
+        "--minify-whitespace"
+      ],
+      "sourceBytes": 103702,
+      "runs": [
+        13.6,
+        13.7,
+        13.5
+      ],
+      "medianMs": 13.6,
+      "outBytes": 57884,
+      "jsBytes": 57884,
+      "mapBytes": 0,
+      "gzipJs": 5352,
+      "gzipMap": 0
+    },
+    {
+      "modules": 100,
+      "mapContentChars": 0,
+      "mapMappingsChars": 0,
+      "strippedGzip": 0,
+      "variant": "min-syntax",
+      "flags": [
+        "--minify-syntax"
+      ],
+      "sourceBytes": 103702,
+      "runs": [
+        14.1,
+        13.8,
+        14.2
+      ],
+      "medianMs": 14.1,
+      "outBytes": 67263,
+      "jsBytes": 67263,
+      "mapBytes": 0,
+      "gzipJs": 5823,
+      "gzipMap": 0
+    },
+    {
+      "modules": 100,
+      "mapContentChars": 0,
+      "mapMappingsChars": 0,
+      "strippedGzip": 0,
+      "variant": "min-identifiers",
+      "flags": [
+        "--minify-identifiers"
+      ],
+      "sourceBytes": 103702,
+      "runs": [
+        13.5,
+        13.5,
+        13.5
+      ],
+      "medianMs": 13.5,
+      "outBytes": 52107,
+      "jsBytes": 52107,
+      "mapBytes": 0,
+      "gzipJs": 5503,
+      "gzipMap": 0
+    },
+    {
+      "modules": 100,
+      "mapContentChars": 103702,
+      "mapMappingsChars": 59748,
+      "strippedGzip": 1224,
+      "variant": "map",
+      "flags": [
+        "--sourcemap=external"
+      ],
+      "sourceBytes": 103702,
+      "runs": [
+        14.6,
+        14.4,
+        14.5
+      ],
+      "medianMs": 14.5,
+      "outBytes": 245472,
+      "jsBytes": 71979,
+      "mapBytes": 173493,
+      "gzipJs": 5979,
+      "gzipMap": 9971
+    },
+    {
+      "modules": 100,
+      "mapContentChars": 103702,
+      "mapMappingsChars": 48926,
+      "strippedGzip": 1221,
+      "variant": "minify+map",
+      "flags": [
+        "--minify",
+        "--sourcemap=external"
+      ],
+      "sourceBytes": 103702,
+      "runs": [
+        14.4,
+        14.5,
+        14.8
+      ],
+      "medianMs": 14.5,
+      "outBytes": 197857,
+      "jsBytes": 35186,
+      "mapBytes": 162671,
+      "gzipJs": 4880,
+      "gzipMap": 9977
+    },
+    {
+      "modules": 100,
+      "mapContentChars": 0,
+      "mapMappingsChars": 0,
+      "strippedGzip": 0,
+      "variant": "minify+inline",
+      "flags": [
+        "--minify",
+        "--sourcemap=inline"
+      ],
+      "sourceBytes": 103702,
+      "runs": [
+        14.8,
+        14.8,
+        14.5
+      ],
+      "medianMs": 14.8,
+      "outBytes": 252133,
+      "jsBytes": 252133,
+      "mapBytes": 0,
+      "gzipJs": 19119,
+      "gzipMap": 0
+    },
+    {
+      "modules": 1000,
+      "mapContentChars": 0,
+      "mapMappingsChars": 0,
+      "strippedGzip": 0,
+      "variant": "plain",
+      "flags": [],
+      "sourceBytes": 1053667,
+      "runs": [
+        84.1,
+        83.6,
+        83.1
+      ],
+      "medianMs": 83.6,
+      "outBytes": 730402,
+      "jsBytes": 730402,
+      "mapBytes": 0,
+      "gzipJs": 52024,
+      "gzipMap": 0
+    },
+    {
+      "modules": 1000,
+      "mapContentChars": 0,
+      "mapMappingsChars": 0,
+      "strippedGzip": 0,
+      "variant": "minify",
+      "flags": [
+        "--minify"
+      ],
+      "sourceBytes": 1053667,
+      "runs": [
+        85.4,
+        85.3,
+        85
+      ],
+      "medianMs": 85.3,
+      "outBytes": 356128,
+      "jsBytes": 356128,
+      "mapBytes": 0,
+      "gzipJs": 42473,
+      "gzipMap": 0
+    },
+    {
+      "modules": 1000,
+      "mapContentChars": 0,
+      "mapMappingsChars": 0,
+      "strippedGzip": 0,
+      "variant": "min-whitespace",
+      "flags": [
+        "--minify-whitespace"
+      ],
+      "sourceBytes": 1053667,
+      "runs": [
+        82.8,
+        82.3,
+        82.8
+      ],
+      "medianMs": 82.8,
+      "outBytes": 589351,
+      "jsBytes": 589351,
+      "mapBytes": 0,
+      "gzipJs": 47355,
+      "gzipMap": 0
+    },
+    {
+      "modules": 1000,
+      "mapContentChars": 0,
+      "mapMappingsChars": 0,
+      "strippedGzip": 0,
+      "variant": "min-syntax",
+      "flags": [
+        "--minify-syntax"
+      ],
+      "sourceBytes": 1053667,
+      "runs": [
+        85.6,
+        84.8,
+        85.3
+      ],
+      "medianMs": 85.3,
+      "outBytes": 684333,
+      "jsBytes": 684333,
+      "mapBytes": 0,
+      "gzipJs": 51115,
+      "gzipMap": 0
+    },
+    {
+      "modules": 1000,
+      "mapContentChars": 0,
+      "mapMappingsChars": 0,
+      "strippedGzip": 0,
+      "variant": "min-identifiers",
+      "flags": [
+        "--minify-identifiers"
+      ],
+      "sourceBytes": 1053667,
+      "runs": [
+        84.7,
+        84.7,
+        91.5
+      ],
+      "medianMs": 84.7,
+      "outBytes": 526196,
+      "jsBytes": 526196,
+      "mapBytes": 0,
+      "gzipJs": 47741,
+      "gzipMap": 0
+    },
+    {
+      "modules": 1000,
+      "mapContentChars": 1053667,
+      "mapMappingsChars": 592549,
+      "strippedGzip": 6341,
+      "variant": "map",
+      "flags": [
+        "--sourcemap=external"
+      ],
+      "sourceBytes": 1053667,
+      "runs": [
+        92.2,
+        94,
+        93.2
+      ],
+      "medianMs": 93.2,
+      "outBytes": 2476809,
+      "jsBytes": 730448,
+      "mapBytes": 1746361,
+      "gzipJs": 52068,
+      "gzipMap": 82161
+    },
+    {
+      "modules": 1000,
+      "mapContentChars": 1053667,
+      "mapMappingsChars": 485429,
+      "strippedGzip": 6056,
+      "variant": "minify+map",
+      "flags": [
+        "--minify",
+        "--sourcemap=external"
+      ],
+      "sourceBytes": 1053667,
+      "runs": [
+        92.6,
+        92.6,
+        92.6
+      ],
+      "medianMs": 92.6,
+      "outBytes": 1995415,
+      "jsBytes": 356174,
+      "mapBytes": 1639241,
+      "gzipJs": 42517,
+      "gzipMap": 81976
+    },
+    {
+      "modules": 1000,
+      "mapContentChars": 0,
+      "mapMappingsChars": 0,
+      "strippedGzip": 0,
+      "variant": "minify+inline",
+      "flags": [
+        "--minify",
+        "--sourcemap=inline"
+      ],
+      "sourceBytes": 1053667,
+      "runs": [
+        95.2,
+        97.3,
+        96.3
+      ],
+      "medianMs": 96.3,
+      "outBytes": 2541881,
+      "jsBytes": 2541881,
+      "mapBytes": 0,
+      "gzipJs": 142632,
+      "gzipMap": 0
+    },
+    {
+      "modules": 4000,
+      "mapContentChars": 0,
+      "mapMappingsChars": 0,
+      "strippedGzip": 0,
+      "variant": "plain",
+      "flags": [],
+      "sourceBytes": 4289230,
+      "runs": [
+        330.4,
+        343.6,
+        348.2
+      ],
+      "medianMs": 343.6,
+      "outBytes": 2972967,
+      "jsBytes": 2972967,
+      "mapBytes": 0,
+      "gzipJs": 201607,
+      "gzipMap": 0
+    },
+    {
+      "modules": 4000,
+      "mapContentChars": 0,
+      "mapMappingsChars": 0,
+      "strippedGzip": 0,
+      "variant": "minify",
+      "flags": [
+        "--minify"
+      ],
+      "sourceBytes": 4289230,
+      "runs": [
+        345.3,
+        350,
+        349.1
+      ],
+      "medianMs": 349.1,
+      "outBytes": 1465200,
+      "jsBytes": 1465200,
+      "mapBytes": 0,
+      "gzipJs": 164429,
+      "gzipMap": 0
+    },
+    {
+      "modules": 4000,
+      "mapContentChars": 0,
+      "mapMappingsChars": 0,
+      "strippedGzip": 0,
+      "variant": "min-whitespace",
+      "flags": [
+        "--minify-whitespace"
+      ],
+      "sourceBytes": 4289230,
+      "runs": [
+        335.8,
+        339.2,
+        334.6
+      ],
+      "medianMs": 335.8,
+      "outBytes": 2405916,
+      "jsBytes": 2405916,
+      "mapBytes": 0,
+      "gzipJs": 181796,
+      "gzipMap": 0
+    },
+    {
+      "modules": 4000,
+      "mapContentChars": 0,
+      "mapMappingsChars": 0,
+      "strippedGzip": 0,
+      "variant": "min-syntax",
+      "flags": [
+        "--minify-syntax"
+      ],
+      "sourceBytes": 4289230,
+      "runs": [
+        347.1,
+        348,
+        349
+      ],
+      "medianMs": 348,
+      "outBytes": 2788898,
+      "jsBytes": 2788898,
+      "mapBytes": 0,
+      "gzipJs": 198324,
+      "gzipMap": 0
+    },
+    {
+      "modules": 4000,
+      "mapContentChars": 0,
+      "mapMappingsChars": 0,
+      "strippedGzip": 0,
+      "variant": "min-identifiers",
+      "flags": [
+        "--minify-identifiers"
+      ],
+      "sourceBytes": 4289230,
+      "runs": [
+        350.3,
+        341.4,
+        352
+      ],
+      "medianMs": 350.3,
+      "outBytes": 2148268,
+      "jsBytes": 2148268,
+      "mapBytes": 0,
+      "gzipJs": 181141,
+      "gzipMap": 0
+    },
+    {
+      "modules": 4000,
+      "mapContentChars": 4289230,
+      "mapMappingsChars": 2368549,
+      "strippedGzip": 22953,
+      "variant": "map",
+      "flags": [
+        "--sourcemap=external"
+      ],
+      "sourceBytes": 4289230,
+      "runs": [
+        384.9,
+        383,
+        389.2
+      ],
+      "medianMs": 384.9,
+      "outBytes": 10033937,
+      "jsBytes": 2973013,
+      "mapBytes": 7060924,
+      "gzipJs": 201660,
+      "gzipMap": 315823
+    },
+    {
+      "modules": 4000,
+      "mapContentChars": 4289230,
+      "mapMappingsChars": 1940429,
+      "strippedGzip": 22140,
+      "variant": "minify+map",
+      "flags": [
+        "--minify",
+        "--sourcemap=external"
+      ],
+      "sourceBytes": 4289230,
+      "runs": [
+        389.6,
+        394.8,
+        387.3
+      ],
+      "medianMs": 389.6,
+      "outBytes": 8098050,
+      "jsBytes": 1465246,
+      "mapBytes": 6632804,
+      "gzipJs": 164479,
+      "gzipMap": 314850
+    },
+    {
+      "modules": 4000,
+      "mapContentChars": 0,
+      "mapMappingsChars": 0,
+      "strippedGzip": 0,
+      "variant": "minify+inline",
+      "flags": [
+        "--minify",
+        "--sourcemap=inline"
+      ],
+      "sourceBytes": 4289230,
+      "runs": [
+        398.5,
+        393.7,
+        398.2
+      ],
+      "medianMs": 398.2,
+      "outBytes": 10309037,
+      "jsBytes": 10309037,
+      "mapBytes": 0,
+      "gzipJs": 537262,
+      "gzipMap": 0
+    }
+  ]
+}
