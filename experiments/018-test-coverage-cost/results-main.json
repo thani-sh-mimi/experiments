@@ -1,0 +1,300 @@
+{
+  "runs": 5,
+  "bun": "1.4.4",
+  "mode": "main",
+  "spawnMs": 1.8,
+  "spawnTimes": [
+    1.8,
+    1.8,
+    1.7,
+    1.8,
+    1.7
+  ],
+  "results": [
+    {
+      "label": "50 files plain",
+      "files": 50,
+      "work": 1,
+      "arm": "plain",
+      "runs": [
+        69,
+        67.1,
+        66.4,
+        66.3,
+        67.9
+      ],
+      "medianMs": 67.1,
+      "spreadPct": 4,
+      "reportBytes": 7748,
+      "lcovBytes": 0,
+      "testsRan": "Ran 250 tests across 50 files. [65.00ms]",
+      "coverageRows": 0
+    },
+    {
+      "label": "50 files coverage-text",
+      "files": 50,
+      "work": 1,
+      "arm": "coverage-text",
+      "runs": [
+        71.3,
+        70.4,
+        71.2,
+        70.5,
+        71.7
+      ],
+      "medianMs": 71.2,
+      "spreadPct": 1.9,
+      "reportBytes": 9853,
+      "lcovBytes": 0,
+      "testsRan": "Ran 250 tests across 50 files. [68.00ms]",
+      "coverageRows": 50
+    },
+    {
+      "label": "50 files coverage-text+lcov",
+      "files": 50,
+      "work": 1,
+      "arm": "coverage-text+lcov",
+      "runs": [
+        72.2,
+        71.1,
+        70.3,
+        74.3,
+        73.1
+      ],
+      "medianMs": 72.2,
+      "spreadPct": 5.7,
+      "reportBytes": 9853,
+      "lcovBytes": 16440,
+      "testsRan": "Ran 250 tests across 50 files. [70.00ms]",
+      "coverageRows": 50
+    },
+    {
+      "label": "50 files coverage-lcov",
+      "files": 50,
+      "work": 1,
+      "arm": "coverage-lcov",
+      "runs": [
+        74.1,
+        70.8,
+        70.8,
+        78.1,
+        70.6
+      ],
+      "medianMs": 70.8,
+      "spreadPct": 10.7,
+      "reportBytes": 7748,
+      "lcovBytes": 16440,
+      "testsRan": "Ran 250 tests across 50 files. [67.00ms]",
+      "coverageRows": 0
+    },
+    {
+      "label": "50 files coverage-exclude-src",
+      "files": 50,
+      "work": 1,
+      "arm": "coverage-exclude-src",
+      "runs": [
+        72,
+        70.2,
+        68.7,
+        69.9,
+        68.7
+      ],
+      "medianMs": 69.9,
+      "spreadPct": 4.7,
+      "reportBytes": 7988,
+      "lcovBytes": 0,
+      "testsRan": "Ran 250 tests across 50 files. [65.00ms]",
+      "coverageRows": 0
+    },
+    {
+      "label": "200 files plain",
+      "files": 200,
+      "work": 1,
+      "arm": "plain",
+      "runs": [
+        250.8,
+        240,
+        237,
+        243.8,
+        239.8
+      ],
+      "medianMs": 240,
+      "spreadPct": 5.8,
+      "reportBytes": 31453,
+      "lcovBytes": 0,
+      "testsRan": "Ran 1000 tests across 200 files. [236.00ms]",
+      "coverageRows": 0
+    },
+    {
+      "label": "200 files coverage-text",
+      "files": 200,
+      "work": 1,
+      "arm": "coverage-text",
+      "runs": [
+        258.4,
+        253.9,
+        258.1,
+        252.9,
+        258.6
+      ],
+      "medianMs": 258.1,
+      "spreadPct": 2.2,
+      "reportBytes": 39313,
+      "lcovBytes": 0,
+      "testsRan": "Ran 1000 tests across 200 files. [254.00ms]",
+      "coverageRows": 200
+    },
+    {
+      "label": "200 files coverage-text+lcov",
+      "files": 200,
+      "work": 1,
+      "arm": "coverage-text+lcov",
+      "runs": [
+        261.7,
+        258.2,
+        260,
+        256.8,
+        257.7
+      ],
+      "medianMs": 258.2,
+      "spreadPct": 1.9,
+      "reportBytes": 39313,
+      "lcovBytes": 65890,
+      "testsRan": "Ran 1000 tests across 200 files. [253.00ms]",
+      "coverageRows": 200
+    },
+    {
+      "label": "200 files coverage-lcov",
+      "files": 200,
+      "work": 1,
+      "arm": "coverage-lcov",
+      "runs": [
+        258.7,
+        256.8,
+        256.9,
+        257.1,
+        252.7
+      ],
+      "medianMs": 256.9,
+      "spreadPct": 2.4,
+      "reportBytes": 31453,
+      "lcovBytes": 65890,
+      "testsRan": "Ran 1000 tests across 200 files. [249.00ms]",
+      "coverageRows": 0
+    },
+    {
+      "label": "200 files coverage-exclude-src",
+      "files": 200,
+      "work": 1,
+      "arm": "coverage-exclude-src",
+      "runs": [
+        266,
+        251.8,
+        255.8,
+        254.2,
+        261.3
+      ],
+      "medianMs": 255.8,
+      "spreadPct": 5.6,
+      "reportBytes": 31693,
+      "lcovBytes": 0,
+      "testsRan": "Ran 1000 tests across 200 files. [257.00ms]",
+      "coverageRows": 0
+    },
+    {
+      "label": "800 files plain",
+      "files": 800,
+      "work": 1,
+      "arm": "plain",
+      "runs": [
+        959.7,
+        972.5,
+        941.9,
+        974.9,
+        950.8
+      ],
+      "medianMs": 959.7,
+      "spreadPct": 3.5,
+      "reportBytes": 127454,
+      "lcovBytes": 0,
+      "testsRan": "Ran 4000 tests across 800 files. [945.00ms]",
+      "coverageRows": 0
+    },
+    {
+      "label": "800 files coverage-text",
+      "files": 800,
+      "work": 1,
+      "arm": "coverage-text",
+      "runs": [
+        1020.9,
+        1032,
+        1026.9,
+        1033,
+        1022.1
+      ],
+      "medianMs": 1026.9,
+      "spreadPct": 1.2,
+      "reportBytes": 158115,
+      "lcovBytes": 0,
+      "testsRan": "Ran 4000 tests across 800 files. [1015.00ms]",
+      "coverageRows": 800
+    },
+    {
+      "label": "800 files coverage-text+lcov",
+      "files": 800,
+      "work": 1,
+      "arm": "coverage-text+lcov",
+      "runs": [
+        1022.7,
+        1030,
+        1038.8,
+        1041.8,
+        1050.8
+      ],
+      "medianMs": 1038.8,
+      "spreadPct": 2.7,
+      "reportBytes": 158115,
+      "lcovBytes": 263890,
+      "testsRan": "Ran 4000 tests across 800 files. [1043.00ms]",
+      "coverageRows": 800
+    },
+    {
+      "label": "800 files coverage-lcov",
+      "files": 800,
+      "work": 1,
+      "arm": "coverage-lcov",
+      "runs": [
+        1030.7,
+        1018.2,
+        1030.9,
+        1055.2,
+        1067.2
+      ],
+      "medianMs": 1030.9,
+      "spreadPct": 4.8,
+      "reportBytes": 127455,
+      "lcovBytes": 263890,
+      "testsRan": "Ran 4000 tests across 800 files. [1060.00ms]",
+      "coverageRows": 0
+    },
+    {
+      "label": "800 files coverage-exclude-src",
+      "files": 800,
+      "work": 1,
+      "arm": "coverage-exclude-src",
+      "runs": [
+        1006.9,
+        1000.4,
+        1028.7,
+        1016.3,
+        1025.8
+      ],
+      "medianMs": 1016.3,
+      "spreadPct": 2.8,
+      "reportBytes": 127695,
+      "lcovBytes": 0,
+      "testsRan": "Ran 4000 tests across 800 files. [1019.00ms]",
+      "coverageRows": 0
+    }
+  ]
+}

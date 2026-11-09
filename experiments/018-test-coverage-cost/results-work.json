@@ -1,0 +1,243 @@
+{
+  "runs": 5,
+  "bun": "1.4.4",
+  "mode": "work",
+  "spawnMs": 1.8,
+  "spawnTimes": [
+    1.8,
+    1.8,
+    1.7,
+    1.8,
+    1.7
+  ],
+  "results": [
+    {
+      "label": "200 files w1 plain",
+      "files": 200,
+      "work": 1,
+      "arm": "plain",
+      "runs": [
+        244.2,
+        239.1,
+        240,
+        237.8,
+        243.6
+      ],
+      "medianMs": 240,
+      "spreadPct": 2.7,
+      "reportBytes": 31453,
+      "lcovBytes": 0,
+      "testsRan": "Ran 1000 tests across 200 files. [240.00ms]",
+      "coverageRows": 0
+    },
+    {
+      "label": "200 files w1 coverage-text",
+      "files": 200,
+      "work": 1,
+      "arm": "coverage-text",
+      "runs": [
+        268.6,
+        258.6,
+        257.4,
+        253.2,
+        261.4
+      ],
+      "medianMs": 258.6,
+      "spreadPct": 6.1,
+      "reportBytes": 39313,
+      "lcovBytes": 0,
+      "testsRan": "Ran 1000 tests across 200 files. [257.00ms]",
+      "coverageRows": 200
+    },
+    {
+      "label": "200 files w1 coverage-text+lcov",
+      "files": 200,
+      "work": 1,
+      "arm": "coverage-text+lcov",
+      "runs": [
+        263.2,
+        263.4,
+        253.6,
+        255.6,
+        256.4
+      ],
+      "medianMs": 256.4,
+      "spreadPct": 3.9,
+      "reportBytes": 39313,
+      "lcovBytes": 65890,
+      "testsRan": "Ran 1000 tests across 200 files. [252.00ms]",
+      "coverageRows": 200
+    },
+    {
+      "label": "200 files w10 plain",
+      "files": 200,
+      "work": 10,
+      "arm": "plain",
+      "runs": [
+        273.9,
+        277,
+        277.8,
+        274.3,
+        275.4
+      ],
+      "medianMs": 275.4,
+      "spreadPct": 1.4,
+      "reportBytes": 31454,
+      "lcovBytes": 0,
+      "testsRan": "Ran 1000 tests across 200 files. [271.00ms]",
+      "coverageRows": 0
+    },
+    {
+      "label": "200 files w10 coverage-text",
+      "files": 200,
+      "work": 10,
+      "arm": "coverage-text",
+      "runs": [
+        284.6,
+        299.2,
+        291.5,
+        290.9,
+        285.6
+      ],
+      "medianMs": 290.9,
+      "spreadPct": 5.1,
+      "reportBytes": 39314,
+      "lcovBytes": 0,
+      "testsRan": "Ran 1000 tests across 200 files. [280.00ms]",
+      "coverageRows": 200
+    },
+    {
+      "label": "200 files w10 coverage-text+lcov",
+      "files": 200,
+      "work": 10,
+      "arm": "coverage-text+lcov",
+      "runs": [
+        287.1,
+        292.4,
+        286.8,
+        288.3,
+        289.1
+      ],
+      "medianMs": 288.3,
+      "spreadPct": 1.9,
+      "reportBytes": 39314,
+      "lcovBytes": 72690,
+      "testsRan": "Ran 1000 tests across 200 files. [284.00ms]",
+      "coverageRows": 200
+    },
+    {
+      "label": "200 files w100 plain",
+      "files": 200,
+      "work": 100,
+      "arm": "plain",
+      "runs": [
+        443.2,
+        442.5,
+        443.5,
+        439.7,
+        439.1
+      ],
+      "medianMs": 442.5,
+      "spreadPct": 1,
+      "reportBytes": 31455,
+      "lcovBytes": 0,
+      "testsRan": "Ran 1000 tests across 200 files. [433.00ms]",
+      "coverageRows": 0
+    },
+    {
+      "label": "200 files w100 coverage-text",
+      "files": 200,
+      "work": 100,
+      "arm": "coverage-text",
+      "runs": [
+        462.5,
+        461,
+        463.8,
+        460.9,
+        462.9
+      ],
+      "medianMs": 462.5,
+      "spreadPct": 0.6,
+      "reportBytes": 39315,
+      "lcovBytes": 0,
+      "testsRan": "Ran 1000 tests across 200 files. [452.00ms]",
+      "coverageRows": 200
+    },
+    {
+      "label": "200 files w100 coverage-text+lcov",
+      "files": 200,
+      "work": 100,
+      "arm": "coverage-text+lcov",
+      "runs": [
+        467.5,
+        469.7,
+        465,
+        464.7,
+        466.7
+      ],
+      "medianMs": 466.7,
+      "spreadPct": 1.1,
+      "reportBytes": 39315,
+      "lcovBytes": 79490,
+      "testsRan": "Ran 1000 tests across 200 files. [460.00ms]",
+      "coverageRows": 200
+    },
+    {
+      "label": "200 files w400 plain",
+      "files": 200,
+      "work": 400,
+      "arm": "plain",
+      "runs": [
+        816.2,
+        809,
+        803.4,
+        802.3,
+        803.8
+      ],
+      "medianMs": 803.8,
+      "spreadPct": 1.7,
+      "reportBytes": 31456,
+      "lcovBytes": 0,
+      "testsRan": "Ran 1000 tests across 200 files. [797.00ms]",
+      "coverageRows": 0
+    },
+    {
+      "label": "200 files w400 coverage-text",
+      "files": 200,
+      "work": 400,
+      "arm": "coverage-text",
+      "runs": [
+        826.2,
+        825.3,
+        832.7,
+        825,
+        829.3
+      ],
+      "medianMs": 826.2,
+      "spreadPct": 0.9,
+      "reportBytes": 39316,
+      "lcovBytes": 0,
+      "testsRan": "Ran 1000 tests across 200 files. [822.00ms]",
+      "coverageRows": 200
+    },
+    {
+      "label": "200 files w400 coverage-text+lcov",
+      "files": 200,
+      "work": 400,
+      "arm": "coverage-text+lcov",
+      "runs": [
+        834.9,
+        825.8,
+        822.2,
+        824.1,
+        828.9
+      ],
+      "medianMs": 825.8,
+      "spreadPct": 1.5,
+      "reportBytes": 39316,
+      "lcovBytes": 82290,
+      "testsRan": "Ran 1000 tests across 200 files. [822.00ms]",
+      "coverageRows": 200
+    }
+  ]
+}
