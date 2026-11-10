@@ -24,3 +24,4 @@ Status: `open` · `building` · `done` · `dropped` · `needs Thanish`.
 | Build minify and sourcemap  | On a 1,000-module graph, what do `--minify` and `--sourcemap` cost in build time and bytes — does minify pay for itself, and what does a map add?                              | done (017)    |
 | Diff algorithm at scale     | Real commits diff in under 1 ms per algorithm, but do `--histogram` and `--patience` stay free on a 30k-line file, and do they buy fewer hunks there?                          | done (016)    |
 | Test coverage cost          | What does `bun test --coverage` add to an 800-file suite, does it scale with executed code, and do the text or lcov reporters move it?                                         | done (018)    |
+| skipLibCheck on TS 7        | Does `skipLibCheck` still pay on the native TypeScript 7 compiler, and does the saving follow the declaration file count or the lines inside them?                             | done (019)    |
