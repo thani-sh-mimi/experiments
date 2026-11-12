@@ -26,3 +26,4 @@ Status: `open` · `building` · `done` · `dropped` · `needs Thanish`.
 | Test coverage cost          | What does `bun test --coverage` add to an 800-file suite, does it scale with executed code, and do the text or lcov reporters move it?                                         | done (018)    |
 | skipLibCheck on TS 7        | Does `skipLibCheck` still pay on the native TypeScript 7 compiler, and does the saving follow the declaration file count or the lines inside them?                             | done (019)    |
 | Publish tarball             | Does `bun pm pack` ship the same files as `npm pack`, and does a second pack produce the same bytes — can a release hash its tarball?                                          | done (020)    |
+| Staged content in a hook    | Does `git stash push --keep-index` + `pop` survive a partially staged commit, and what does reading the index cost per file against it?                                        | done (021)    |

@@ -1,0 +1,700 @@
+{
+  "bun": "1.4.4",
+  "git": "git version 2.47.3",
+  "runs": 3,
+  "results": [
+    {
+      "n": 10,
+      "dirty": 10,
+      "mode": "adjacent",
+      "runs": [
+        {
+          "a": {
+            "ms": 25.932601,
+            "pushMs": 18.32706,
+            "popMs": 7.605541,
+            "pushCode": 0,
+            "popCode": 1,
+            "conflicts": 10,
+            "stashesLeft": 1
+          },
+          "b": {
+            "ms": 3.336457,
+            "code": 0,
+            "files": 10
+          },
+          "c": {
+            "ms": 3.390019,
+            "code": 0,
+            "blobs": 10,
+            "bytes": 5010
+          },
+          "restored": false
+        },
+        {
+          "a": {
+            "ms": 25.906711,
+            "pushMs": 18.424509,
+            "popMs": 7.482202,
+            "pushCode": 0,
+            "popCode": 1,
+            "conflicts": 10,
+            "stashesLeft": 1
+          },
+          "b": {
+            "ms": 3.339441,
+            "code": 0,
+            "files": 10
+          },
+          "c": {
+            "ms": 3.138062,
+            "code": 0,
+            "blobs": 10,
+            "bytes": 5010
+          },
+          "restored": false
+        },
+        {
+          "a": {
+            "ms": 25.687948,
+            "pushMs": 18.198066,
+            "popMs": 7.489882,
+            "pushCode": 0,
+            "popCode": 1,
+            "conflicts": 10,
+            "stashesLeft": 1
+          },
+          "b": {
+            "ms": 3.411223,
+            "code": 0,
+            "files": 10
+          },
+          "c": {
+            "ms": 3.053268,
+            "code": 0,
+            "blobs": 10,
+            "bytes": 5010
+          },
+          "restored": false
+        }
+      ],
+      "checks": {
+        "checkoutIsStaged": true,
+        "catFileIsStaged": true
+      },
+      "median": {
+        "stashMs": 25.906711,
+        "checkoutMs": 3.339441,
+        "catFileMs": 3.138062
+      },
+      "spread": {
+        "stashMs": [
+          25.687948,
+          25.932601
+        ],
+        "checkoutMs": [
+          3.336457,
+          3.411223
+        ],
+        "catFileMs": [
+          3.053268,
+          3.390019
+        ]
+      }
+    },
+    {
+      "n": 100,
+      "dirty": 100,
+      "mode": "adjacent",
+      "runs": [
+        {
+          "a": {
+            "ms": 77.705524,
+            "pushMs": 46.808674,
+            "popMs": 30.89685,
+            "pushCode": 0,
+            "popCode": 1,
+            "conflicts": 100,
+            "stashesLeft": 1
+          },
+          "b": {
+            "ms": 12.45666,
+            "code": 0,
+            "files": 100
+          },
+          "c": {
+            "ms": 10.851411,
+            "code": 0,
+            "blobs": 100,
+            "bytes": 50100
+          },
+          "restored": false
+        },
+        {
+          "a": {
+            "ms": 76.803635,
+            "pushMs": 46.398628,
+            "popMs": 30.405007,
+            "pushCode": 0,
+            "popCode": 1,
+            "conflicts": 100,
+            "stashesLeft": 1
+          },
+          "b": {
+            "ms": 12.188035,
+            "code": 0,
+            "files": 100
+          },
+          "c": {
+            "ms": 11.201984,
+            "code": 0,
+            "blobs": 100,
+            "bytes": 50100
+          },
+          "restored": false
+        },
+        {
+          "a": {
+            "ms": 77.717771,
+            "pushMs": 46.875773,
+            "popMs": 30.841998,
+            "pushCode": 0,
+            "popCode": 1,
+            "conflicts": 100,
+            "stashesLeft": 1
+          },
+          "b": {
+            "ms": 12.456955,
+            "code": 0,
+            "files": 100
+          },
+          "c": {
+            "ms": 11.096691,
+            "code": 0,
+            "blobs": 100,
+            "bytes": 50100
+          },
+          "restored": false
+        }
+      ],
+      "checks": {
+        "checkoutIsStaged": true,
+        "catFileIsStaged": true
+      },
+      "median": {
+        "stashMs": 77.705524,
+        "checkoutMs": 12.45666,
+        "catFileMs": 11.096691
+      },
+      "spread": {
+        "stashMs": [
+          76.803635,
+          77.717771
+        ],
+        "checkoutMs": [
+          12.188035,
+          12.456955
+        ],
+        "catFileMs": [
+          10.851411,
+          11.201984
+        ]
+      }
+    },
+    {
+      "n": 1000,
+      "dirty": 0,
+      "mode": "adjacent",
+      "runs": [
+        {
+          "a": {
+            "ms": 328.499428,
+            "pushMs": 297.371636,
+            "popMs": 31.127792,
+            "pushCode": 0,
+            "popCode": 0,
+            "conflicts": 0,
+            "stashesLeft": 0
+          },
+          "b": {
+            "ms": 111.430681,
+            "code": 0,
+            "files": 1000
+          },
+          "c": {
+            "ms": 90.211979,
+            "code": 0,
+            "blobs": 1000,
+            "bytes": 501000
+          },
+          "restored": true
+        },
+        {
+          "a": {
+            "ms": 339.54251,
+            "pushMs": 308.576032,
+            "popMs": 30.966478,
+            "pushCode": 0,
+            "popCode": 0,
+            "conflicts": 0,
+            "stashesLeft": 0
+          },
+          "b": {
+            "ms": 111.158384,
+            "code": 0,
+            "files": 1000
+          },
+          "c": {
+            "ms": 91.153547,
+            "code": 0,
+            "blobs": 1000,
+            "bytes": 501000
+          },
+          "restored": true
+        },
+        {
+          "a": {
+            "ms": 338.822611,
+            "pushMs": 308.05553,
+            "popMs": 30.767081,
+            "pushCode": 0,
+            "popCode": 0,
+            "conflicts": 0,
+            "stashesLeft": 0
+          },
+          "b": {
+            "ms": 111.35743,
+            "code": 0,
+            "files": 1000
+          },
+          "c": {
+            "ms": 91.863126,
+            "code": 0,
+            "blobs": 1000,
+            "bytes": 501000
+          },
+          "restored": true
+        }
+      ],
+      "checks": {
+        "checkoutIsStaged": true,
+        "catFileIsStaged": true
+      },
+      "median": {
+        "stashMs": 338.822611,
+        "checkoutMs": 111.35743,
+        "catFileMs": 91.153547
+      },
+      "spread": {
+        "stashMs": [
+          328.499428,
+          339.54251
+        ],
+        "checkoutMs": [
+          111.158384,
+          111.430681
+        ],
+        "catFileMs": [
+          90.211979,
+          91.863126
+        ]
+      }
+    },
+    {
+      "n": 1000,
+      "dirty": 1000,
+      "mode": "adjacent",
+      "runs": [
+        {
+          "a": {
+            "ms": 627.433194,
+            "pushMs": 353.919334,
+            "popMs": 273.51386,
+            "pushCode": 0,
+            "popCode": 1,
+            "conflicts": 1000,
+            "stashesLeft": 1
+          },
+          "b": {
+            "ms": 110.72479,
+            "code": 0,
+            "files": 1000
+          },
+          "c": {
+            "ms": 91.982636,
+            "code": 0,
+            "blobs": 1000,
+            "bytes": 501000
+          },
+          "restored": false
+        },
+        {
+          "a": {
+            "ms": 611.2140039999999,
+            "pushMs": 338.313374,
+            "popMs": 272.90063,
+            "pushCode": 0,
+            "popCode": 1,
+            "conflicts": 1000,
+            "stashesLeft": 1
+          },
+          "b": {
+            "ms": 111.058026,
+            "code": 0,
+            "files": 1000
+          },
+          "c": {
+            "ms": 90.172085,
+            "code": 0,
+            "blobs": 1000,
+            "bytes": 501000
+          },
+          "restored": false
+        },
+        {
+          "a": {
+            "ms": 631.102371,
+            "pushMs": 354.441737,
+            "popMs": 276.660634,
+            "pushCode": 0,
+            "popCode": 1,
+            "conflicts": 1000,
+            "stashesLeft": 1
+          },
+          "b": {
+            "ms": 111.005302,
+            "code": 0,
+            "files": 1000
+          },
+          "c": {
+            "ms": 90.013919,
+            "code": 0,
+            "blobs": 1000,
+            "bytes": 501000
+          },
+          "restored": false
+        }
+      ],
+      "checks": {
+        "checkoutIsStaged": true,
+        "catFileIsStaged": true
+      },
+      "median": {
+        "stashMs": 627.433194,
+        "checkoutMs": 111.005302,
+        "catFileMs": 90.172085
+      },
+      "spread": {
+        "stashMs": [
+          611.2140039999999,
+          631.102371
+        ],
+        "checkoutMs": [
+          110.72479,
+          111.058026
+        ],
+        "catFileMs": [
+          90.013919,
+          91.982636
+        ]
+      }
+    },
+    {
+      "n": 1000,
+      "dirty": 1000,
+      "mode": "apart",
+      "runs": [
+        {
+          "a": {
+            "ms": 745.2082439999999,
+            "pushMs": 390.808716,
+            "popMs": 354.399528,
+            "pushCode": 0,
+            "popCode": 0,
+            "conflicts": 0,
+            "stashesLeft": 0
+          },
+          "b": {
+            "ms": 118.447513,
+            "code": 0,
+            "files": 1000
+          },
+          "c": {
+            "ms": 98.722698,
+            "code": 0,
+            "blobs": 1000,
+            "bytes": 2842000
+          },
+          "restored": true
+        },
+        {
+          "a": {
+            "ms": 717.118508,
+            "pushMs": 357.587105,
+            "popMs": 359.531403,
+            "pushCode": 0,
+            "popCode": 0,
+            "conflicts": 0,
+            "stashesLeft": 0
+          },
+          "b": {
+            "ms": 118.329353,
+            "code": 0,
+            "files": 1000
+          },
+          "c": {
+            "ms": 99.243012,
+            "code": 0,
+            "blobs": 1000,
+            "bytes": 2842000
+          },
+          "restored": true
+        },
+        {
+          "a": {
+            "ms": 749.290324,
+            "pushMs": 394.617959,
+            "popMs": 354.672365,
+            "pushCode": 0,
+            "popCode": 0,
+            "conflicts": 0,
+            "stashesLeft": 0
+          },
+          "b": {
+            "ms": 118.641258,
+            "code": 0,
+            "files": 1000
+          },
+          "c": {
+            "ms": 98.410029,
+            "code": 0,
+            "blobs": 1000,
+            "bytes": 2842000
+          },
+          "restored": true
+        }
+      ],
+      "checks": {
+        "checkoutIsStaged": true,
+        "catFileIsStaged": true
+      },
+      "median": {
+        "stashMs": 745.2082439999999,
+        "checkoutMs": 118.447513,
+        "catFileMs": 98.722698
+      },
+      "spread": {
+        "stashMs": [
+          717.118508,
+          749.290324
+        ],
+        "checkoutMs": [
+          118.329353,
+          118.641258
+        ],
+        "catFileMs": [
+          98.410029,
+          99.243012
+        ]
+      }
+    },
+    {
+      "n": 5000,
+      "dirty": 0,
+      "mode": "adjacent",
+      "runs": [
+        {
+          "a": {
+            "ms": 1594.319209,
+            "pushMs": 1465.469057,
+            "popMs": 128.850152,
+            "pushCode": 0,
+            "popCode": 0,
+            "conflicts": 0,
+            "stashesLeft": 0
+          },
+          "b": {
+            "ms": 566.056277,
+            "code": 0,
+            "files": 5000
+          },
+          "c": {
+            "ms": 440.103735,
+            "code": 0,
+            "blobs": 5000,
+            "bytes": 2505000
+          },
+          "restored": true
+        },
+        {
+          "a": {
+            "ms": 1541.9224820000002,
+            "pushMs": 1468.807015,
+            "popMs": 73.115467,
+            "pushCode": 0,
+            "popCode": 0,
+            "conflicts": 0,
+            "stashesLeft": 0
+          },
+          "b": {
+            "ms": 557.335885,
+            "code": 0,
+            "files": 5000
+          },
+          "c": {
+            "ms": 441.79628,
+            "code": 0,
+            "blobs": 5000,
+            "bytes": 2505000
+          },
+          "restored": true
+        },
+        {
+          "a": {
+            "ms": 1531.0793370000001,
+            "pushMs": 1436.588101,
+            "popMs": 94.491236,
+            "pushCode": 0,
+            "popCode": 0,
+            "conflicts": 0,
+            "stashesLeft": 0
+          },
+          "b": {
+            "ms": 553.589046,
+            "code": 0,
+            "files": 5000
+          },
+          "c": {
+            "ms": 448.411909,
+            "code": 0,
+            "blobs": 5000,
+            "bytes": 2505000
+          },
+          "restored": true
+        }
+      ],
+      "checks": {
+        "checkoutIsStaged": true,
+        "catFileIsStaged": true
+      },
+      "median": {
+        "stashMs": 1541.9224820000002,
+        "checkoutMs": 557.335885,
+        "catFileMs": 441.79628
+      },
+      "spread": {
+        "stashMs": [
+          1531.0793370000001,
+          1594.319209
+        ],
+        "checkoutMs": [
+          553.589046,
+          566.056277
+        ],
+        "catFileMs": [
+          440.103735,
+          448.411909
+        ]
+      }
+    },
+    {
+      "n": 5000,
+      "dirty": 5000,
+      "mode": "adjacent",
+      "runs": [
+        {
+          "a": {
+            "ms": 3023.2105540000002,
+            "pushMs": 1675.043416,
+            "popMs": 1348.167138,
+            "pushCode": 0,
+            "popCode": 1,
+            "conflicts": 5000,
+            "stashesLeft": 1
+          },
+          "b": {
+            "ms": 556.949783,
+            "code": 0,
+            "files": 5000
+          },
+          "c": {
+            "ms": 441.886527,
+            "code": 0,
+            "blobs": 5000,
+            "bytes": 2505000
+          },
+          "restored": false
+        },
+        {
+          "a": {
+            "ms": 2968.3787949999996,
+            "pushMs": 1612.386104,
+            "popMs": 1355.992691,
+            "pushCode": 0,
+            "popCode": 1,
+            "conflicts": 5000,
+            "stashesLeft": 1
+          },
+          "b": {
+            "ms": 564.182764,
+            "code": 0,
+            "files": 5000
+          },
+          "c": {
+            "ms": 443.859056,
+            "code": 0,
+            "blobs": 5000,
+            "bytes": 2505000
+          },
+          "restored": false
+        },
+        {
+          "a": {
+            "ms": 2916.894905,
+            "pushMs": 1579.136841,
+            "popMs": 1337.758064,
+            "pushCode": 0,
+            "popCode": 1,
+            "conflicts": 5000,
+            "stashesLeft": 1
+          },
+          "b": {
+            "ms": 568.240814,
+            "code": 0,
+            "files": 5000
+          },
+          "c": {
+            "ms": 447.365898,
+            "code": 0,
+            "blobs": 5000,
+            "bytes": 2505000
+          },
+          "restored": false
+        }
+      ],
+      "checks": {
+        "checkoutIsStaged": true,
+        "catFileIsStaged": true
+      },
+      "median": {
+        "stashMs": 2968.3787949999996,
+        "checkoutMs": 564.182764,
+        "catFileMs": 443.859056
+      },
+      "spread": {
+        "stashMs": [
+          2916.894905,
+          3023.2105540000002
+        ],
+        "checkoutMs": [
+          556.949783,
+          568.240814
+        ],
+        "catFileMs": [
+          441.886527,
+          447.365898
+        ]
+      }
+    }
+  ]
+}
