@@ -1,0 +1,165 @@
+{
+  "run": "2026-11-13T08:05:24.375Z",
+  "bun": "1.4.4",
+  "graph": {
+    "core": 60,
+    "leaves_per_route": 20,
+    "routes": 40
+  },
+  "runs": 3,
+  "summary": {
+    "separate-api-40": {
+      "ms": 127.2,
+      "raw_runs": [
+        133.4,
+        127.2,
+        126.4
+      ],
+      "files": 40,
+      "raw": 519425,
+      "gz": 80641,
+      "bytes_identical_across_runs": true
+    },
+    "separate-cli-40": {
+      "ms": 374,
+      "raw_runs": [
+        373.2,
+        375.7,
+        374
+      ],
+      "files": 40,
+      "raw": 519425,
+      "gz": 80641,
+      "bytes_identical_across_runs": true
+    },
+    "combined-unsplit-40": {
+      "ms": 27,
+      "raw_runs": [
+        27.6,
+        27,
+        25.2
+      ],
+      "files": 40,
+      "raw": 519425,
+      "gz": 80641,
+      "bytes_identical_across_runs": true
+    },
+    "combined-split-40": {
+      "ms": 23.7,
+      "raw_runs": [
+        23.8,
+        23.7,
+        22.5
+      ],
+      "files": 41,
+      "raw": 193482,
+      "gz": 46081,
+      "bytes_identical_across_runs": true
+    },
+    "combined-unsplit-1": {
+      "ms": 3.5,
+      "raw_runs": [
+        3.7,
+        3.5,
+        3.4
+      ],
+      "files": 1,
+      "raw": 12964,
+      "gz": 1955,
+      "bytes_identical_across_runs": true
+    },
+    "combined-split-1": {
+      "ms": 3.4,
+      "raw_runs": [
+        3.5,
+        3.4,
+        3.4
+      ],
+      "files": 1,
+      "raw": 12964,
+      "gz": 1955,
+      "bytes_identical_across_runs": true
+    },
+    "combined-unsplit-10": {
+      "ms": 7.8,
+      "raw_runs": [
+        7.8,
+        7.8,
+        7.4
+      ],
+      "files": 10,
+      "raw": 129700,
+      "gz": 20091,
+      "bytes_identical_across_runs": true
+    },
+    "combined-split-10": {
+      "ms": 7.3,
+      "raw_runs": [
+        7.5,
+        7.3,
+        6.9
+      ],
+      "files": 11,
+      "raw": 55337,
+      "gz": 12603,
+      "bytes_identical_across_runs": true
+    }
+  },
+  "spread_ms": {
+    "separate-api-40": 7,
+    "separate-cli-40": 2.5,
+    "combined-unsplit-40": 2.4,
+    "combined-split-40": 1.3,
+    "combined-unsplit-1": 0.3,
+    "combined-split-1": 0.1,
+    "combined-unsplit-10": 0.4,
+    "combined-split-10": 0.6
+  },
+  "tiny_build_ms": 4.5,
+  "sanity": {
+    "dir_entries": 41,
+    "first": [
+      "chunk-b96q0pch.js",
+      "route-0",
+      "route-1",
+      "route-10"
+    ],
+    "sizes": {
+      "chunk-b96q0pch.js": 9497,
+      "route-0": 4096,
+      "route-1": 4096,
+      "route-10": 4096
+    },
+    "split_entry_bytes": 4578,
+    "chunk_holds_core": true,
+    "run_exit": 0,
+    "run_stdout": "route 0 159940",
+    "run_stderr": ""
+  },
+  "ratios": {
+    "separate_api_over_combined_unsplit": 4.71,
+    "separate_cli_over_combined_unsplit": 13.85,
+    "combined_split_over_single_route_time": 6.77,
+    "combined_split_over_unsplit_time": 0.88,
+    "raw_bytes_split_over_unsplit": 0.372,
+    "gz_bytes_split_over_unsplit": 0.571,
+    "marginal_ms_per_route_10_to_40": 0.64,
+    "microseconds_per_module": 32.0
+  },
+  "per_page": {
+    "unsplit_bundle": {
+      "raw": 12964,
+      "gz": 1955,
+      "requests": 1
+    },
+    "split_chunk_plus_entry": {
+      "raw": 14075,
+      "gz": 2602,
+      "requests": 2,
+      "chunk_raw": 9497,
+      "chunk_gz": 1490,
+      "entry_raw": 4578,
+      "entry_gz": 1112
+    }
+  }
+}
