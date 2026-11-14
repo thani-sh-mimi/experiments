@@ -1,0 +1,587 @@
+{
+  "meta": {
+    "host": {
+      "cpus": "6",
+      "git": "git version 2.47.3",
+      "bun": "1.4.4"
+    },
+    "files": 400,
+    "history": [
+      500,
+      5000,
+      20000
+    ],
+    "fileSweep": [
+      100,
+      400,
+      1200
+    ],
+    "sweepCommits": 5000,
+    "runs": 3,
+    "note": "disk is `du -sb` apparent size of the new directory; a worktree dir holds only checkout files"
+  },
+  "runs": [
+    {
+      "repo": "h500",
+      "arm": "worktree",
+      "run": 1,
+      "ms": 32.77,
+      "diskBytes": 250417,
+      "teardownMs": 11.23,
+      "files": 400
+    },
+    {
+      "repo": "h500",
+      "arm": "clone-shared",
+      "run": 1,
+      "ms": 34.67,
+      "diskBytes": 309779,
+      "teardownMs": 7.98,
+      "files": 400
+    },
+    {
+      "repo": "h500",
+      "arm": "clone-file",
+      "run": 1,
+      "ms": 125.23,
+      "diskBytes": 885510,
+      "teardownMs": 8.04,
+      "files": 400
+    },
+    {
+      "repo": "h500",
+      "arm": "clone-shared",
+      "run": 2,
+      "ms": 35.07,
+      "diskBytes": 309779,
+      "teardownMs": 7.89,
+      "files": 400
+    },
+    {
+      "repo": "h500",
+      "arm": "clone-file",
+      "run": 2,
+      "ms": 124.29,
+      "diskBytes": 885510,
+      "teardownMs": 8.13,
+      "files": 400
+    },
+    {
+      "repo": "h500",
+      "arm": "worktree",
+      "run": 2,
+      "ms": 31.33,
+      "diskBytes": 250417,
+      "teardownMs": 11.07,
+      "files": 400
+    },
+    {
+      "repo": "h500",
+      "arm": "clone-file",
+      "run": 3,
+      "ms": 123.91,
+      "diskBytes": 885510,
+      "teardownMs": 8.12,
+      "files": 400
+    },
+    {
+      "repo": "h500",
+      "arm": "worktree",
+      "run": 3,
+      "ms": 31.84,
+      "diskBytes": 250417,
+      "teardownMs": 11.05,
+      "files": 400
+    },
+    {
+      "repo": "h500",
+      "arm": "clone-shared",
+      "run": 3,
+      "ms": 34.58,
+      "diskBytes": 309779,
+      "teardownMs": 7.87,
+      "files": 400
+    },
+    {
+      "repo": "h5000",
+      "arm": "worktree",
+      "run": 1,
+      "ms": 30.76,
+      "diskBytes": 250819,
+      "teardownMs": 11.14,
+      "files": 400
+    },
+    {
+      "repo": "h5000",
+      "arm": "clone-shared",
+      "run": 1,
+      "ms": 33.99,
+      "diskBytes": 310184,
+      "teardownMs": 7.8,
+      "files": 400
+    },
+    {
+      "repo": "h5000",
+      "arm": "clone-file",
+      "run": 1,
+      "ms": 647.97,
+      "diskBytes": 4642369,
+      "teardownMs": 8.95,
+      "files": 400
+    },
+    {
+      "repo": "h5000",
+      "arm": "clone-shared",
+      "run": 2,
+      "ms": 34.52,
+      "diskBytes": 310184,
+      "teardownMs": 7.8,
+      "files": 400
+    },
+    {
+      "repo": "h5000",
+      "arm": "clone-file",
+      "run": 2,
+      "ms": 659.01,
+      "diskBytes": 4642369,
+      "teardownMs": 8.79,
+      "files": 400
+    },
+    {
+      "repo": "h5000",
+      "arm": "worktree",
+      "run": 2,
+      "ms": 32.02,
+      "diskBytes": 250819,
+      "teardownMs": 11.11,
+      "files": 400
+    },
+    {
+      "repo": "h5000",
+      "arm": "clone-file",
+      "run": 3,
+      "ms": 652.87,
+      "diskBytes": 4642369,
+      "teardownMs": 8.82,
+      "files": 400
+    },
+    {
+      "repo": "h5000",
+      "arm": "worktree",
+      "run": 3,
+      "ms": 30.97,
+      "diskBytes": 250819,
+      "teardownMs": 11.05,
+      "files": 400
+    },
+    {
+      "repo": "h5000",
+      "arm": "clone-shared",
+      "run": 3,
+      "ms": 34.14,
+      "diskBytes": 310184,
+      "teardownMs": 7.82,
+      "files": 400
+    },
+    {
+      "repo": "h20000",
+      "arm": "worktree",
+      "run": 1,
+      "ms": 31.37,
+      "diskBytes": 250821,
+      "teardownMs": 10.96,
+      "files": 400
+    },
+    {
+      "repo": "h20000",
+      "arm": "clone-shared",
+      "run": 1,
+      "ms": 34.17,
+      "diskBytes": 310189,
+      "teardownMs": 7.82,
+      "files": 400
+    },
+    {
+      "repo": "h20000",
+      "arm": "clone-file",
+      "run": 1,
+      "ms": 2284.18,
+      "diskBytes": 17150371,
+      "teardownMs": 11.26,
+      "files": 400
+    },
+    {
+      "repo": "h20000",
+      "arm": "clone-shared",
+      "run": 2,
+      "ms": 34.58,
+      "diskBytes": 310189,
+      "teardownMs": 7.81,
+      "files": 400
+    },
+    {
+      "repo": "h20000",
+      "arm": "clone-file",
+      "run": 2,
+      "ms": 2281.48,
+      "diskBytes": 17150371,
+      "teardownMs": 11.23,
+      "files": 400
+    },
+    {
+      "repo": "h20000",
+      "arm": "worktree",
+      "run": 2,
+      "ms": 31.18,
+      "diskBytes": 250821,
+      "teardownMs": 11.12,
+      "files": 400
+    },
+    {
+      "repo": "h20000",
+      "arm": "clone-file",
+      "run": 3,
+      "ms": 2284.03,
+      "diskBytes": 17150371,
+      "teardownMs": 11.27,
+      "files": 400
+    },
+    {
+      "repo": "h20000",
+      "arm": "worktree",
+      "run": 3,
+      "ms": 31.39,
+      "diskBytes": 250821,
+      "teardownMs": 11.03,
+      "files": 400
+    },
+    {
+      "repo": "h20000",
+      "arm": "clone-shared",
+      "run": 3,
+      "ms": 33.9,
+      "diskBytes": 310189,
+      "teardownMs": 7.72,
+      "files": 400
+    },
+    {
+      "repo": "files1200",
+      "arm": "worktree",
+      "run": 1,
+      "ms": 81.24,
+      "diskBytes": 751427,
+      "teardownMs": 27.42,
+      "files": 1200
+    },
+    {
+      "repo": "files1200",
+      "arm": "clone-shared",
+      "run": 1,
+      "ms": 78.42,
+      "diskBytes": 874805,
+      "teardownMs": 20.29,
+      "files": 1200
+    },
+    {
+      "repo": "files1200",
+      "arm": "clone-file",
+      "run": 1,
+      "ms": 1425.21,
+      "diskBytes": 7435945,
+      "teardownMs": 21.72,
+      "files": 1200
+    },
+    {
+      "repo": "files1200",
+      "arm": "clone-shared",
+      "run": 2,
+      "ms": 78.81,
+      "diskBytes": 874805,
+      "teardownMs": 20.31,
+      "files": 1200
+    },
+    {
+      "repo": "files1200",
+      "arm": "clone-file",
+      "run": 2,
+      "ms": 1435.23,
+      "diskBytes": 7435945,
+      "teardownMs": 21.61,
+      "files": 1200
+    },
+    {
+      "repo": "files1200",
+      "arm": "worktree",
+      "run": 2,
+      "ms": 85.55,
+      "diskBytes": 751427,
+      "teardownMs": 27.13,
+      "files": 1200
+    },
+    {
+      "repo": "files1200",
+      "arm": "clone-file",
+      "run": 3,
+      "ms": 1423.14,
+      "diskBytes": 7435945,
+      "teardownMs": 21.68,
+      "files": 1200
+    },
+    {
+      "repo": "files1200",
+      "arm": "worktree",
+      "run": 3,
+      "ms": 80.68,
+      "diskBytes": 751427,
+      "teardownMs": 27.77,
+      "files": 1200
+    },
+    {
+      "repo": "files1200",
+      "arm": "clone-shared",
+      "run": 3,
+      "ms": 78.63,
+      "diskBytes": 874805,
+      "teardownMs": 20.19,
+      "files": 1200
+    },
+    {
+      "repo": "files100",
+      "arm": "worktree",
+      "run": 1,
+      "ms": 12.52,
+      "diskBytes": 62725,
+      "teardownMs": 4.57,
+      "files": 100
+    },
+    {
+      "repo": "files100",
+      "arm": "clone-shared",
+      "run": 1,
+      "ms": 17.28,
+      "diskBytes": 98099,
+      "teardownMs": 2.64,
+      "files": 100
+    },
+    {
+      "repo": "files100",
+      "arm": "clone-file",
+      "run": 1,
+      "ms": 347.5,
+      "diskBytes": 3603946,
+      "teardownMs": 3.45,
+      "files": 100
+    },
+    {
+      "repo": "files100",
+      "arm": "clone-shared",
+      "run": 2,
+      "ms": 17.19,
+      "diskBytes": 98099,
+      "teardownMs": 2.59,
+      "files": 100
+    },
+    {
+      "repo": "files100",
+      "arm": "clone-file",
+      "run": 2,
+      "ms": 348.21,
+      "diskBytes": 3603946,
+      "teardownMs": 3.56,
+      "files": 100
+    },
+    {
+      "repo": "files100",
+      "arm": "worktree",
+      "run": 2,
+      "ms": 12.46,
+      "diskBytes": 62725,
+      "teardownMs": 4.66,
+      "files": 100
+    },
+    {
+      "repo": "files100",
+      "arm": "clone-file",
+      "run": 3,
+      "ms": 348.04,
+      "diskBytes": 3603946,
+      "teardownMs": 3.44,
+      "files": 100
+    },
+    {
+      "repo": "files100",
+      "arm": "worktree",
+      "run": 3,
+      "ms": 12.52,
+      "diskBytes": 62725,
+      "teardownMs": 4.63,
+      "files": 100
+    },
+    {
+      "repo": "files100",
+      "arm": "clone-shared",
+      "run": 3,
+      "ms": 17.06,
+      "diskBytes": 98099,
+      "teardownMs": 2.6,
+      "files": 100
+    }
+  ],
+  "summary": [
+    {
+      "repo": "h500",
+      "files": 400,
+      "commits": 500,
+      "arm": "worktree",
+      "ms": 31.84,
+      "msSpread": 1.44,
+      "diskKiB": 244.5,
+      "teardownMs": 11.07
+    },
+    {
+      "repo": "h500",
+      "files": 400,
+      "commits": 500,
+      "arm": "clone-shared",
+      "ms": 34.67,
+      "msSpread": 0.49,
+      "diskKiB": 302.5,
+      "teardownMs": 7.89
+    },
+    {
+      "repo": "h500",
+      "files": 400,
+      "commits": 500,
+      "arm": "clone-file",
+      "ms": 124.29,
+      "msSpread": 1.32,
+      "diskKiB": 864.8,
+      "teardownMs": 8.12
+    },
+    {
+      "repo": "h5000",
+      "files": 400,
+      "commits": 5000,
+      "arm": "worktree",
+      "ms": 30.97,
+      "msSpread": 1.26,
+      "diskKiB": 244.9,
+      "teardownMs": 11.11
+    },
+    {
+      "repo": "h5000",
+      "files": 400,
+      "commits": 5000,
+      "arm": "clone-shared",
+      "ms": 34.14,
+      "msSpread": 0.53,
+      "diskKiB": 302.9,
+      "teardownMs": 7.8
+    },
+    {
+      "repo": "h5000",
+      "files": 400,
+      "commits": 5000,
+      "arm": "clone-file",
+      "ms": 652.87,
+      "msSpread": 11.04,
+      "diskKiB": 4533.6,
+      "teardownMs": 8.82
+    },
+    {
+      "repo": "h20000",
+      "files": 400,
+      "commits": 20000,
+      "arm": "worktree",
+      "ms": 31.37,
+      "msSpread": 0.21,
+      "diskKiB": 244.9,
+      "teardownMs": 11.03
+    },
+    {
+      "repo": "h20000",
+      "files": 400,
+      "commits": 20000,
+      "arm": "clone-shared",
+      "ms": 34.17,
+      "msSpread": 0.68,
+      "diskKiB": 302.9,
+      "teardownMs": 7.81
+    },
+    {
+      "repo": "h20000",
+      "files": 400,
+      "commits": 20000,
+      "arm": "clone-file",
+      "ms": 2284.03,
+      "msSpread": 2.7,
+      "diskKiB": 16748.4,
+      "teardownMs": 11.26
+    },
+    {
+      "repo": "files1200",
+      "files": 1200,
+      "commits": 5000,
+      "arm": "worktree",
+      "ms": 81.24,
+      "msSpread": 4.87,
+      "diskKiB": 733.8,
+      "teardownMs": 27.42
+    },
+    {
+      "repo": "files1200",
+      "files": 1200,
+      "commits": 5000,
+      "arm": "clone-shared",
+      "ms": 78.63,
+      "msSpread": 0.39,
+      "diskKiB": 854.3,
+      "teardownMs": 20.29
+    },
+    {
+      "repo": "files1200",
+      "files": 1200,
+      "commits": 5000,
+      "arm": "clone-file",
+      "ms": 1425.21,
+      "msSpread": 12.09,
+      "diskKiB": 7261.7,
+      "teardownMs": 21.68
+    },
+    {
+      "repo": "files100",
+      "files": 100,
+      "commits": 5000,
+      "arm": "worktree",
+      "ms": 12.52,
+      "msSpread": 0.06,
+      "diskKiB": 61.3,
+      "teardownMs": 4.63
+    },
+    {
+      "repo": "files100",
+      "files": 100,
+      "commits": 5000,
+      "arm": "clone-shared",
+      "ms": 17.19,
+      "msSpread": 0.22,
+      "diskKiB": 95.8,
+      "teardownMs": 2.6
+    },
+    {
+      "repo": "files100",
+      "files": 100,
+      "commits": 5000,
+      "arm": "clone-file",
+      "ms": 348.04,
+      "msSpread": 0.71,
+      "diskKiB": 3519.5,
+      "teardownMs": 3.45
+    }
+  ],
+  "slopesMsPerCommit": {
+    "worktree": 0,
+    "clone-shared": 0,
+    "clone-file": 0.1108
+  }
+}

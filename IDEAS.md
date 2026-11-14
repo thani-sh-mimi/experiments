@@ -28,3 +28,4 @@ Status: `open` · `building` · `done` · `dropped` · `needs Thanish`.
 | Publish tarball             | Does `bun pm pack` ship the same files as `npm pack`, and does a second pack produce the same bytes — can a release hash its tarball?                                          | done (020)    |
 | Staged content in a hook    | Does `git stash push --keep-index` + `pop` survive a partially staged commit, and what does reading the index cost per file against it?                                        | done (021)    |
 | Route bundling shape        | 40 route entrypoints over one shared core: what does a single `splitting` build cost against 40 separate builds, and what does it save in bytes?                               | done (022)    |
+| Parallel workspace cost     | A second working copy for an agent: what do `worktree add`, a shared clone and a `--no-local` clone cost in time and disk, and does the cost follow history or the checkout?   | done (023)    |
