@@ -1,4 +1,4 @@
-# 024 — a compiled CLI costs 995× the bytes and saves 145 ms of start-up
+# 024 — a compiled CLI costs 1,006× the bytes and saves 145 ms of start-up
 
 ## Problem
 
@@ -47,9 +47,9 @@ Derived, from 1 to 4,000 modules:
 - The runtime floor is 104.07 MiB. The program adds 434 KB to `plain` (109 B
   per module, 0.4%) and 1.63 MiB to `bytecode` (427 B per module, 1.6%).
 - Start-up slope: `source` 37.7 µs per module, `plain` 13.8 µs, `bytecode`
-  1.65 µs.
+  1.64 µs.
 - At 4,000 modules the binary starts 12.9× sooner than the source tree
-  (12.2 ms against 157.5 ms) for 995× the bytes of the 110 KB tarball, or 479×
+  (12.2 ms against 157.5 ms) for 1,006× the bytes of the 110 KB tarball, or 482×
   when both are gzipped.
 - `minify` on its own buys 0.2% of bytes and 2% of start-up. It is not the
   lever; `--bytecode` is.
@@ -65,8 +65,9 @@ the CLI runs.
 
 ### What worked
 
-- The floor is flat exactly as predicted: 109 bytes of program per module in a
-  104 MiB file, so the cost of the binary does not follow the size of the code.
+- The floor is flat exactly as predicted: 427 bytes of program per module is
+  1.6% of the file at 4,000 modules, so the cost of the binary does not follow
+  the size of the code.
 - `--bytecode` cuts the per-module start-up slope eightfold against `plain`
   and 23× against `source`, for 1.6% more bytes.
 
@@ -92,9 +93,9 @@ the CLI runs.
   single build graph.
 - Always pass `--bytecode` on the compiled artifact. Skip `--minify` unless the
   bytes are measured to matter; it moves neither number.
-- Publish the gzipped binary, not the raw one: 52.8 MB instead of 109.6 MB.
-- Keep the module count out of the release decision. It costs 109 bytes and
-  1.65 µs per module, and the floor decides the download.
+- Publish the gzipped binary, not the raw one: 53.1 MB instead of 110.8 MB.
+- Keep the module count out of the release decision. It costs 427 bytes and
+  1.64 µs per module, and the floor decides the download.
 
 ## Limits
 
