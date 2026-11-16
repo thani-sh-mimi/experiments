@@ -50,9 +50,12 @@ Controls:
 
 - Basename kept: 1,200 files gave 1,200 renames (96,000 lines, 3,172 ms) and
   2,500 files gave 2,500 renames (200,000 lines, 3,719 ms). No warning at
-  either size.
+  either size, because the basename pass ran first and uncapped.
 - 5-line files, basename kept: 1,000 files gave 1,000 renames; 1,001 files gave
-  0 renames and 1,001 added files. Same cliff, 1/40th the bytes.
+  0 renames and 1,001 added files. `-l0` restores 1,001 renames at 73–74 %
+  similarity, which is under the basename pass's 75 % threshold, so the names
+  bought nothing at either size and the pair count alone decided it. Same
+  cliff, 1/40th the bytes.
 - Similarity: at 100 files, 30% of lines touched still gave 100 renames;
   49% gave none, 40,000 diff lines, and `-l0` did not change it.
 
@@ -67,8 +70,12 @@ Derived:
   faster to produce. The cheap path is the unreadable one.
 - `git log --follow` still crossed the move at 2,000 files with the default
   config: it resolves one path at a time, so it never builds the matrix.
+- The basename pass runs first and is not capped; the cap applies to what it
+  leaves. That is why 2,500 kept-basename files raised no warning and 1,001
+  five-line files did.
 - The filename heuristic explains the folklore. Git pairs files that keep their
-  basename before the matrix, with no cap, when similarity is at least ~75%. The
+  basename before the matrix, with no cap, when similarity is at least 75 %:
+  the default 50 % score plus half of the remaining margin. The
   source comment records 76% of Linux renames, 64% of gcc and 89% of WebKit
   keeping the basename, which is why most large moves still look fine.
 
@@ -91,16 +98,20 @@ does not exist for a move that keeps basenames.
 
 - My 2 s estimate for `-l0` at 2,000 files: it is 12.1 s, quadratic.
 - I assumed the limit counted files. It counts the square.
+- I assumed a kept basename made the limit irrelevant. It clears the basename
+  pass only at 75 % similarity, and the small-file control never did.
 
 ### Surprises
 
-- A 2,500-file move that keeps basenames is free of the limit entirely.
+- A 2,500-file move that keeps basenames stays clear of the limit: the basename
+  pass clears enough candidates for the rest to fit under it.
 - A 49% line change drops below git's 50% similarity floor before any count
   matters, and no flag brings those renames back.
 
 ### Recommendation for the real build
 
-- Move directories and keep the basenames. That is free at any size measured.
+- Move directories and keep the basenames, with the edits light enough to stay
+  above 75 % similarity. That is free at any size measured.
 - When a move must also rename files, keep each commit under 1,000 files, or
   split the rename into its own commit and review the edits separately.
 - Do not put `-l0` in a repo config as a blanket fix: it turns a 2,000-file
