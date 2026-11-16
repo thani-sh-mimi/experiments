@@ -1,0 +1,956 @@
+{
+  "experiment": "025-rename-detection-cliff",
+  "date": "2026-11-16",
+  "git": "git version 2.47.3",
+  "bun": "1.4.4",
+  "cpus": 6,
+  "runs_per_variant": 3,
+  "wall_ms": 331987,
+  "cases": [
+    {
+      "n": 100,
+      "lines": 200,
+      "edit": 0.2,
+      "keep": false,
+      "label": "renamed n=100",
+      "variants": {
+        "default": {
+          "median_ms": 67.53,
+          "runs_ms": [
+            67.2,
+            67.53,
+            67.6
+          ],
+          "added": 4000,
+          "deleted": 4000,
+          "lines": 8000,
+          "entries": 100,
+          "renames": 100,
+          "added_files": 0,
+          "deleted_files": 0,
+          "warning": ""
+        },
+        "no-renames": {
+          "median_ms": 22.97,
+          "runs_ms": [
+            22.96,
+            22.97,
+            23.06
+          ],
+          "added": 20000,
+          "deleted": 20000,
+          "lines": 40000,
+          "entries": 200,
+          "renames": 0,
+          "added_files": 100,
+          "deleted_files": 100,
+          "warning": ""
+        },
+        "l0": {
+          "median_ms": 67.25,
+          "runs_ms": [
+            67.15,
+            67.25,
+            67.38
+          ],
+          "added": 4000,
+          "deleted": 4000,
+          "lines": 8000,
+          "entries": 100,
+          "renames": 100,
+          "added_files": 0,
+          "deleted_files": 0,
+          "warning": ""
+        },
+        "M60": {
+          "median_ms": 67.35,
+          "runs_ms": [
+            67.26,
+            67.35,
+            67.6
+          ],
+          "added": 4000,
+          "deleted": 4000,
+          "lines": 8000,
+          "entries": 100,
+          "renames": 100,
+          "added_files": 0,
+          "deleted_files": 0,
+          "warning": ""
+        }
+      }
+    },
+    {
+      "n": 900,
+      "lines": 200,
+      "edit": 0.2,
+      "keep": false,
+      "label": "renamed n=900",
+      "variants": {
+        "default": {
+          "median_ms": 2566.57,
+          "runs_ms": [
+            2562.19,
+            2566.57,
+            2569.98
+          ],
+          "added": 36000,
+          "deleted": 36000,
+          "lines": 72000,
+          "entries": 900,
+          "renames": 900,
+          "added_files": 0,
+          "deleted_files": 0,
+          "warning": ""
+        },
+        "no-renames": {
+          "median_ms": 185.27,
+          "runs_ms": [
+            184.71,
+            185.27,
+            186.01
+          ],
+          "added": 180000,
+          "deleted": 180000,
+          "lines": 360000,
+          "entries": 1800,
+          "renames": 0,
+          "added_files": 900,
+          "deleted_files": 900,
+          "warning": ""
+        },
+        "l0": {
+          "median_ms": 2563.89,
+          "runs_ms": [
+            2561.38,
+            2563.89,
+            2570.76
+          ],
+          "added": 36000,
+          "deleted": 36000,
+          "lines": 72000,
+          "entries": 900,
+          "renames": 900,
+          "added_files": 0,
+          "deleted_files": 0,
+          "warning": ""
+        },
+        "M60": {
+          "median_ms": 2566.28,
+          "runs_ms": [
+            2564.76,
+            2566.28,
+            2573.38
+          ],
+          "added": 36000,
+          "deleted": 36000,
+          "lines": 72000,
+          "entries": 900,
+          "renames": 900,
+          "added_files": 0,
+          "deleted_files": 0,
+          "warning": ""
+        }
+      }
+    },
+    {
+      "n": 1000,
+      "lines": 200,
+      "edit": 0.2,
+      "keep": false,
+      "label": "renamed n=1000",
+      "variants": {
+        "default": {
+          "median_ms": 3130.43,
+          "runs_ms": [
+            3121.61,
+            3130.43,
+            3135.28
+          ],
+          "added": 40000,
+          "deleted": 40000,
+          "lines": 80000,
+          "entries": 1000,
+          "renames": 1000,
+          "added_files": 0,
+          "deleted_files": 0,
+          "warning": ""
+        },
+        "no-renames": {
+          "median_ms": 207.04,
+          "runs_ms": [
+            205.75,
+            207.04,
+            208.29
+          ],
+          "added": 200000,
+          "deleted": 200000,
+          "lines": 400000,
+          "entries": 2000,
+          "renames": 0,
+          "added_files": 1000,
+          "deleted_files": 1000,
+          "warning": ""
+        },
+        "l0": {
+          "median_ms": 3121.79,
+          "runs_ms": [
+            3121.64,
+            3121.79,
+            3128.47
+          ],
+          "added": 40000,
+          "deleted": 40000,
+          "lines": 80000,
+          "entries": 1000,
+          "renames": 1000,
+          "added_files": 0,
+          "deleted_files": 0,
+          "warning": ""
+        },
+        "M60": {
+          "median_ms": 3120.49,
+          "runs_ms": [
+            3119.69,
+            3120.49,
+            3122.97
+          ],
+          "added": 40000,
+          "deleted": 40000,
+          "lines": 80000,
+          "entries": 1000,
+          "renames": 1000,
+          "added_files": 0,
+          "deleted_files": 0,
+          "warning": ""
+        }
+      }
+    },
+    {
+      "n": 1001,
+      "lines": 200,
+      "edit": 0.2,
+      "keep": false,
+      "label": "renamed n=1001",
+      "variants": {
+        "default": {
+          "median_ms": 208.35,
+          "runs_ms": [
+            207.21,
+            208.35,
+            209.53
+          ],
+          "added": 200200,
+          "deleted": 200200,
+          "lines": 400400,
+          "entries": 2002,
+          "renames": 0,
+          "added_files": 1001,
+          "deleted_files": 1001,
+          "warning": "inexact detection skipped"
+        },
+        "no-renames": {
+          "median_ms": 206.86,
+          "runs_ms": [
+            205.74,
+            206.86,
+            207.8
+          ],
+          "added": 200200,
+          "deleted": 200200,
+          "lines": 400400,
+          "entries": 2002,
+          "renames": 0,
+          "added_files": 1001,
+          "deleted_files": 1001,
+          "warning": ""
+        },
+        "l0": {
+          "median_ms": 3129.7,
+          "runs_ms": [
+            3127.4,
+            3129.7,
+            3136.57
+          ],
+          "added": 40040,
+          "deleted": 40040,
+          "lines": 80080,
+          "entries": 1001,
+          "renames": 1001,
+          "added_files": 0,
+          "deleted_files": 0,
+          "warning": ""
+        },
+        "M60": {
+          "median_ms": 208.77,
+          "runs_ms": [
+            206.13,
+            208.77,
+            212.37
+          ],
+          "added": 200200,
+          "deleted": 200200,
+          "lines": 400400,
+          "entries": 2002,
+          "renames": 0,
+          "added_files": 1001,
+          "deleted_files": 1001,
+          "warning": "inexact detection skipped"
+        }
+      },
+      "follow_commits": {
+        "default": 2,
+        "l0": 2
+      }
+    },
+    {
+      "n": 1500,
+      "lines": 200,
+      "edit": 0.2,
+      "keep": false,
+      "label": "renamed n=1500",
+      "variants": {
+        "default": {
+          "median_ms": 310.43,
+          "runs_ms": [
+            310.07,
+            310.43,
+            313.31
+          ],
+          "added": 300000,
+          "deleted": 300000,
+          "lines": 600000,
+          "entries": 3000,
+          "renames": 0,
+          "added_files": 1500,
+          "deleted_files": 1500,
+          "warning": "inexact detection skipped"
+        },
+        "no-renames": {
+          "median_ms": 308.77,
+          "runs_ms": [
+            307.3,
+            308.77,
+            310.86
+          ],
+          "added": 300000,
+          "deleted": 300000,
+          "lines": 600000,
+          "entries": 3000,
+          "renames": 0,
+          "added_files": 1500,
+          "deleted_files": 1500,
+          "warning": ""
+        },
+        "l0": {
+          "median_ms": 6922.62,
+          "runs_ms": [
+            6922.43,
+            6922.62,
+            6928.77
+          ],
+          "added": 60000,
+          "deleted": 60000,
+          "lines": 120000,
+          "entries": 1500,
+          "renames": 1500,
+          "added_files": 0,
+          "deleted_files": 0,
+          "warning": ""
+        },
+        "M60": {
+          "median_ms": 311.18,
+          "runs_ms": [
+            309.58,
+            311.18,
+            315.57
+          ],
+          "added": 300000,
+          "deleted": 300000,
+          "lines": 600000,
+          "entries": 3000,
+          "renames": 0,
+          "added_files": 1500,
+          "deleted_files": 1500,
+          "warning": "inexact detection skipped"
+        }
+      },
+      "follow_commits": {
+        "default": 2,
+        "l0": 2
+      }
+    },
+    {
+      "n": 2000,
+      "lines": 200,
+      "edit": 0.2,
+      "keep": false,
+      "label": "renamed n=2000",
+      "variants": {
+        "default": {
+          "median_ms": 415.53,
+          "runs_ms": [
+            415.11,
+            415.53,
+            415.53
+          ],
+          "added": 400000,
+          "deleted": 400000,
+          "lines": 800000,
+          "entries": 4000,
+          "renames": 0,
+          "added_files": 2000,
+          "deleted_files": 2000,
+          "warning": "inexact detection skipped"
+        },
+        "no-renames": {
+          "median_ms": 414.45,
+          "runs_ms": [
+            411.71,
+            414.45,
+            414.62
+          ],
+          "added": 400000,
+          "deleted": 400000,
+          "lines": 800000,
+          "entries": 4000,
+          "renames": 0,
+          "added_files": 2000,
+          "deleted_files": 2000,
+          "warning": ""
+        },
+        "l0": {
+          "median_ms": 12148.28,
+          "runs_ms": [
+            12141.83,
+            12148.28,
+            12157.56
+          ],
+          "added": 80000,
+          "deleted": 80000,
+          "lines": 160000,
+          "entries": 2000,
+          "renames": 2000,
+          "added_files": 0,
+          "deleted_files": 0,
+          "warning": ""
+        },
+        "M60": {
+          "median_ms": 418.33,
+          "runs_ms": [
+            415.65,
+            418.33,
+            419.82
+          ],
+          "added": 400000,
+          "deleted": 400000,
+          "lines": 800000,
+          "entries": 4000,
+          "renames": 0,
+          "added_files": 2000,
+          "deleted_files": 2000,
+          "warning": "inexact detection skipped"
+        }
+      },
+      "follow_commits": {
+        "default": 2,
+        "l0": 2
+      }
+    },
+    {
+      "n": 1200,
+      "lines": 200,
+      "edit": 0.2,
+      "keep": true,
+      "label": "kept n=1200",
+      "variants": {
+        "default": {
+          "median_ms": 3172.29,
+          "runs_ms": [
+            3171.94,
+            3172.29,
+            3176.88
+          ],
+          "added": 48000,
+          "deleted": 48000,
+          "lines": 96000,
+          "entries": 1200,
+          "renames": 1200,
+          "added_files": 0,
+          "deleted_files": 0,
+          "warning": ""
+        },
+        "no-renames": {
+          "median_ms": 248.12,
+          "runs_ms": [
+            246.75,
+            248.12,
+            249.43
+          ],
+          "added": 240000,
+          "deleted": 240000,
+          "lines": 480000,
+          "entries": 2400,
+          "renames": 0,
+          "added_files": 1200,
+          "deleted_files": 1200,
+          "warning": ""
+        },
+        "l0": {
+          "median_ms": 3172.95,
+          "runs_ms": [
+            3167.7,
+            3172.95,
+            3173.4
+          ],
+          "added": 48000,
+          "deleted": 48000,
+          "lines": 96000,
+          "entries": 1200,
+          "renames": 1200,
+          "added_files": 0,
+          "deleted_files": 0,
+          "warning": ""
+        },
+        "M60": {
+          "median_ms": 405.04,
+          "runs_ms": [
+            404.07,
+            405.04,
+            406.32
+          ],
+          "added": 240000,
+          "deleted": 240000,
+          "lines": 480000,
+          "entries": 2400,
+          "renames": 0,
+          "added_files": 1200,
+          "deleted_files": 1200,
+          "warning": "inexact detection skipped"
+        }
+      }
+    },
+    {
+      "n": 2500,
+      "lines": 200,
+      "edit": 0.2,
+      "keep": true,
+      "label": "kept n=2500",
+      "variants": {
+        "default": {
+          "median_ms": 3718.87,
+          "runs_ms": [
+            3709.21,
+            3718.87,
+            3720.09
+          ],
+          "added": 100000,
+          "deleted": 100000,
+          "lines": 200000,
+          "entries": 2500,
+          "renames": 2500,
+          "added_files": 0,
+          "deleted_files": 0,
+          "warning": ""
+        },
+        "no-renames": {
+          "median_ms": 517.06,
+          "runs_ms": [
+            515.5,
+            517.06,
+            521.29
+          ],
+          "added": 500000,
+          "deleted": 500000,
+          "lines": 1000000,
+          "entries": 5000,
+          "renames": 0,
+          "added_files": 2500,
+          "deleted_files": 2500,
+          "warning": ""
+        },
+        "M60": {
+          "median_ms": 848.8,
+          "runs_ms": [
+            847.15,
+            848.8,
+            853.45
+          ],
+          "added": 500000,
+          "deleted": 500000,
+          "lines": 1000000,
+          "entries": 5000,
+          "renames": 0,
+          "added_files": 2500,
+          "deleted_files": 2500,
+          "warning": "inexact detection skipped"
+        }
+      }
+    },
+    {
+      "n": 1000,
+      "lines": 5,
+      "edit": 0.2,
+      "keep": true,
+      "label": "tiny n=1000",
+      "variants": {
+        "default": {
+          "median_ms": 288.5,
+          "runs_ms": [
+            287.69,
+            288.5,
+            294.79
+          ],
+          "added": 1000,
+          "deleted": 1000,
+          "lines": 2000,
+          "entries": 1000,
+          "renames": 1000,
+          "added_files": 0,
+          "deleted_files": 0,
+          "warning": ""
+        },
+        "no-renames": {
+          "median_ms": 95.41,
+          "runs_ms": [
+            94.73,
+            95.41,
+            96.67
+          ],
+          "added": 5000,
+          "deleted": 5000,
+          "lines": 10000,
+          "entries": 2000,
+          "renames": 0,
+          "added_files": 1000,
+          "deleted_files": 1000,
+          "warning": ""
+        },
+        "l0": {
+          "median_ms": 289.28,
+          "runs_ms": [
+            288.96,
+            289.28,
+            290.3
+          ],
+          "added": 1000,
+          "deleted": 1000,
+          "lines": 2000,
+          "entries": 1000,
+          "renames": 1000,
+          "added_files": 0,
+          "deleted_files": 0,
+          "warning": ""
+        },
+        "M60": {
+          "median_ms": 288.98,
+          "runs_ms": [
+            288.46,
+            288.98,
+            290.82
+          ],
+          "added": 1000,
+          "deleted": 1000,
+          "lines": 2000,
+          "entries": 1000,
+          "renames": 1000,
+          "added_files": 0,
+          "deleted_files": 0,
+          "warning": ""
+        }
+      }
+    },
+    {
+      "n": 1001,
+      "lines": 5,
+      "edit": 0.2,
+      "keep": true,
+      "label": "tiny n=1001",
+      "variants": {
+        "default": {
+          "median_ms": 141.14,
+          "runs_ms": [
+            140.36,
+            141.14,
+            143.04
+          ],
+          "added": 5005,
+          "deleted": 5005,
+          "lines": 10010,
+          "entries": 2002,
+          "renames": 0,
+          "added_files": 1001,
+          "deleted_files": 1001,
+          "warning": "inexact detection skipped"
+        },
+        "no-renames": {
+          "median_ms": 98.4,
+          "runs_ms": [
+            93.68,
+            98.4,
+            100
+          ],
+          "added": 5005,
+          "deleted": 5005,
+          "lines": 10010,
+          "entries": 2002,
+          "renames": 0,
+          "added_files": 1001,
+          "deleted_files": 1001,
+          "warning": ""
+        },
+        "l0": {
+          "median_ms": 289.66,
+          "runs_ms": [
+            288.2,
+            289.66,
+            290.09
+          ],
+          "added": 1001,
+          "deleted": 1001,
+          "lines": 2002,
+          "entries": 1001,
+          "renames": 1001,
+          "added_files": 0,
+          "deleted_files": 0,
+          "warning": ""
+        },
+        "M60": {
+          "median_ms": 140.61,
+          "runs_ms": [
+            138.77,
+            140.61,
+            140.69
+          ],
+          "added": 5005,
+          "deleted": 5005,
+          "lines": 10010,
+          "entries": 2002,
+          "renames": 0,
+          "added_files": 1001,
+          "deleted_files": 1001,
+          "warning": "inexact detection skipped"
+        }
+      }
+    },
+    {
+      "n": 100,
+      "lines": 200,
+      "edit": 0.3,
+      "keep": true,
+      "label": "similarity edit=30%",
+      "variants": {
+        "default": {
+          "median_ms": 71.78,
+          "runs_ms": [
+            71.7,
+            71.78,
+            71.96
+          ],
+          "added": 6700,
+          "deleted": 6700,
+          "lines": 13400,
+          "entries": 100,
+          "renames": 100,
+          "added_files": 0,
+          "deleted_files": 0,
+          "warning": ""
+        },
+        "no-renames": {
+          "median_ms": 23.23,
+          "runs_ms": [
+            22.97,
+            23.23,
+            23.28
+          ],
+          "added": 20000,
+          "deleted": 20000,
+          "lines": 40000,
+          "entries": 200,
+          "renames": 0,
+          "added_files": 100,
+          "deleted_files": 100,
+          "warning": ""
+        },
+        "l0": {
+          "median_ms": 71.52,
+          "runs_ms": [
+            71.47,
+            71.52,
+            71.61
+          ],
+          "added": 6700,
+          "deleted": 6700,
+          "lines": 13400,
+          "entries": 100,
+          "renames": 100,
+          "added_files": 0,
+          "deleted_files": 0,
+          "warning": ""
+        },
+        "M60": {
+          "median_ms": 71.67,
+          "runs_ms": [
+            71.61,
+            71.67,
+            72.05
+          ],
+          "added": 20000,
+          "deleted": 20000,
+          "lines": 40000,
+          "entries": 200,
+          "renames": 0,
+          "added_files": 100,
+          "deleted_files": 100,
+          "warning": ""
+        }
+      }
+    },
+    {
+      "n": 100,
+      "lines": 200,
+      "edit": 0.49,
+      "keep": true,
+      "label": "similarity edit=49%",
+      "variants": {
+        "default": {
+          "median_ms": 71.44,
+          "runs_ms": [
+            71.42,
+            71.44,
+            71.57
+          ],
+          "added": 20000,
+          "deleted": 20000,
+          "lines": 40000,
+          "entries": 200,
+          "renames": 0,
+          "added_files": 100,
+          "deleted_files": 100,
+          "warning": ""
+        },
+        "no-renames": {
+          "median_ms": 22.9,
+          "runs_ms": [
+            22.8,
+            22.9,
+            23.01
+          ],
+          "added": 20000,
+          "deleted": 20000,
+          "lines": 40000,
+          "entries": 200,
+          "renames": 0,
+          "added_files": 100,
+          "deleted_files": 100,
+          "warning": ""
+        },
+        "l0": {
+          "median_ms": 71.52,
+          "runs_ms": [
+            71.43,
+            71.52,
+            71.58
+          ],
+          "added": 20000,
+          "deleted": 20000,
+          "lines": 40000,
+          "entries": 200,
+          "renames": 0,
+          "added_files": 100,
+          "deleted_files": 100,
+          "warning": ""
+        },
+        "M60": {
+          "median_ms": 71.46,
+          "runs_ms": [
+            71.07,
+            71.46,
+            71.52
+          ],
+          "added": 20000,
+          "deleted": 20000,
+          "lines": 40000,
+          "entries": 200,
+          "renames": 0,
+          "added_files": 100,
+          "deleted_files": 100,
+          "warning": ""
+        }
+      }
+    },
+    {
+      "n": 100,
+      "lines": 200,
+      "edit": 0.6,
+      "keep": true,
+      "label": "similarity edit=60%",
+      "variants": {
+        "default": {
+          "median_ms": 71.21,
+          "runs_ms": [
+            71.18,
+            71.21,
+            71.66
+          ],
+          "added": 20000,
+          "deleted": 20000,
+          "lines": 40000,
+          "entries": 200,
+          "renames": 0,
+          "added_files": 100,
+          "deleted_files": 100,
+          "warning": ""
+        },
+        "no-renames": {
+          "median_ms": 22.74,
+          "runs_ms": [
+            22.71,
+            22.74,
+            23.26
+          ],
+          "added": 20000,
+          "deleted": 20000,
+          "lines": 40000,
+          "entries": 200,
+          "renames": 0,
+          "added_files": 100,
+          "deleted_files": 100,
+          "warning": ""
+        },
+        "l0": {
+          "median_ms": 71.08,
+          "runs_ms": [
+            71.05,
+            71.08,
+            71.11
+          ],
+          "added": 20000,
+          "deleted": 20000,
+          "lines": 40000,
+          "entries": 200,
+          "renames": 0,
+          "added_files": 100,
+          "deleted_files": 100,
+          "warning": ""
+        },
+        "M60": {
+          "median_ms": 71.15,
+          "runs_ms": [
+            70.78,
+            71.15,
+            71.25
+          ],
+          "added": 20000,
+          "deleted": 20000,
+          "lines": 40000,
+          "entries": 200,
+          "renames": 0,
+          "added_files": 100,
+          "deleted_files": 100,
+          "warning": ""
+        }
+      }
+    }
+  ]
+}

@@ -30,3 +30,4 @@ Status: `open` · `building` · `done` · `dropped` · `needs Thanish`.
 | Route bundling shape        | 40 route entrypoints over one shared core: what does a single `splitting` build cost against 40 separate builds, and what does it save in bytes?                               | done (022)    |
 | Parallel workspace cost     | A second working copy for an agent: what do `worktree add`, a shared clone and a `--no-local` clone cost in time and disk, and does the cost follow history or the checkout?   | done (023)    |
 | Compiled CLI artifact       | Shipping a CLI: what does `bun build --compile` cost in bytes and build time against a source tarball, does the gap follow module count, and how much start-up does it buy back?  | done (024)     |
+| Rename detection cliff      | A move PR that also edits every file: at how many files does `git diff` stop showing renames, what does the review surface become, and what does lifting `diff.renameLimit` cost? | done (025)     |
