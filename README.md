@@ -29,5 +29,6 @@ One small SDLC problem a day: a hypothesis with a number in it, a harness that m
 | 023 | [parallel-workspace-cost](experiments/023-parallel-workspace-cost)       | What does a second checkout for an agent cost?                               | Validated: worktree 31 ms and 245 KiB against 2,284 ms and 16.4 MiB; 1.4% of a clone, flat in history                                   |
 | 024 | [compiled-cli-artifact](experiments/024-compiled-cli-artifact)           | What does a compiled CLI cost against a source tarball?                      | Partial: 995× the bytes for 12.9× start-up; `--bytecode` is the lever, minify is not; 109 B per module                                 |
 | 025 | [rename-detection-cliff](experiments/025-rename-detection-cliff)         | When does a move-with-edits stop showing as renames?                         | Partial: cliff at 1,001 files, 5× the diff lines; kept basenames escape it, `-l0` is 12 s at 2,000                              |
+| 026 | [commit-signing-cost](experiments/026-commit-signing-cost)               | What does a signed commit cost, and what does verifying it cost?              | Partial: +8 ms per commit, flat; GPG cold +12 ms, not 250; `%G?` 15 ms/commit, 1.5 s per 100                    |
 
 The backlog is in [IDEAS.md](IDEAS.md). How an experiment is run and written up is in [AGENTS.md](AGENTS.md).
