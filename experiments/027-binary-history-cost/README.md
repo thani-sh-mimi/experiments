@@ -49,9 +49,9 @@ Bun 1.4.4, zlib default.
 
 | case                             | loose `.git` | pack after gc | per revision | fresh clone         |
 | -------------------------------- | ------------ | ------------- | ------------ | ------------------- |
-| binary, re-encoded each time     | 100.1 MiB    | 100.1 MiB     | 1,035 KiB    | 100.1 MiB, 1,577 ms |
-| binary, 1 % rewritten in place   | 100.1 MiB    | 7.2 MiB       | 74 KiB       | 7.2 MiB, 378 ms     |
-| text, 1 % of lines edited        | 16.3 MiB     | 1.03 MiB      | 10.6 KiB     | 1.05 MiB, 371 ms    |
+| binary, re-encoded each time     | 100.1 MiB    | 100.1 MiB     | 1,025 KiB    | 100.1 MiB, 1,577 ms |
+| binary, 1 % rewritten in place   | 100.1 MiB    | 7.2 MiB       | 73.5 KiB     | 7.2 MiB, 378 ms     |
+| text, 1 % of lines edited        | 16.3 MiB     | 1.03 MiB      | 10.5 KiB     | 1.05 MiB, 371 ms    |
 | LFS pointer, blob stored outside | 0.08 MiB     | 0.04 MiB      | 0.4 KiB      | 0.07 MiB, 30 ms     |
 
 `git gc` gave back 0.04 % on the re-encoded binary: 100.10 MiB of loose objects
@@ -63,12 +63,12 @@ The law is linear in size. 50 revisions of fresh random bytes per run:
 
 | file size | pack       | per revision | share of the file |
 | --------- | ---------- | ------------ | ----------------- |
-| 256 KiB   | 12.52 MiB  | 261.6 KiB    | 102.2 %           |
-| 1 MiB     | 50.03 MiB  | 1,045.5 KiB  | 102.1 %           |
-| 4 MiB     | 200.08 MiB | 4,181.2 KiB  | 102.1 %           |
+| 256 KiB   | 12.52 MiB  | 256.4 KiB    | 100.1 %           |
+| 1 MiB     | 50.03 MiB  | 1,024.6 KiB  | 100.1 %           |
+| 4 MiB     | 200.08 MiB | 4,097.5 KiB  | 100.0 %           |
 
-All three runs returned the same bytes. The 2 % above the file size is the
-commit and tree objects.
+All three runs returned the same bytes. The fraction above the file size — 0.15 %
+at 256 KiB, 0.06 % at 1 MiB, 0.04 % at 4 MiB — is the commit and tree objects.
 
 Neither delta case is as cheap as it looks. Both packs hold 5 whole copies and 95
 deltas, so the pack is mostly the copies:
@@ -78,7 +78,7 @@ deltas, so the pack is mostly the copies:
 | binary-shift | 5,242,880 B, zlib saved 0 % | 2,252,340 B | 10 KiB to 265 KiB  |
 | text-edit    | 835,841 B, zlib saved 84 %  | 212,161 B   | 2.2 KiB to 4.6 KiB |
 
-Extrapolated from the measured 1,035 KiB per revision: 1,013 revisions of one
+Extrapolated from the measured 1,025 KiB per revision: 1,023 revisions of one
 1 MiB asset reach 1 GiB of history, which is GitHub's recommended repository
 size, and every clone pays all of it.
 
@@ -86,11 +86,11 @@ size, and every clone pays all of it.
 
 ### What worked
 
-- The 1.0 MiB per revision prediction held at 1,035 KiB, and the linear law held
+- The 1.0 MiB per revision prediction held at 1,025 KiB, and the linear law held
   at three sizes with identical byte counts.
 - `git gc` recovered nothing on incompressible content, as predicted, and 93.7 %
   on text. The pack is not a repair pass.
-- The pointer file is 2,500× cheaper than the blob it points at in history
+- The pointer file is 2,563× cheaper than the blob it points at in history
   (40 KiB against 100.1 MiB), which is the whole case for LFS.
 
 ### What didn't
