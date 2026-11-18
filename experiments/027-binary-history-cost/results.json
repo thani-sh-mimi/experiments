@@ -1,0 +1,160 @@
+{
+  "runs": 3,
+  "revs": 100,
+  "sizeBytes": 1048576,
+  "host": "6 vCPU container",
+  "cases": {
+    "binary-rewrite": [
+      {
+        "looseBytes": 104967521,
+        "packBytes": 104919040,
+        "cloneBytes": 104948233,
+        "cloneMs": 1572.8,
+        "gcMs": 9172,
+        "buildMs": 6972.3,
+        "commitMs": 11.53,
+        "packDeltas": 0,
+        "packObjects": 300,
+        "lfsStoreBytes": 0
+      },
+      {
+        "looseBytes": 104967545,
+        "packBytes": 104919040,
+        "cloneBytes": 104948265,
+        "cloneMs": 1576.7,
+        "gcMs": 9160,
+        "buildMs": 6979.7,
+        "commitMs": 11.49,
+        "packDeltas": 0,
+        "packObjects": 300,
+        "lfsStoreBytes": 0
+      },
+      {
+        "looseBytes": 104967566,
+        "packBytes": 104919040,
+        "cloneBytes": 104948285,
+        "cloneMs": 1579.1,
+        "gcMs": 9229.9,
+        "buildMs": 6957.7,
+        "commitMs": 11.46,
+        "packDeltas": 0,
+        "packObjects": 300,
+        "lfsStoreBytes": 0
+      }
+    ],
+    "binary-shift": [
+      {
+        "looseBytes": 104967551,
+        "packBytes": 7525376,
+        "cloneBytes": 7554532,
+        "cloneMs": 378.2,
+        "gcMs": 1749.3,
+        "buildMs": 6839,
+        "commitMs": 11.56,
+        "packDeltas": 95,
+        "packObjects": 300,
+        "lfsStoreBytes": 0
+      },
+      {
+        "looseBytes": 104967546,
+        "packBytes": 7343104,
+        "cloneBytes": 7372590,
+        "cloneMs": 337.9,
+        "gcMs": 1718.2,
+        "buildMs": 6799.1,
+        "commitMs": 11.59,
+        "packDeltas": 95,
+        "packObjects": 300,
+        "lfsStoreBytes": 0
+      },
+      {
+        "looseBytes": 104967537,
+        "packBytes": 7549952,
+        "cloneBytes": 7579068,
+        "cloneMs": 391.7,
+        "gcMs": 1717.2,
+        "buildMs": 6799,
+        "commitMs": 11.55,
+        "packDeltas": 95,
+        "packObjects": 300,
+        "lfsStoreBytes": 0
+      }
+    ],
+    "text-edit": [
+      {
+        "looseBytes": 17110239,
+        "packBytes": 1076224,
+        "cloneBytes": 1105545,
+        "cloneMs": 369.3,
+        "gcMs": 2075.3,
+        "buildMs": 7270.8,
+        "commitMs": 11.44,
+        "packDeltas": 95,
+        "packObjects": 300,
+        "lfsStoreBytes": 0
+      },
+      {
+        "looseBytes": 17110220,
+        "packBytes": 1076224,
+        "cloneBytes": 1105828,
+        "cloneMs": 375.9,
+        "gcMs": 2086,
+        "buildMs": 7293.5,
+        "commitMs": 11.47,
+        "packDeltas": 95,
+        "packObjects": 300,
+        "lfsStoreBytes": 0
+      },
+      {
+        "looseBytes": 17110219,
+        "packBytes": 1076224,
+        "cloneBytes": 1105824,
+        "cloneMs": 371.4,
+        "gcMs": 2069.1,
+        "buildMs": 7212.4,
+        "commitMs": 11.39,
+        "packDeltas": 95,
+        "packObjects": 300,
+        "lfsStoreBytes": 0
+      }
+    ],
+    "pointer": [
+      {
+        "looseBytes": 88579,
+        "packBytes": 40960,
+        "cloneBytes": 69722,
+        "cloneMs": 29.6,
+        "gcMs": 114.7,
+        "buildMs": 1478.6,
+        "commitMs": 6.33,
+        "packDeltas": 0,
+        "packObjects": 300,
+        "lfsStoreBytes": 104857600
+      },
+      {
+        "looseBytes": 88601,
+        "packBytes": 40960,
+        "cloneBytes": 69726,
+        "cloneMs": 29.6,
+        "gcMs": 114.3,
+        "buildMs": 1476.8,
+        "commitMs": 6.31,
+        "packDeltas": 0,
+        "packObjects": 300,
+        "lfsStoreBytes": 104857600
+      },
+      {
+        "looseBytes": 88578,
+        "packBytes": 40960,
+        "cloneBytes": 69718,
+        "cloneMs": 29.3,
+        "gcMs": 113.3,
+        "buildMs": 1474.8,
+        "commitMs": 6.33,
+        "packDeltas": 0,
+        "packObjects": 300,
+        "lfsStoreBytes": 104857600
+      }
+    ]
+  }
+}

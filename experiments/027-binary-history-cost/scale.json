@@ -1,0 +1,66 @@
+{
+  "runs": 3,
+  "revs": 50,
+  "cases": {
+    "262144": [
+      {
+        "sizeBytes": 262144,
+        "packBytes": 13126656,
+        "perRevBytes": 267891,
+        "gcMs": 1509
+      },
+      {
+        "sizeBytes": 262144,
+        "packBytes": 13126656,
+        "perRevBytes": 267891,
+        "gcMs": 1509
+      },
+      {
+        "sizeBytes": 262144,
+        "packBytes": 13126656,
+        "perRevBytes": 267891,
+        "gcMs": 1530
+      }
+    ],
+    "1048576": [
+      {
+        "sizeBytes": 1048576,
+        "packBytes": 52459520,
+        "perRevBytes": 1070602,
+        "gcMs": 6067
+      },
+      {
+        "sizeBytes": 1048576,
+        "packBytes": 52459520,
+        "perRevBytes": 1070602,
+        "gcMs": 6078
+      },
+      {
+        "sizeBytes": 1048576,
+        "packBytes": 52459520,
+        "perRevBytes": 1070602,
+        "gcMs": 6115
+      }
+    ],
+    "4194304": [
+      {
+        "sizeBytes": 4194304,
+        "packBytes": 209794048,
+        "perRevBytes": 4281511,
+        "gcMs": 25686
+      },
+      {
+        "sizeBytes": 4194304,
+        "packBytes": 209794048,
+        "perRevBytes": 4281511,
+        "gcMs": 25862
+      },
+      {
+        "sizeBytes": 4194304,
+        "packBytes": 209794048,
+        "perRevBytes": 4281511,
+        "gcMs": 25841
+      }
+    ]
+  }
+}
