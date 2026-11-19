@@ -1,0 +1,477 @@
+{
+  "meta": {
+    "files_tracked": 20002,
+    "files_ignored": 2000,
+    "bytes_on_disk": "97M",
+    "bytes_tracked_on_disk": 72454496,
+    "bytes_of_file_list": 468922,
+    "query_rare": "ZEBRA_QUARRY",
+    "query_absent": "XYZZY_NOT_PRESENT_e9",
+    "runs": 3,
+    "versions": ["rg 14.1.1", "grep 3.11", "git 2.47.3"],
+    "cwd": "."
+  },
+  "runs": [
+    {
+      "run": 1,
+      "query": "rare",
+      "tool": "rg",
+      "ms": 63.98,
+      "lines": 50
+    },
+    {
+      "run": 1,
+      "query": "rare",
+      "tool": "git grep",
+      "ms": 63.4,
+      "lines": 50
+    },
+    {
+      "run": 1,
+      "query": "rare",
+      "tool": "grep (fair)",
+      "ms": 251.47,
+      "lines": 50
+    },
+    {
+      "run": 1,
+      "query": "rare",
+      "tool": "grep (naive)",
+      "ms": 272.09,
+      "lines": 55
+    },
+    {
+      "run": 1,
+      "query": "rare",
+      "tool": "xargs grep",
+      "ms": 220.38,
+      "lines": 50
+    },
+    {
+      "run": 1,
+      "query": "absent",
+      "tool": "rg",
+      "ms": 67.02,
+      "lines": 0
+    },
+    {
+      "run": 1,
+      "query": "absent",
+      "tool": "git grep",
+      "ms": 66.69,
+      "lines": 0
+    },
+    {
+      "run": 1,
+      "query": "absent",
+      "tool": "grep (fair)",
+      "ms": 266.54,
+      "lines": 0
+    },
+    {
+      "run": 1,
+      "query": "absent",
+      "tool": "grep (naive)",
+      "ms": 288.12,
+      "lines": 0
+    },
+    {
+      "run": 1,
+      "query": "absent",
+      "tool": "xargs grep",
+      "ms": 236.37,
+      "lines": 0
+    },
+    {
+      "run": 1,
+      "query": "walk",
+      "tool": "git ls-files",
+      "ms": 6.75,
+      "lines": 1
+    },
+    {
+      "run": 1,
+      "query": "walk",
+      "tool": "find",
+      "ms": 71.23,
+      "lines": 20002
+    },
+    {
+      "run": 1,
+      "query": "walk",
+      "tool": "rg --files",
+      "ms": 26.41,
+      "lines": 20001
+    },
+    {
+      "run": 1,
+      "query": "onefile",
+      "tool": "rg",
+      "ms": 3.49,
+      "lines": 0
+    },
+    {
+      "run": 1,
+      "query": "onefile",
+      "tool": "git grep",
+      "ms": 7.88,
+      "lines": 0
+    },
+    {
+      "run": 1,
+      "query": "onefile",
+      "tool": "grep",
+      "ms": 1.76,
+      "lines": 0
+    },
+    {
+      "run": 2,
+      "query": "rare",
+      "tool": "rg",
+      "ms": 66.13,
+      "lines": 50
+    },
+    {
+      "run": 2,
+      "query": "rare",
+      "tool": "git grep",
+      "ms": 64.37,
+      "lines": 50
+    },
+    {
+      "run": 2,
+      "query": "rare",
+      "tool": "grep (fair)",
+      "ms": 250.48,
+      "lines": 50
+    },
+    {
+      "run": 2,
+      "query": "rare",
+      "tool": "grep (naive)",
+      "ms": 273.21,
+      "lines": 55
+    },
+    {
+      "run": 2,
+      "query": "rare",
+      "tool": "xargs grep",
+      "ms": 222.1,
+      "lines": 50
+    },
+    {
+      "run": 2,
+      "query": "absent",
+      "tool": "rg",
+      "ms": 66.67,
+      "lines": 0
+    },
+    {
+      "run": 2,
+      "query": "absent",
+      "tool": "git grep",
+      "ms": 60.39,
+      "lines": 0
+    },
+    {
+      "run": 2,
+      "query": "absent",
+      "tool": "grep (fair)",
+      "ms": 269.14,
+      "lines": 0
+    },
+    {
+      "run": 2,
+      "query": "absent",
+      "tool": "grep (naive)",
+      "ms": 292.72,
+      "lines": 0
+    },
+    {
+      "run": 2,
+      "query": "absent",
+      "tool": "xargs grep",
+      "ms": 237.3,
+      "lines": 0
+    },
+    {
+      "run": 2,
+      "query": "walk",
+      "tool": "git ls-files",
+      "ms": 8.01,
+      "lines": 1
+    },
+    {
+      "run": 2,
+      "query": "walk",
+      "tool": "find",
+      "ms": 72.04,
+      "lines": 20002
+    },
+    {
+      "run": 2,
+      "query": "walk",
+      "tool": "rg --files",
+      "ms": 25.42,
+      "lines": 20001
+    },
+    {
+      "run": 2,
+      "query": "onefile",
+      "tool": "rg",
+      "ms": 3.54,
+      "lines": 0
+    },
+    {
+      "run": 2,
+      "query": "onefile",
+      "tool": "git grep",
+      "ms": 6.52,
+      "lines": 0
+    },
+    {
+      "run": 2,
+      "query": "onefile",
+      "tool": "grep",
+      "ms": 1.73,
+      "lines": 0
+    },
+    {
+      "run": 3,
+      "query": "rare",
+      "tool": "rg",
+      "ms": 67.08,
+      "lines": 50
+    },
+    {
+      "run": 3,
+      "query": "rare",
+      "tool": "git grep",
+      "ms": 62.93,
+      "lines": 50
+    },
+    {
+      "run": 3,
+      "query": "rare",
+      "tool": "grep (fair)",
+      "ms": 251.48,
+      "lines": 50
+    },
+    {
+      "run": 3,
+      "query": "rare",
+      "tool": "grep (naive)",
+      "ms": 272.08,
+      "lines": 55
+    },
+    {
+      "run": 3,
+      "query": "rare",
+      "tool": "xargs grep",
+      "ms": 221.04,
+      "lines": 50
+    },
+    {
+      "run": 3,
+      "query": "absent",
+      "tool": "rg",
+      "ms": 65.11,
+      "lines": 0
+    },
+    {
+      "run": 3,
+      "query": "absent",
+      "tool": "git grep",
+      "ms": 60.88,
+      "lines": 0
+    },
+    {
+      "run": 3,
+      "query": "absent",
+      "tool": "grep (fair)",
+      "ms": 266.37,
+      "lines": 0
+    },
+    {
+      "run": 3,
+      "query": "absent",
+      "tool": "grep (naive)",
+      "ms": 292.83,
+      "lines": 0
+    },
+    {
+      "run": 3,
+      "query": "absent",
+      "tool": "xargs grep",
+      "ms": 236.96,
+      "lines": 0
+    },
+    {
+      "run": 3,
+      "query": "walk",
+      "tool": "git ls-files",
+      "ms": 8.05,
+      "lines": 1
+    },
+    {
+      "run": 3,
+      "query": "walk",
+      "tool": "find",
+      "ms": 71.44,
+      "lines": 20002
+    },
+    {
+      "run": 3,
+      "query": "walk",
+      "tool": "rg --files",
+      "ms": 28.1,
+      "lines": 20001
+    },
+    {
+      "run": 3,
+      "query": "onefile",
+      "tool": "rg",
+      "ms": 3.76,
+      "lines": 0
+    },
+    {
+      "run": 3,
+      "query": "onefile",
+      "tool": "git grep",
+      "ms": 7.75,
+      "lines": 0
+    },
+    {
+      "run": 3,
+      "query": "onefile",
+      "tool": "grep",
+      "ms": 1.73,
+      "lines": 0
+    }
+  ],
+  "medians": {
+    "rare": {
+      "rg": {
+        "ms": 66.13,
+        "lines": 50,
+        "all": [63.98, 66.13, 67.08]
+      },
+      "git grep": {
+        "ms": 63.4,
+        "lines": 50,
+        "all": [63.4, 64.37, 62.93]
+      },
+      "grep (fair)": {
+        "ms": 251.47,
+        "lines": 50,
+        "all": [251.47, 250.48, 251.48]
+      },
+      "grep (naive)": {
+        "ms": 272.09,
+        "lines": 55,
+        "all": [272.09, 273.21, 272.08]
+      },
+      "xargs grep": {
+        "ms": 221.04,
+        "lines": 50,
+        "all": [220.38, 222.1, 221.04]
+      }
+    },
+    "absent": {
+      "rg": {
+        "ms": 66.67,
+        "lines": 0,
+        "all": [67.02, 66.67, 65.11]
+      },
+      "git grep": {
+        "ms": 60.88,
+        "lines": 0,
+        "all": [66.69, 60.39, 60.88]
+      },
+      "grep (fair)": {
+        "ms": 266.54,
+        "lines": 0,
+        "all": [266.54, 269.14, 266.37]
+      },
+      "grep (naive)": {
+        "ms": 292.72,
+        "lines": 0,
+        "all": [288.12, 292.72, 292.83]
+      },
+      "xargs grep": {
+        "ms": 236.96,
+        "lines": 0,
+        "all": [236.37, 237.3, 236.96]
+      }
+    },
+    "walk": {
+      "git ls-files": {
+        "ms": 8.01,
+        "lines": 1,
+        "all": [6.75, 8.01, 8.05]
+      },
+      "find": {
+        "ms": 71.44,
+        "lines": 20002,
+        "all": [71.23, 72.04, 71.44]
+      },
+      "rg --files": {
+        "ms": 26.41,
+        "lines": 20001,
+        "all": [26.41, 25.42, 28.1]
+      }
+    },
+    "onefile": {
+      "rg": {
+        "ms": 3.54,
+        "lines": 0,
+        "all": [3.49, 3.54, 3.76]
+      },
+      "git grep": {
+        "ms": 7.75,
+        "lines": 0,
+        "all": [7.88, 6.52, 7.75]
+      },
+      "grep": {
+        "ms": 1.73,
+        "lines": 0,
+        "all": [1.76, 1.73, 1.73]
+      }
+    }
+  },
+  "noise": {
+    "tool": "rg absent",
+    "min": 62.96,
+    "median": 64.34,
+    "max": 66.17,
+    "all": [
+      64.64, 63.73, 66.17, 65.81, 65.22, 64.04, 63.83, 62.96, 63.41, 65.34
+    ]
+  },
+  "startup": [
+    {
+      "tool": "rg",
+      "probe": "rg --version",
+      "median_ms": 1.87
+    },
+    {
+      "tool": "git grep",
+      "probe": "git --version",
+      "median_ms": 1.64
+    },
+    {
+      "tool": "grep",
+      "probe": "grep --version",
+      "median_ms": 1.63
+    }
+  ],
+  "untracked_probe": {
+    "file": "src/g000/sub0/scratch.ts",
+    "hits_per_tool": {
+      "rg": 51,
+      "git grep": 50,
+      "git grep --untracked": 51,
+      "grep (fair)": 51
+    }
+  }
+}
