@@ -39,9 +39,11 @@ of its cost. Three runs per command; the table reports medians.
 
 Noise floor: the fastest command repeated ten times spread 63.0–66.2 ms around
 a 64.3 ms median, about ±3 %. Whole-harness repeats moved a median by up to
-2.3 ms (±4 %). Host: 6 vCPU, Linux 6.12, ext4 in a container, rg 14.1.1, GNU
-grep 3.11, git 2.47.3. Every run was warm: `/proc/sys/vm/drop_caches` is
-read-only here, so a cold cache could not be tested.
+2.3 ms (±4 %). A single tool's three runs spread wider: `git grep` on the
+absent query spanned 60.4–66.7 ms, 10 %. Host: 6 vCPU, Linux 6.12, ext4 in a
+container, rg 14.1.1, GNU grep 3.11, git 2.47.3. Every run was warm:
+`/proc/sys/vm/drop_caches` is read-only here, so a cold cache could not be
+tested.
 
 ## Results
 
@@ -69,9 +71,11 @@ Untracked file: one scratch file with the token was visible to `rg` (51 hits),
 
 ### What worked
 
-- `git grep` came in at 0.91× ripgrep — inside the ±4 % noise, so a dead heat,
-  and well inside the 1.5× the hypothesis allowed. It reads the file list from
-  the index (8.0 ms) instead of walking the tree, which is the whole reason.
+- `git grep` came in at 0.91× ripgrep: 60.9 ms against 66.7 ms on the absent
+  query, 8.7 % apart and inside the 10 % its own three runs spanned. A tie at
+  this scale, and well inside the 1.5× the hypothesis allowed. It reads the
+  file list from the index (8.0 ms) instead of walking the tree, which is the
+  whole reason.
 - GNU grep cost 3.6× to 4.4×, above the 3× the hypothesis required.
 - The win is real at repo scale, not only on the kernel: 66 ms against 267 ms,
   and 40 searches a session come to 2.7 s against 10.7 s.
