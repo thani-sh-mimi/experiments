@@ -1,0 +1,199 @@
+{
+  "generatedAt": "2026-11-21T08:04:13.332Z",
+  "runs": 3,
+  "commits": 200,
+  "cells": {
+    "loose-0": {
+      "tags": 0,
+      "layout": "loose",
+      "looseFilesLeft": 0,
+      "packMs": null,
+      "commands": {
+        "tag": [2, 2.1, 2.1],
+        "status": [2.9, 2.7, 2.7],
+        "status-uno": [2.8, 2.7, 2.7],
+        "log-1": [2.6, 2.3, 2.6],
+        "rev-parse": [2.2, 2.1, 2.1],
+        "for-each-ref": [2, 2, 2],
+        "describe": [7.8, 7.5, 7.3],
+        "checkout-b": [3.4, 3.6, 3.5]
+      }
+    },
+    "packed-0": {
+      "tags": 0,
+      "layout": "packed",
+      "looseFilesLeft": 0,
+      "packMs": 2.3,
+      "commands": {
+        "tag": [2, 2, 2],
+        "status": [2.8, 2.7, 2.9],
+        "status-uno": [2.7, 2.7, 2.7],
+        "log-1": [2.4, 2.4, 2.4],
+        "rev-parse": [2, 2.1, 2],
+        "for-each-ref": [2, 2.1, 2],
+        "describe": [7.5, 7.7, 7.9],
+        "checkout-b": [3.4, 3.4, 3.4]
+      }
+    },
+    "loose-100": {
+      "tags": 100,
+      "layout": "loose",
+      "looseFilesLeft": 100,
+      "packMs": null,
+      "commands": {
+        "tag": [3.6, 3.2, 3.2],
+        "status": [2.7, 2.7, 2.7],
+        "status-uno": [2.6, 2.7, 2.7],
+        "log-1": [2.4, 2.4, 2.4],
+        "rev-parse": [2, 2, 2],
+        "for-each-ref": [3.3, 3.3, 3.2],
+        "describe": [5.7, 5.8, 5.8],
+        "checkout-b": [3.5, 3.3, 3.3]
+      }
+    },
+    "packed-100": {
+      "tags": 100,
+      "layout": "packed",
+      "looseFilesLeft": 0,
+      "packMs": 13.6,
+      "commands": {
+        "tag": [2.1, 2.1, 2.6],
+        "status": [2.7, 2.7, 2.8],
+        "status-uno": [2.7, 2.7, 2.7],
+        "log-1": [2.4, 2.4, 2.4],
+        "rev-parse": [2.1, 2, 2.1],
+        "for-each-ref": [2.1, 2.1, 2.1],
+        "describe": [2.5, 2.3, 2.3],
+        "checkout-b": [3.5, 3.3, 3.4]
+      }
+    },
+    "loose-1000": {
+      "tags": 1000,
+      "layout": "loose",
+      "looseFilesLeft": 1000,
+      "packMs": null,
+      "commands": {
+        "tag": [15, 14.7, 14.3],
+        "status": [2.7, 2.7, 2.7],
+        "status-uno": [2.7, 2.7, 2.7],
+        "log-1": [2.4, 2.4, 2.4],
+        "rev-parse": [2, 2.1, 2],
+        "for-each-ref": [14.3, 14.5, 14.4],
+        "describe": [18.2, 18.1, 18.5],
+        "checkout-b": [3.4, 3.3, 3.4]
+      }
+    },
+    "packed-1000": {
+      "tags": 1000,
+      "layout": "packed",
+      "looseFilesLeft": 0,
+      "packMs": 94.4,
+      "commands": {
+        "tag": [3.2, 3.2, 3.2],
+        "status": [2.8, 2.8, 2.8],
+        "status-uno": [2.7, 2.7, 2.7],
+        "log-1": [2.4, 2.5, 2.4],
+        "rev-parse": [2, 2.1, 2],
+        "for-each-ref": [3, 3.1, 3],
+        "describe": [2.5, 2.5, 2.5],
+        "checkout-b": [3.5, 3.4, 3.4]
+      }
+    },
+    "loose-10000": {
+      "tags": 10000,
+      "layout": "loose",
+      "looseFilesLeft": 10000,
+      "packMs": null,
+      "commands": {
+        "tag": [128, 129, 128.5],
+        "status": [2.6, 2.6, 2.6],
+        "status-uno": [2.5, 2.5, 2.6],
+        "log-1": [2.4, 2.4, 2.4],
+        "rev-parse": [2, 2.1, 2],
+        "for-each-ref": [124.5, 127.6, 126.7],
+        "describe": [122.5, 121.9, 126.3],
+        "checkout-b": [3.3, 3.3, 3.3]
+      }
+    },
+    "packed-10000": {
+      "tags": 10000,
+      "layout": "packed",
+      "looseFilesLeft": 0,
+      "packMs": 896,
+      "commands": {
+        "tag": [14.8, 14.8, 14.8],
+        "status": [2.7, 2.6, 2.7],
+        "status-uno": [2.7, 2.6, 2.6],
+        "log-1": [2.5, 2.4, 2.4],
+        "rev-parse": [2.1, 2.1, 2.1],
+        "for-each-ref": [12.8, 13, 13],
+        "describe": [4.3, 4.3, 4.3],
+        "checkout-b": [3.5, 3.5, 3.4]
+      }
+    },
+    "loose-50000": {
+      "tags": 50000,
+      "layout": "loose",
+      "looseFilesLeft": 50000,
+      "packMs": null,
+      "commands": {
+        "tag": [624.4, 632.3, 636.4],
+        "status": [2.6, 2.6, 2.6],
+        "status-uno": [2.6, 2.6, 2.5],
+        "log-1": [2.4, 2.4, 2.4],
+        "rev-parse": [2, 2, 2.1],
+        "for-each-ref": [630.8, 621.7, 630.5],
+        "describe": [589.2, 586.5, 591.2],
+        "checkout-b": [3.3, 3.3, 3.2]
+      }
+    },
+    "packed-50000": {
+      "tags": 50000,
+      "layout": "packed",
+      "looseFilesLeft": 0,
+      "packMs": 4475.7,
+      "commands": {
+        "tag": [66.3, 65.9, 66.1],
+        "status": [2.7, 2.8, 2.7],
+        "status-uno": [2.6, 2.6, 2.6],
+        "log-1": [2.5, 2.4, 2.5],
+        "rev-parse": [2.1, 2.1, 2.1],
+        "for-each-ref": [58.1, 56.5, 58.3],
+        "describe": [12.3, 12.2, 12.3],
+        "checkout-b": [3.6, 3.5, 3.4]
+      }
+    }
+  },
+  "noiseFloor": {
+    "tag": [2.1, 2, 2.2, 2, 2.3, 2, 1.9, 2, 2, 1.9, 2, 2],
+    "status": [2.9, 2.8, 2.9, 2.7, 2.7, 2.8, 2.7, 2.7, 2.7, 2.7, 2.7, 2.7],
+    "tagSpread": 0.4,
+    "statusSpread": 0.2
+  },
+  "remote": {
+    "loose-10000": {
+      "lsRemote": [165.5, 163.7, 165.6],
+      "bareClone": [416.7, 416.3, 417.4],
+      "bareCloneKiB": 3860,
+      "sourceKiB": 43360
+    },
+    "packed-10000": {
+      "lsRemote": [44.8, 44.7, 45.2],
+      "bareClone": [299.8, 295.2, 296.8],
+      "bareCloneKiB": 3860,
+      "sourceKiB": 3936
+    },
+    "loose-50000": {
+      "lsRemote": [788.1, 779.3, 790.1],
+      "bareClone": [1913.8, 1894.7, 1889.7],
+      "bareCloneKiB": 6164,
+      "sourceKiB": 203360
+    },
+    "packed-50000": {
+      "lsRemote": [207.1, 210.1, 206.5],
+      "bareClone": [1311.4, 1326.2, 1310.3],
+      "bareCloneKiB": 6164,
+      "sourceKiB": 6240
+    }
+  }
+}
